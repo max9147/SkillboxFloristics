@@ -4,50 +4,49 @@ using UnityEngine;
 
 public class ArrangeFlowers : MonoBehaviour
 {
-    public GameObject bouquetTip; //Нижний конец букета
+    public GameObject collisionFlower; //Цветок только что вошедший в букет
+    public bool flowerInside = false;
 
-    private GameObject collisionFlower; //Цветок только что вошедший в букет
     private int flowerCount; //Число цветков в букете
-    private bool flowerInside = false;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flowerInside = true;
+    private void OnTriggerEnter2D(Collider2D collision) //Используем для записи цветка в объект
+    {        
         collisionFlower = collision.gameObject;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
+    {        
+        collisionFlower = null;
+    }
+
+    private void OnMouseEnter() //Используем для обозначения нахождения цветка в объекте
+    {
+        flowerInside = true;
+    }
+
+    private void OnMouseExit()
     {
         flowerInside = false;
-        collisionFlower = null;
+        if (collisionFlower)
+        {
+            collisionFlower.transform.rotation = Quaternion.identity; //Обнуляем вращение цветка при выходе из букета
+        }
     }
 
     public bool CheckFlower() //Проверка на нахождение цветка в области букета
     {
         if (flowerInside)
         {
-            collisionFlower.transform.position = CalcPosition(); //Вычисляем позицию цветка в букете
-            collisionFlower.transform.up = (bouquetTip.transform.position - collisionFlower.transform.position) * -1; //Вычисляем поворот цветка в букете
             flowerCount++;
-            collisionFlower.GetComponent<SpriteRenderer>().sortingOrder = flowerCount; //Сдвигаем каждый следующий цветок на передний план относительно предыдущих
-            GetComponent<SpriteRenderer>().sortingOrder = flowerCount + 1; //Сдвигаем букет на передний план относительно цветов
+            if (collisionFlower)
+            {
+                collisionFlower.GetComponent<SpriteRenderer>().sortingOrder = flowerCount; //Сдвигаем каждый следующий цветок на передний план относительно предыдущих
+            }
             return true;
         }
         else
         {
             return false;
-        }
-    }
-
-    private Vector3 CalcPosition() //Вычисляем позицию цветка в букете
-    {
-        if (flowerCount == 0)
-        {
-            return new Vector3(0, 0, 0);
-        }
-        else
-        {
-            return new Vector3(collisionFlower.transform.position.x, 0, 0);
         }
     }
 }

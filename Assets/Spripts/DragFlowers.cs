@@ -7,6 +7,7 @@ public class DragFlowers : MonoBehaviour
     public Camera mainCam;
     public GameObject flowerPrefab; //Конкретный цветок у каждого спавнера
     public GameObject bouquet;
+    public GameObject bouquetTip;
 
     private GameObject flowerToDrag;
     private bool isDragging = false; //Есть ли у игрока в курсоре цветок
@@ -26,7 +27,6 @@ public class DragFlowers : MonoBehaviour
     private void OnMouseUp()
     {
         isDragging = false;
-        flowerToDrag.GetComponent<Rigidbody2D>().simulated = false;
 
         if (bouquet.GetComponent<ArrangeFlowers>().CheckFlower()) //Проверка на нахождение цветка в области букета
         {
@@ -40,8 +40,18 @@ public class DragFlowers : MonoBehaviour
         {
             if (isDragging) //Выполняется когда игрок тащит цветок
             {
-                Vector3 curPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Координаты курсора, но z=0
-                flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, curPos, 100); //Перемещаем цветок к курсору
+                Vector3 curPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Текущая позиция курсора
+
+                if (bouquet.GetComponent<ArrangeFlowers>().flowerInside)
+                {
+                    Vector3 snappedPos = new Vector3(curPos.x / 2, bouquet.transform.position.y, 0);
+                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 10); //Перемещаем цветок в букет
+                    flowerToDrag.transform.up = (bouquetTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри букета
+                }
+                else
+                {
+                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, curPos, 0.5f); //Перемещаем цветок к курсору
+                }
             }
             else
             {
@@ -58,6 +68,7 @@ public class DragFlowers : MonoBehaviour
 
     public void ReleaseFlower() //Считаем цветок используемым в букете
     {
+        bouquet.GetComponent<ArrangeFlowers>().collisionFlower = null;
         flowerToDrag = null;
         canTake = true;
     }
