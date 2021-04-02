@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ArrangeFlowers : MonoBehaviour
 {
-    public GameObject collisionFlower; //Цветок только что вошедший в букет
+    public Button buttonCreate;
     public bool flowerInside = false;
 
+    private GameObject collisionFlower; //Цветок только что вошедший в букет
     private int flowerCount; //Число цветков в букете
 
     private void OnTriggerEnter2D(Collider2D collision) //Используем для записи цветка в объект
@@ -40,7 +42,9 @@ public class ArrangeFlowers : MonoBehaviour
             flowerCount++;
             if (collisionFlower)
             {
+                buttonCreate.interactable = true; //Можно создать букет если цветок опустили в букет
                 collisionFlower.GetComponent<SpriteRenderer>().sortingOrder = flowerCount; //Сдвигаем каждый следующий цветок на передний план относительно предыдущих
+                collisionFlower = null;
             }
             return true;
         }
@@ -48,5 +52,15 @@ public class ArrangeFlowers : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public int GetFlowerCount()
+    {
+        return flowerCount;
+    }
+
+    public void ClearBouquet()
+    {
+        flowerCount = 0;
     }
 }

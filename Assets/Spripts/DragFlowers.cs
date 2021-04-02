@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DragFlowers : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class DragFlowers : MonoBehaviour
     public GameObject flowerPrefab; //Конкретный цветок у каждого спавнера
     public GameObject bouquet;
     public GameObject bouquetTip;
+    public Button buttonCreate;
 
     private GameObject flowerToDrag;
     private bool isDragging = false; //Есть ли у игрока в курсоре цветок
@@ -17,6 +19,7 @@ public class DragFlowers : MonoBehaviour
     {
         if (canTake)
         {
+            buttonCreate.interactable = false; //Запрещаем создавать букет пока тащим цветок
             isDragging = true;
             canTake = false;
             Vector3 spawnPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Координаты курсора, но z=0
@@ -60,6 +63,10 @@ public class DragFlowers : MonoBehaviour
 
             if (flowerToDrag.transform.position == transform.position) //Когда цветок долетел до спавнера
             {
+                if (bouquet.GetComponent<ArrangeFlowers>().GetFlowerCount() > 0)
+                {
+                    buttonCreate.interactable = true; //Можем создать букет если цветок возвращается на место, а в букете есть цветы
+                }
                 canTake = true;
                 Destroy(flowerToDrag);
             }
@@ -68,7 +75,6 @@ public class DragFlowers : MonoBehaviour
 
     public void ReleaseFlower() //Считаем цветок используемым в букете
     {
-        bouquet.GetComponent<ArrangeFlowers>().collisionFlower = null;
         flowerToDrag = null;
         canTake = true;
     }
