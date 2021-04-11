@@ -10,6 +10,7 @@ public class DragFlowers : MonoBehaviour
     public GameObject bouquet;
     public GameObject bouquetTip;
     public Button buttonCreate;
+    public Button buttonBack;
 
     private GameObject flowerToDrag;
     private bool isDragging = false; //Есть ли у игрока в курсоре цветок
@@ -31,7 +32,7 @@ public class DragFlowers : MonoBehaviour
     {
         isDragging = false;
 
-        if (bouquet.GetComponent<ArrangeFlowers>().CheckFlower()) //Проверка на нахождение цветка в области букета
+        if (bouquet.GetComponent<ArrangeFlowers>().CheckFlowerPos()) //Проверка на нахождение цветка в области букета
         {
             ReleaseFlower();
         }
@@ -45,9 +46,9 @@ public class DragFlowers : MonoBehaviour
             {
                 Vector3 curPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Текущая позиция курсора
 
-                if (bouquet.GetComponent<ArrangeFlowers>().flowerInside)
+                if (bouquet.GetComponent<ArrangeFlowers>().CheckFlowerInside())
                 {
-                    Vector3 snappedPos = new Vector3(curPos.x / 2, bouquet.transform.position.y, 0);
+                    Vector3 snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, bouquet.transform.position.y, 0); //Находим место цветка в букете
                     flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 10); //Перемещаем цветок в букет
                     flowerToDrag.transform.up = (bouquetTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри букета
                 }
@@ -73,9 +74,15 @@ public class DragFlowers : MonoBehaviour
         }
     }
 
-    public void ReleaseFlower() //Считаем цветок используемым в букете
+    private void ReleaseFlower() //Считаем цветок используемым в букете
     {
         flowerToDrag = null;
+        canTake = true;
+        buttonBack.interactable = true;
+    }
+
+    public void AllowTaking()
+    {
         canTake = true;
     }
 }
