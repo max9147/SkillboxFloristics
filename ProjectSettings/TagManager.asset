@@ -39,6 +39,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Big
+    uniqueID: 4216341811
+    locked: 0
+  - name: Medium
+    uniqueID: 771156703
+    locked: 0
+  - name: Small
+    uniqueID: 3976434745
+    locked: 0
   - name: Background
     uniqueID: 3869871187
     locked: 0

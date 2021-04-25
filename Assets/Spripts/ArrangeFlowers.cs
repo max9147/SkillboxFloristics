@@ -48,7 +48,7 @@ public class ArrangeFlowers : MonoBehaviour
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
         {
-            if (item.GetComponent<SpriteRenderer>().sortingOrder == flowerCount)
+            if (item.GetComponent<SpriteRenderer>().sortingOrder == flowerCount) //Находим цветы
             {
                 Destroy(item);
                 flowerCount--;

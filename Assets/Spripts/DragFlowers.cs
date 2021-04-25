@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DragFlowers : MonoBehaviour
 {
     public Camera mainCam;
+    public Flower flower;
     public GameObject flowerPrefab; //Конкретный цветок у каждого спавнера
     public GameObject bouquet;
     public GameObject bouquetTip;
@@ -34,6 +35,7 @@ public class DragFlowers : MonoBehaviour
 
         if (bouquet.GetComponent<ArrangeFlowers>().CheckFlowerPos()) //Проверка на нахождение цветка в области букета
         {
+            flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = flower.size;
             ReleaseFlower();
         }
     }
@@ -48,13 +50,27 @@ public class DragFlowers : MonoBehaviour
 
                 if (bouquet.GetComponent<ArrangeFlowers>().CheckFlowerInside())
                 {
-                    Vector3 snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, bouquet.transform.position.y, 0); //Находим место цветка в букете
+                    Vector3 snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 3, 0); //Находим место цветка в букете
                     flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 10); //Перемещаем цветок в букет
                     flowerToDrag.transform.up = (bouquetTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри букета
+
+                    if (bouquet.transform.position.x - flowerToDrag.transform.position.x > 0.35f) //Если цветок в левой части букета
+                    {
+                        flowerToDrag.GetComponent<SpriteRenderer>().sprite = flower.imageL;
+                    }
+                    else if (bouquet.transform.position.x - flowerToDrag.transform.position.x < -0.35f) //Если цветок в правой части букета
+                    {
+                        flowerToDrag.GetComponent<SpriteRenderer>().sprite = flower.imageR;
+                    }
+                    else //Если цветок в центре букета
+                    {
+                        flowerToDrag.GetComponent<SpriteRenderer>().sprite = flower.imageC;
+                    }
                 }
                 else
                 {
                     flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, curPos, 0.5f); //Перемещаем цветок к курсору
+                    flowerToDrag.GetComponent<SpriteRenderer>().sprite = flower.imageC;
                 }
             }
             else

@@ -254,7 +254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -113.2, y: 140}
+  m_AnchoredPosition: {x: -245, y: 190}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &148902072
@@ -326,7 +326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -310, y: 60}
+  m_AnchoredPosition: {x: -366, y: 95}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &313873359
@@ -606,7 +606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -70, y: 60}
+  m_AnchoredPosition: {x: -126, y: 95.00003}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413580513
@@ -829,7 +829,7 @@ GameObject:
   - component: {fileID: 610010361}
   - component: {fileID: 610010362}
   m_Layer: 0
-  m_Name: Flower3Spawner
+  m_Name: MuscariSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -889,12 +889,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eaba6de5cf3f80b4aac8dea53401e6d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94b9765e603ac174db07d1b37004fa11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 3}
+  m_Size: {x: 1.11, y: 1.67}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -917,8 +917,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 3}
-    newSize: {x: 1, y: 3}
+    oldSize: {x: 1.11, y: 1.67}
+    newSize: {x: 1.11, y: 1.67}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -939,6 +939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 519420031}
+  flower: {fileID: 11400000, guid: 8d34d8e0551d510438390d6e3ca4a92a, type: 2}
   flowerPrefab: {fileID: 3732360458341616958, guid: f86b8a088ff388b4386936f01a1efbdf, type: 3}
   bouquet: {fileID: 357295950}
   bouquetTip: {fileID: 535042131}
@@ -1114,7 +1115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -190, y: 60}
+  m_AnchoredPosition: {x: -246, y: 95.00003}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &760961038
@@ -1224,7 +1225,7 @@ GameObject:
   - component: {fileID: 870881711}
   - component: {fileID: 870881712}
   m_Layer: 0
-  m_Name: Flower2Spawner
+  m_Name: GerberaSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1284,12 +1285,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7a6121cc934175c45b2ebbe199ca6056, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cdf919476256d2d41bc149d533e44436, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 3}
+  m_Size: {x: 3.87, y: 3.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1312,8 +1313,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 3}
-    newSize: {x: 1, y: 3}
+    oldSize: {x: 3.87, y: 3.84}
+    newSize: {x: 3.87, y: 3.84}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1334,6 +1335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 519420031}
+  flower: {fileID: 11400000, guid: 77cfde2b1b04a4a4cb3464264345de1c, type: 2}
   flowerPrefab: {fileID: 3136315913607016711, guid: 1dc83ae1f8ea2e54dba60096bb92ad13, type: 3}
   bouquet: {fileID: 357295950}
   bouquetTip: {fileID: 535042131}
@@ -1865,7 +1867,7 @@ GameObject:
   - component: {fileID: 2132321993}
   - component: {fileID: 2132321994}
   m_Layer: 0
-  m_Name: Flower1Spawner
+  m_Name: AnemoneSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1925,12 +1927,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9c828d9a51fc9474c900e2d3b86b77f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a63c00c6ca7e47f4593fca2a0fa81f6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 3}
+  m_Size: {x: 1.84, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1953,8 +1955,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 3}
-    newSize: {x: 1, y: 3}
+    oldSize: {x: 1.84, y: 3.2}
+    newSize: {x: 1.84, y: 3.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1975,6 +1977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 519420031}
+  flower: {fileID: 11400000, guid: 57a08911fe397074195c82eded000e02, type: 2}
   flowerPrefab: {fileID: 6555160974231719570, guid: 44414309d727c0247a647a4fed0d96db, type: 3}
   bouquet: {fileID: 357295950}
   bouquetTip: {fileID: 535042131}
