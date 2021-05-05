@@ -39,13 +39,13 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Big
+  - name: Focus
     uniqueID: 4216341811
     locked: 0
-  - name: Medium
+  - name: Base
     uniqueID: 771156703
     locked: 0
-  - name: Small
+  - name: Details
     uniqueID: 3976434745
     locked: 0
   - name: Background

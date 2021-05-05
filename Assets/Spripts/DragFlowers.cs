@@ -10,10 +10,13 @@ public class DragFlowers : MonoBehaviour
     public GameObject flowerPrefab; //Конкретный цветок у каждого спавнера
     public GameObject bouquet;
     public GameObject bouquetTip;
+    public GameObject itemsContent; //Контент элемента scrollview
     public Button buttonCreate;
     public Button buttonBack;
 
     private GameObject flowerToDrag;
+    private Vector3 snappedPos;
+    private float contentPos;
     private bool isDragging = false; //Есть ли у игрока в курсоре цветок
     private bool canTake = true; //Можно ли взять цветок
 
@@ -21,6 +24,7 @@ public class DragFlowers : MonoBehaviour
     {
         if (canTake)
         {
+            contentPos = itemsContent.GetComponent<RectTransform>().localPosition.y; //Положение content во время взятия цветка
             buttonCreate.interactable = false; //Запрещаем создавать букет пока тащим цветок
             isDragging = true;
             canTake = false;
@@ -34,9 +38,16 @@ public class DragFlowers : MonoBehaviour
         isDragging = false;
 
         if (bouquet.GetComponent<ArrangeFlowers>().CheckFlowerPos()) //Проверка на нахождение цветка в области букета
-        {
-            flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = flower.size;
+        {            
             ReleaseFlower();
+        }
+    }
+
+    private void Update()
+    {
+        if (flowerToDrag)
+        {
+            itemsContent.GetComponent<RectTransform>().localPosition = new Vector3(0, contentPos, 0); //Перемещаем content в положение в котором он был при взятии цветка
         }
     }
 
@@ -50,8 +61,18 @@ public class DragFlowers : MonoBehaviour
 
                 if (bouquet.GetComponent<ArrangeFlowers>().CheckFlowerInside())
                 {
-                    Vector3 snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 3, 0); //Находим место цветка в букете
-                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 10); //Перемещаем цветок в букет
+                    flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = flower.size; //Перемещаем цветок на его слой
+
+                    if (flower.size == "Details")
+                    {
+                        snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 3 + 0.5f, 0);
+                    }
+                    else
+                    {
+                        snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 3, 0); //Находим место цветка в букете
+                    }
+
+                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 5); //Перемещаем цветок в букет
                     flowerToDrag.transform.up = (bouquetTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри букета
 
                     if (bouquet.transform.position.x - flowerToDrag.transform.position.x > 0.35f) //Если цветок в левой части букета
@@ -69,7 +90,8 @@ public class DragFlowers : MonoBehaviour
                 }
                 else
                 {
-                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, curPos, 0.5f); //Перемещаем цветок к курсору
+                    flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = "Default"; //Перемещаем цветок на стандартный слой при вынимании из букета
+                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, curPos, 5f); //Перемещаем цветок к курсору
                     flowerToDrag.GetComponent<SpriteRenderer>().sprite = flower.imageC;
                 }
             }
