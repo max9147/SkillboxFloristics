@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ArrangeFlowers : MonoBehaviour
+public class ArrangeBasket : MonoBehaviour
 {
     public Button buttonCreate;
     public Button buttonReset;
@@ -11,16 +11,16 @@ public class ArrangeFlowers : MonoBehaviour
 
     private GameObject collisionFlower; //Цветок только что вошедший в букет
     private GameObject[] toDestroy;
-    private int flowerCount; //Число цветков в букете
+    private int flowerCount; //Число цветков в корзине
     private bool flowerInside = false;
 
     private void OnTriggerEnter2D(Collider2D collision) //Используем для записи цветка в объект
-    {        
+    {
         collisionFlower = collision.gameObject;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
-    {        
+    {
         collisionFlower = null;
     }
 
@@ -32,11 +32,7 @@ public class ArrangeFlowers : MonoBehaviour
     private void OnMouseExit()
     {
         flowerInside = false;
-        if (collisionFlower)
-        {
-            collisionFlower.transform.rotation = Quaternion.identity; //Обнуляем вращение цветка при выходе из букета
-        }
-    }    
+    }
 
     public void ClearBouquet()
     {
@@ -68,14 +64,14 @@ public class ArrangeFlowers : MonoBehaviour
         return flowerCount;
     }
 
-    public bool CheckFlowerPos() //Проверка на нахождение цветка в области букета
+    public bool CheckFlowerPos() //Проверка на нахождение цветка в области корзины
     {
         if (flowerInside)
         {
             flowerCount++;
             if (collisionFlower)
             {
-                buttonCreate.interactable = true; //Можно создать букет если цветок опустили в букет
+                buttonCreate.interactable = true; //Можно создать букет если цветок опустили в корзину
                 buttonReset.interactable = true;
                 collisionFlower.GetComponent<SpriteRenderer>().sortingOrder = flowerCount; //Сдвигаем каждый следующий цветок на передний план относительно предыдущих
                 collisionFlower = null;

@@ -4,8 +4,10 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class CreateBouquet : MonoBehaviour
+public class CreateComp : MonoBehaviour
 {
+    public GameObject bouquet;
+    public GameObject basket;
     public GameObject[] flowerSpawers;
     public TextMeshProUGUI textLast; //Текст показывающий информацию о последнем букете
     public Button buttonCreate;
@@ -20,7 +22,14 @@ public class CreateBouquet : MonoBehaviour
         buttonCreate.interactable = false; //Запрещаем нажимать на создание букета после создания
         buttonReset.interactable = false;
         buttonBack.interactable = false;
-        GetComponent<ArrangeFlowers>().ClearBouquet();
+        if (bouquet.activeInHierarchy)
+        {
+            bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
+        }
+        if (basket.activeInHierarchy)
+        {
+
+        }
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
         {
@@ -29,6 +38,7 @@ public class CreateBouquet : MonoBehaviour
         }
         textLast.text = $"Цветков: {countFlowers}";
         countFlowers = 0;
+        GetComponent<SelectType>().InitSelection();
     }
 
     public void PressReset()
@@ -36,7 +46,14 @@ public class CreateBouquet : MonoBehaviour
         buttonCreate.interactable = false;
         buttonReset.interactable = false;
         buttonBack.interactable = false;
-        GetComponent<ArrangeFlowers>().ClearBouquet();
+        if (bouquet.activeInHierarchy)
+        {
+            bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
+        }
+        if (basket.activeInHierarchy)
+        {
+
+        }
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
         {
