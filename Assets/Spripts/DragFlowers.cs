@@ -11,6 +11,7 @@ public class DragFlowers : MonoBehaviour
     public GameObject bouquet;
     public GameObject bouquetTip;
     public GameObject basket;
+    public GameObject basketTip;
     public GameObject itemsContent; //Контент элемента scrollview
     public Button buttonCreate;
     public Button buttonBack;
@@ -93,6 +94,7 @@ public class DragFlowers : MonoBehaviour
                 {
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = flower.size; //Перемещаем цветок на его слой
                     snappedPos = new Vector3((basket.transform.position.x + curPos.x) / 2, (basket.transform.position.y + curPos.y) / 5, 0); //Находим место цветка в корзине
+                    flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри корзины
                     flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 5); //Перемещаем цветок в корзину
                 }
                 else
@@ -109,10 +111,6 @@ public class DragFlowers : MonoBehaviour
 
             if (flowerToDrag.transform.position == transform.position) //Когда цветок долетел до спавнера
             {
-                if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 0 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 0)
-                {
-                    buttonCreate.interactable = true; //Можем создать букет если цветок возвращается на место, а в композиции есть цветы
-                }
                 canTake = true;
                 Destroy(flowerToDrag);
             }

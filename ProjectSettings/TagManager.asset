@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3869871187
+    locked: 0
   - name: Focus
     uniqueID: 4216341811
     locked: 0
@@ -47,9 +50,6 @@ TagManager:
     locked: 0
   - name: Details
     uniqueID: 3976434745
-    locked: 0
-  - name: Background
-    uniqueID: 3869871187
     locked: 0
   - name: Default
     uniqueID: 0

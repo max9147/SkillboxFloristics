@@ -32,9 +32,13 @@ public class ArrangeBasket : MonoBehaviour
     private void OnMouseExit()
     {
         flowerInside = false;
+        if (collisionFlower)
+        {
+            collisionFlower.transform.rotation = Quaternion.identity; //Обнуляем вращение цветка при выходе из корзины
+        }
     }
 
-    public void ClearBouquet()
+    public void ClearBasket()
     {
         flowerCount = 0;
     }
@@ -52,9 +56,13 @@ public class ArrangeBasket : MonoBehaviour
 
             if (flowerCount == 0)
             {
-                buttonCreate.interactable = false;
                 buttonReset.interactable = false;
                 buttonBack.interactable = false;
+            }
+
+            if (flowerCount < 20 || flowerCount > 35)
+            {
+                buttonCreate.interactable = false;
             }
         }
     }
@@ -69,9 +77,12 @@ public class ArrangeBasket : MonoBehaviour
         if (flowerInside)
         {
             flowerCount++;
-            if (collisionFlower)
+            if (flowerCount >= 20 && flowerCount <= 35)
             {
-                buttonCreate.interactable = true; //Можно создать букет если цветок опустили в корзину
+                buttonCreate.interactable = true;
+            }
+            if (collisionFlower)
+            {                
                 buttonReset.interactable = true;
                 collisionFlower.GetComponent<SpriteRenderer>().sortingOrder = flowerCount; //Сдвигаем каждый следующий цветок на передний план относительно предыдущих
                 collisionFlower = null;

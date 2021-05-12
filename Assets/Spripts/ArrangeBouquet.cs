@@ -56,9 +56,13 @@ public class ArrangeBouquet : MonoBehaviour
 
             if (flowerCount == 0)
             {
-                buttonCreate.interactable = false;
                 buttonReset.interactable = false;
                 buttonBack.interactable = false;
+            }
+
+            if (flowerCount < 20 || flowerCount > 35)
+            {
+                buttonCreate.interactable = false;
             }
         }
     }
@@ -73,9 +77,12 @@ public class ArrangeBouquet : MonoBehaviour
         if (flowerInside)
         {
             flowerCount++;
+            if (flowerCount >= 20 && flowerCount <= 35)
+            {
+                buttonCreate.interactable = true;
+            }
             if (collisionFlower)
             {
-                buttonCreate.interactable = true; //Можно создать букет если цветок опустили в букет
                 buttonReset.interactable = true;
                 collisionFlower.GetComponent<SpriteRenderer>().sortingOrder = flowerCount; //Сдвигаем каждый следующий цветок на передний план относительно предыдущих
                 collisionFlower = null;

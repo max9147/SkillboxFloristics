@@ -28,7 +28,7 @@ public class CreateComp : MonoBehaviour
         }
         if (basket.activeInHierarchy)
         {
-
+            basket.GetComponent<ArrangeBasket>().ClearBasket();
         }
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
@@ -52,12 +52,11 @@ public class CreateComp : MonoBehaviour
         }
         if (basket.activeInHierarchy)
         {
-
+            basket.GetComponent<ArrangeBasket>().ClearBasket();
         }
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
         {
-            countFlowers++;
             Destroy(item);
         }
         foreach (var item in flowerSpawers)
