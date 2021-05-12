@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1183783614602124167}
   - component: {fileID: -8541131394576919093}
   m_Layer: 0
-  m_Name: Flower1
+  m_Name: Anemone
   m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.84, y: 3.2}
+  m_Size: {x: 1.62, y: 2.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -101,8 +101,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 3.2}
-    newSize: {x: 1.84, y: 3.2}
+    oldSize: {x: 1.62, y: 2.82}
+    newSize: {x: 1.62, y: 2.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
