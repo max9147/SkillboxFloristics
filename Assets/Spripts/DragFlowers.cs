@@ -18,13 +18,15 @@ public class DragFlowers : MonoBehaviour
 
     private GameObject flowerToDrag;
     private Vector3 snappedPos;
+    private Ray ray;
     private float contentPos;
     private bool isDragging = false; //Есть ли у игрока в курсоре цветок
     private bool canTake = true; //Можно ли взять цветок
 
     private void OnMouseDown()
     {
-        if (canTake)
+        ray = mainCam.ScreenPointToRay(Input.mousePosition); //Проверка на нахождение курсора в content
+        if (canTake && ray.origin.y < 3.7f && ray.origin.y > -2.9f)
         {
             contentPos = itemsContent.GetComponent<RectTransform>().localPosition.y; //Положение content во время взятия цветка
             buttonCreate.interactable = false; //Запрещаем создавать композицию пока тащим цветок
@@ -67,11 +69,11 @@ public class DragFlowers : MonoBehaviour
 
                     if (flower.size == "Details")
                     {
-                        snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 3 + 0.5f, 0);
+                        snappedPos = new Vector3(curPos.x, curPos.y + 1, 0); //Находим место цветка в букете
                     }
                     else
                     {
-                        snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 3, 0); //Находим место цветка в букете
+                        snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 2, 0); //Находим место цветка в букете
                     }
 
                     flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 5); //Перемещаем цветок в букет
@@ -100,6 +102,7 @@ public class DragFlowers : MonoBehaviour
                 else
                 {
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = "Default"; //Перемещаем цветок на стандартный слой при вынимании из букета
+                    flowerToDrag.transform.rotation = Quaternion.identity; //Обнуляем вращение цветка
                     flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, curPos, 5f); //Перемещаем цветок к курсору
                     flowerToDrag.GetComponent<SpriteRenderer>().sprite = flower.imageC;
                 }

@@ -32,10 +32,6 @@ public class ArrangeBasket : MonoBehaviour
     private void OnMouseExit()
     {
         flowerInside = false;
-        if (collisionFlower)
-        {
-            collisionFlower.transform.rotation = Quaternion.identity; //Обнуляем вращение цветка при выходе из корзины
-        }
     }
 
     public void ClearBasket()
