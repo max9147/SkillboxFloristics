@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6254376833773590850}
   - component: {fileID: -8576419055343598565}
   m_Layer: 0
-  m_Name: Tulip 5
+  m_Name: RoseBush
   m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

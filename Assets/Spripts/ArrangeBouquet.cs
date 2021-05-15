@@ -10,7 +10,6 @@ public class ArrangeBouquet : MonoBehaviour
     public Button buttonBack;
 
     private GameObject collisionFlower; //Цветок только что вошедший в букет
-    private GameObject[] toDestroy;
     private int flowerCount; //Число цветков в букете
     private bool flowerInside = false;
 
@@ -45,26 +44,7 @@ public class ArrangeBouquet : MonoBehaviour
 
     public void RemoveLast()
     {
-        toDestroy = GameObject.FindGameObjectsWithTag("Flower");
-        foreach (var item in toDestroy) //Перебираем цветы на сцене
-        {
-            if (item.GetComponent<SpriteRenderer>().sortingOrder == flowerCount) //Находим цветы
-            {
-                Destroy(item);
-                flowerCount--;
-            }
-
-            if (flowerCount == 0)
-            {
-                buttonReset.interactable = false;
-                buttonBack.interactable = false;
-            }
-
-            if (flowerCount < 20 || flowerCount > 35)
-            {
-                buttonCreate.interactable = false;
-            }
-        }
+        flowerCount--;
     }
 
     public int GetFlowerCount()
@@ -84,7 +64,6 @@ public class ArrangeBouquet : MonoBehaviour
             if (collisionFlower)
             {
                 buttonReset.interactable = true;
-                collisionFlower.GetComponent<SpriteRenderer>().sortingOrder = flowerCount; //Сдвигаем каждый следующий цветок на передний план относительно предыдущих
                 collisionFlower = null;
             }
             return true;

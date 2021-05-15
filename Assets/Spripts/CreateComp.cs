@@ -22,6 +22,7 @@ public class CreateComp : MonoBehaviour
         buttonCreate.interactable = false; //Запрещаем нажимать на создание букета после создания
         buttonReset.interactable = false;
         buttonBack.interactable = false;
+        GetComponent<ScoringSystem>().CountScore();
         if (bouquet.activeInHierarchy)
         {
             bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
@@ -30,15 +31,8 @@ public class CreateComp : MonoBehaviour
         {
             basket.GetComponent<ArrangeBasket>().ClearBasket();
         }
-        toDestroy = GameObject.FindGameObjectsWithTag("Flower");
-        foreach (var item in toDestroy) //Перебираем цветы на сцене
-        {
-            countFlowers++;
-            Destroy(item);
-        }
         textLast.text = $"Цветков: {countFlowers}";
         countFlowers = 0;
-        GetComponent<SelectType>().InitSelection();
     }
 
     public void PressReset()
@@ -54,6 +48,7 @@ public class CreateComp : MonoBehaviour
         {
             basket.GetComponent<ArrangeBasket>().ClearBasket();
         }
+        GetComponent<ScoringSystem>().addedFlowers.Clear();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
         {
@@ -62,6 +57,56 @@ public class CreateComp : MonoBehaviour
         foreach (var item in flowerSpawers)
         {
             item.GetComponent<DragFlowers>().AllowTaking();
+        }
+    }
+
+    public void PressRemove()
+    {
+        GetComponent<ScoringSystem>().addedFlowers.RemoveAt(GetComponent<ScoringSystem>().addedFlowers.Count - 1);
+        toDestroy = GameObject.FindGameObjectsWithTag("Flower");
+        if (bouquet.activeInHierarchy)
+        {
+            foreach (var item in toDestroy) //Перебираем цветы на сцене
+            {
+                if (item.GetComponent<SpriteRenderer>().sortingOrder == bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount()) //Находим цветы
+                {
+                    Destroy(item);
+                    bouquet.GetComponent<ArrangeBouquet>().RemoveLast();
+                }
+
+                if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() == 0)
+                {
+                    buttonReset.interactable = false;
+                    buttonBack.interactable = false;
+                }
+
+                if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() < 20 || bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 35)
+                {
+                    buttonCreate.interactable = false;
+                }
+            }
+        }
+        if (basket.activeInHierarchy)
+        {
+            foreach (var item in toDestroy) //Перебираем цветы на сцене
+            {
+                if (item.GetComponent<SpriteRenderer>().sortingOrder == basket.GetComponent<ArrangeBasket>().GetFlowerCount()) //Находим цветы
+                {
+                    Destroy(item);
+                    basket.GetComponent<ArrangeBasket>().RemoveLast();
+                }
+
+                if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() == 0)
+                {
+                    buttonReset.interactable = false;
+                    buttonBack.interactable = false;
+                }
+
+                if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() < 20 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 35)
+                {
+                    buttonCreate.interactable = false;
+                }
+            }
         }
     }
 }
