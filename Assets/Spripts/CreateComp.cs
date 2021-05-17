@@ -9,13 +9,11 @@ public class CreateComp : MonoBehaviour
     public GameObject bouquet;
     public GameObject basket;
     public GameObject[] flowerSpawers;
-    public TextMeshProUGUI textLast; //Текст показывающий информацию о последнем букете
     public Button buttonCreate;
     public Button buttonReset;
     public Button buttonBack;
 
     private GameObject[] toDestroy;
-    private int countFlowers = 0; //Число цветков в последнем букете
 
     public void PressCreate() //Нажатие на кнопку создать букет
     {
@@ -31,8 +29,6 @@ public class CreateComp : MonoBehaviour
         {
             basket.GetComponent<ArrangeBasket>().ClearBasket();
         }
-        textLast.text = $"Цветков: {countFlowers}";
-        countFlowers = 0;
     }
 
     public void PressReset()
