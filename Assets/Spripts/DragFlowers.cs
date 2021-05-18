@@ -13,7 +13,7 @@ public class DragFlowers : MonoBehaviour
     public GameObject bouquetTip;
     public GameObject basket;
     public GameObject basketTip;
-    public GameObject itemsContent; //Контент элемента scrollview
+    public GameObject content; //Контент элемента scrollview
     public GameObject gameManager;
     public Button buttonCreate;
     public Button buttonBack;
@@ -30,7 +30,7 @@ public class DragFlowers : MonoBehaviour
         ray = mainCam.ScreenPointToRay(Input.mousePosition); //Проверка на нахождение курсора в content
         if (canTake && !gameManager.GetComponent<ScoringSystem>().CheckIsOpen() && !gameManager.GetComponent<SelectType>().CheckIsOpen() && ray.origin.y < 3.7f && ray.origin.y > -2.9f)
         {
-            contentPos = itemsContent.GetComponent<RectTransform>().localPosition.y; //Положение content во время взятия цветка
+            contentPos = content.GetComponent<RectTransform>().localPosition.y; //Положение content во время взятия цветка
             buttonCreate.interactable = false; //Запрещаем создавать композицию пока тащим цветок
             isDragging = true;
             canTake = false;
@@ -53,7 +53,7 @@ public class DragFlowers : MonoBehaviour
     {
         if (flowerToDrag)
         {
-            itemsContent.GetComponent<RectTransform>().localPosition = new Vector3(0, contentPos, 0); //Перемещаем content в положение в котором он был при взятии цветка
+            content.GetComponent<RectTransform>().localPosition = new Vector3(0, contentPos, 0); //Перемещаем content в положение в котором он был при взятии цветка
         }
     }
 

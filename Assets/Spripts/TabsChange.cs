@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TabsChange : MonoBehaviour
 {
+    public GameObject content;
     public GameObject focusFlowers;
     public GameObject baseFlowers;
     public GameObject fillFlowers;
@@ -12,6 +13,8 @@ public class TabsChange : MonoBehaviour
 
     public void ChangeTab(int id)
     {
+        content.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
+
         switch (id)
         {
             case 1:
