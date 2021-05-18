@@ -34,6 +34,7 @@ public class ScoringSystem : MonoBehaviour
     private float fillScore = 0;
     private float detailsScore = 0;
     private float greenScore = 0;
+    private bool isOpen = false;
 
     private void CheckType()
     {
@@ -67,44 +68,56 @@ public class ScoringSystem : MonoBehaviour
         }
 
         if (((float)focusCount / addedFlowers.Count) > 0.11f && ((float)focusCount / addedFlowers.Count) < 0.182f)
-            focusScore = 100;
+        {
+            focusScore = 112 - Mathf.Ceil(Mathf.Abs(0.146f - ((float)focusCount / addedFlowers.Count)) * 690);
+            if (focusScore > 100) focusScore = 100;
+        }
         else
         {
-            if (Mathf.Abs(0.146f - ((float)focusCount / addedFlowers.Count)) * 750 > 100)
+            if (Mathf.Abs(0.146f - ((float)focusCount / addedFlowers.Count)) * 690 > 100)
                 focusScore = 0;
             else
-                focusScore = 100 - Mathf.Ceil(Mathf.Abs(0.146f - ((float)focusCount / addedFlowers.Count)) * 750);
+                focusScore = 100 - Mathf.Ceil(Mathf.Abs(0.146f - ((float)focusCount / addedFlowers.Count)) * 690);
         }
 
 
         if (((float)baseCount / addedFlowers.Count) > 0.312f && ((float)baseCount / addedFlowers.Count) < 0.458f)
-            baseScore = 100;
+        {
+            baseScore = 110 - Mathf.Ceil(Mathf.Abs(0.385f - ((float)baseCount / addedFlowers.Count)) * 270);
+            if (baseScore > 100) baseScore = 100;
+        }
         else
         {
-            if (Mathf.Abs(0.385f - ((float)baseCount / addedFlowers.Count)) * 750 > 100)
+            if (Mathf.Abs(0.385f - ((float)baseCount / addedFlowers.Count)) * 270 > 100)
                 baseScore = 0;
             else
-                baseScore = 100 - Mathf.Ceil(Mathf.Abs(0.385f - ((float)baseCount / addedFlowers.Count)) * 750);
+                baseScore = 100 - Mathf.Ceil(Mathf.Abs(0.385f - ((float)baseCount / addedFlowers.Count)) * 270);
         }
 
         if (((float)fillCount / addedFlowers.Count) > 0.171f && ((float)fillCount / addedFlowers.Count) < 0.301f)
-            fillScore = 100;
+        {
+            fillScore = 113 - Mathf.Ceil(Mathf.Abs(0.236f - ((float)fillCount / addedFlowers.Count)) * 430);
+            if (fillScore > 100) fillScore = 100;
+        }
         else
         {
-            if (Mathf.Abs(0.236f - ((float)fillCount / addedFlowers.Count)) * 750 > 100)
+            if (Mathf.Abs(0.236f - ((float)fillCount / addedFlowers.Count)) * 430 > 100)
                 fillScore = 0;
             else
-                fillScore = 100 - Mathf.Ceil(Mathf.Abs(0.236f - ((float)fillCount / addedFlowers.Count)) * 750);
+                fillScore = 100 - Mathf.Ceil(Mathf.Abs(0.236f - ((float)fillCount / addedFlowers.Count)) * 430);
         }
 
         if (((float)detailsCount / addedFlowers.Count) > 0.173f && ((float)detailsCount / addedFlowers.Count) < 0.251f)
-            detailsScore = 100;
+        {
+            detailsScore = 113 - Mathf.Ceil(Mathf.Abs(0.212f - ((float)detailsCount / addedFlowers.Count)) * 480);
+            if (detailsScore > 100) detailsScore = 100;
+        }
         else
         {
-            if (Mathf.Abs(0.212f - ((float)detailsCount / addedFlowers.Count)) * 750 > 100)
+            if (Mathf.Abs(0.212f - ((float)detailsCount / addedFlowers.Count)) * 480 > 100)
                 detailsScore = 0;
             else
-                detailsScore = 100 - Mathf.Ceil(Mathf.Abs(0.212f - ((float)detailsCount / addedFlowers.Count)) * 750);
+                detailsScore = 100 - Mathf.Ceil(Mathf.Abs(0.212f - ((float)detailsCount / addedFlowers.Count)) * 480);
         }
 
         if (greenCount > 0 && greenCount < 3)
@@ -123,6 +136,7 @@ public class ScoringSystem : MonoBehaviour
         basket.GetComponent<SpriteRenderer>().enabled = false;
         CheckType();
         scoreScreen.SetActive(true);
+        isOpen = true;
         flowerCountText.text = $"Всего цветков: {addedFlowers.Count}";
         focusCountText.text = $"Фокусных: {focusCount}";
         focusScoreText.text = $"{focusScore} очков";
@@ -150,11 +164,17 @@ public class ScoringSystem : MonoBehaviour
             Destroy(item);
         addedFlowers.Clear();
         scoreScreen.SetActive(false);
+        isOpen = false;
         GetComponent<SelectType>().InitSelection();
     }
 
     public void AddFlower(GameObject flower)
     {
         addedFlowers.Add(flower);
+    }
+
+    public bool CheckIsOpen()
+    {
+        return isOpen;
     }
 }

@@ -28,7 +28,7 @@ public class DragFlowers : MonoBehaviour
     private void OnMouseDown()
     {
         ray = mainCam.ScreenPointToRay(Input.mousePosition); //Проверка на нахождение курсора в content
-        if (canTake && ray.origin.y < 3.7f && ray.origin.y > -2.9f)
+        if (canTake && !gameManager.GetComponent<ScoringSystem>().CheckIsOpen() && !gameManager.GetComponent<SelectType>().CheckIsOpen() && ray.origin.y < 3.7f && ray.origin.y > -2.9f)
         {
             contentPos = itemsContent.GetComponent<RectTransform>().localPosition.y; //Положение content во время взятия цветка
             buttonCreate.interactable = false; //Запрещаем создавать композицию пока тащим цветок
