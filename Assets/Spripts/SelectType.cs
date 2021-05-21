@@ -7,6 +7,7 @@ public class SelectType : MonoBehaviour
     public GameObject bouquet;
     public GameObject basket;
     public GameObject selectMenu;
+    public GameObject soundButton;
 
     private bool isOpen = false;
 
@@ -25,6 +26,7 @@ public class SelectType : MonoBehaviour
 
     public void SelectBouquet()
     {
+        soundButton.GetComponent<AudioSource>().Play();
         bouquet.SetActive(true);
         selectMenu.SetActive(false);
         isOpen = false;
@@ -32,6 +34,7 @@ public class SelectType : MonoBehaviour
 
     public void SelectBasket()
     {
+        soundButton.GetComponent<AudioSource>().Play();
         basket.SetActive(true);
         selectMenu.SetActive(false);
         isOpen = false;

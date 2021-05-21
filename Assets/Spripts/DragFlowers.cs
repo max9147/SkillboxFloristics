@@ -30,6 +30,7 @@ public class DragFlowers : MonoBehaviour
         ray = mainCam.ScreenPointToRay(Input.mousePosition); //Проверка на нахождение курсора в content
         if (canTake && !gameManager.GetComponent<ScoringSystem>().CheckIsOpen() && !gameManager.GetComponent<SelectType>().CheckIsOpen() && ray.origin.y < 3.7f && ray.origin.y > -2.9f)
         {
+            GetComponent<AudioSource>().Play();
             contentPos = content.GetComponent<RectTransform>().localPosition.y; //Положение content во время взятия цветка
             buttonCreate.interactable = false; //Запрещаем создавать композицию пока тащим цветок
             isDragging = true;
@@ -122,6 +123,10 @@ public class DragFlowers : MonoBehaviour
             {
                 canTake = true;
                 Destroy(flowerToDrag);
+                if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 20 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 35) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 25 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 35))
+                {
+                    buttonCreate.interactable = true;
+                }
             }
         }
     }

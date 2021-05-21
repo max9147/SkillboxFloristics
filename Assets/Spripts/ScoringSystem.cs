@@ -8,6 +8,7 @@ public class ScoringSystem : MonoBehaviour
     public GameObject scoreScreen;
     public GameObject bouquet;
     public GameObject basket;
+    public GameObject soundButton;
     public List<GameObject> addedFlowers = new List<GameObject>();
     public TextMeshProUGUI flowerCountText;
     public TextMeshProUGUI focusCountText;
@@ -158,6 +159,7 @@ public class ScoringSystem : MonoBehaviour
 
     public void CloseScore()
     {
+        soundButton.GetComponent<AudioSource>().Play();
         bouquet.GetComponent<SpriteRenderer>().enabled = true;
         basket.GetComponent<SpriteRenderer>().enabled = true;
         foreach (var item in toDestroy) //Перебираем цветы на сцене

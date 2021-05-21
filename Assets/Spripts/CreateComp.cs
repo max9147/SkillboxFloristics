@@ -17,6 +17,7 @@ public class CreateComp : MonoBehaviour
 
     public void PressCreate() //Нажатие на кнопку создать букет
     {
+        buttonCreate.GetComponent<AudioSource>().Play();
         buttonCreate.interactable = false; //Запрещаем нажимать на создание букета после создания
         buttonReset.interactable = false;
         buttonBack.interactable = false;
@@ -33,6 +34,7 @@ public class CreateComp : MonoBehaviour
 
     public void PressReset()
     {
+        buttonReset.GetComponent<AudioSource>().Play();
         buttonCreate.interactable = false;
         buttonReset.interactable = false;
         buttonBack.interactable = false;
@@ -58,6 +60,7 @@ public class CreateComp : MonoBehaviour
 
     public void PressRemove()
     {
+        buttonBack.GetComponent<AudioSource>().Play();
         GetComponent<ScoringSystem>().addedFlowers.RemoveAt(GetComponent<ScoringSystem>().addedFlowers.Count - 1);
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         if (bouquet.activeInHierarchy)
@@ -103,6 +106,10 @@ public class CreateComp : MonoBehaviour
                     buttonCreate.interactable = false;
                 }
             }
+        }
+        if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 20 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 35) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 25 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 35))
+        {
+            buttonCreate.interactable = true;
         }
     }
 }
