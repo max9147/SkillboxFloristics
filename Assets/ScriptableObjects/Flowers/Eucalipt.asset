@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
-  m_Name: RoseGarden
+  m_Name: Eucalipt
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
-  imageL: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
-  imageR: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
-  size: Base
+  imageC: {fileID: 21300000, guid: 919a2fa159315e846ab7970f3b17e561, type: 3}
+  imageL: {fileID: 21300000, guid: 0cf36709281e3124e8713fd2638cb7a9, type: 3}
+  imageR: {fileID: 21300000, guid: 91c40184cdeb76b48b6839c274c9d543, type: 3}
+  size: Green

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
-  m_Name: RoseGarden
+  m_Name: Ruskus
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
-  imageL: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
-  imageR: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
-  size: Base
+  imageC: {fileID: 21300000, guid: 418661765a8adc4469c6efdeeb96dee5, type: 3}
+  imageL: {fileID: 21300000, guid: 627285292d8d7004a9a9cc03eb346f76, type: 3}
+  imageR: {fileID: 21300000, guid: 2d9eb215a998f4f4db592dabaf7cc060, type: 3}
+  size: Green

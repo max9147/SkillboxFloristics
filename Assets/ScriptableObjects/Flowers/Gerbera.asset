@@ -15,4 +15,4 @@ MonoBehaviour:
   imageC: {fileID: 21300000, guid: cdf919476256d2d41bc149d533e44436, type: 3}
   imageL: {fileID: 21300000, guid: 10ee9917c80ee394399d2953f8adbcd6, type: 3}
   imageR: {fileID: 21300000, guid: 69830644f42013e4983961c3176d8b22, type: 3}
-  size: Focus
+  size: Base
