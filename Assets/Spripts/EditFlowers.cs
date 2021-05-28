@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class EditFlowers : MonoBehaviour
 {
-    private void OnMouseDown()
+    public GameObject highlight;
+
+    public void SelectFlower(GameObject flower)
     {
-        if (GetComponent<SpriteRenderer>().flipY == false)
-        {
-            GetComponent<SpriteRenderer>().flipY = true;
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().flipY = false;
-        }
+        Destroy(GameObject.Find("Highlight(Clone)"));
+
+        Instantiate(highlight, flower.transform.position,flower.transform.rotation);
+    }
+
+    public void Disselect()
+    {
+        Destroy(GameObject.Find("Highlight(Clone)"));
     }
 }

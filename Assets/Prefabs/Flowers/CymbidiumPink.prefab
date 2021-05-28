@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8576419055343598565}
   - component: {fileID: -1106090474372284375}
   m_Layer: 0
-  m_Name: Tulip 15
+  m_Name: CymbidiumPink
   m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3, y: 4.97}
+    oldSize: {x: 1.4375, y: 3.10625}
     newSize: {x: 1.11, y: 1.67}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
