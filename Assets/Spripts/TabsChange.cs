@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TabsChange : MonoBehaviour
 {
+    public GameObject description;
     public GameObject content;
     public GameObject soundButton;
     public GameObject focusFlowers;
@@ -11,12 +13,15 @@ public class TabsChange : MonoBehaviour
     public GameObject fillFlowers;
     public GameObject detailFlowers;
     public GameObject green;
+    public TextMeshProUGUI descriptionText;
+
+    private int openTab = 0;
 
     public void ChangeTab(int id)
     {
-        GetComponent<AudioSource>().Play();
+        content.GetComponent<AudioSource>().Play();
         content.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
-
+        openTab = id;
         switch (id)
         {
             case 1:
@@ -62,5 +67,53 @@ public class TabsChange : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void OpenDescription()
+    {
+        content.GetComponent<AudioSource>().Play();
+        if (description.activeInHierarchy)
+        {
+            description.SetActive(false);
+            return;
+        }
+
+        switch (openTab)
+        {
+            case 1:
+                description.SetActive(true);
+                descriptionText.text = "Фокусные цветы - это главные растения в подборе, как правило, это необычные элитарные растения или растения доминирующие " +
+                    "за счет большого размера или яркого окраса.";
+                break;
+            case 2:
+                description.SetActive(true);
+                descriptionText.text = "Базовые цветы - их задача состоит в подчеркивании красоты фокусного цветка, в создании объема букета. Их цена обычно ниже, чем у фокусных цветов. " +
+                    "Одно и то же растение может выступать в букете как фокусное растение, так и как базовое, в зависимости от общего ассортимента. " +
+                    "В составе базовых растений лучше замешивать не меньше 3 - х видов или сортов растений с разным размеров головы, отличающиеся по внешнему строению.";
+                break;
+            case 3:
+                description.SetActive(true);
+                descriptionText.text = "Растения с мелким бутоном или с цветками небольшого размера, собранными в соцветия. Они заполняют пространство " +
+                    "между крупными бутонами, добавляют в букет разноразмерности.";
+                break;
+            case 4:
+                description.SetActive(true);
+                descriptionText.text = "Как правило, это растения с небольшим размером бутона, не всегда добавляющие подбору объема, но при этом их необычная легкая структура усиливает " +
+                    "выразительные качества состава. Обычно их располагают над общим уровнем цветов и часто называют “бабочками”.";
+                break;
+            case 5:
+                description.SetActive(true);
+                descriptionText.text = "Зелень в букете может выполнять техническую роль (фиксация стеблей, создание зеленой подушки) или декоративную (интересный окрас " +
+                    "или форма листьев, ветвей). Для создания выигрышного подбора рекомендуем сочетать несколько видов зелени, отличающейся по размеру, форме или окрасу листа.";
+                break;
+            default:
+                break;
+        }
+    }
+
+    public bool CheckDescriptionOpen()
+    {
+        if (description.activeInHierarchy) return true;
+        else return false;
     }
 }

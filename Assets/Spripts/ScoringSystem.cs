@@ -234,8 +234,22 @@ public class ScoringSystem : MonoBehaviour
             default:
                 break;
         }
+
+        yellowColored = 0;
+        lightOrangeColored = 0;
+        orangeColored = 0;
+        darkOrangeColored = 0;
+        redColored = 0;
+        pinkColored = 0;
+        violetColored = 0;
+        darkBlueColored = 0;
+        blueColored = 0;
+        lightBlueColored = 0;
+        greenColored = 0;
+        lightGreenColored = 0;
+
         return colorScore;
-    }    
+    }
 
     private int CheckMonochrome()
     {
@@ -609,6 +623,7 @@ public class ScoringSystem : MonoBehaviour
         flowerColors.Clear();
         scoreScreen.SetActive(false);
         isOpen = false;
+        totalScore = 0;
         GetComponent<SelectType>().InitSelection();
     }
 
