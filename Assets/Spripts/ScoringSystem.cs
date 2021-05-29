@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ public class ScoringSystem : MonoBehaviour
     public GameObject basket;
     public GameObject soundButton;
     public List<GameObject> addedFlowers = new List<GameObject>();
+    public List<FlowerColor> flowerColors = new List<FlowerColor>();
     public TextMeshProUGUI flowerCountText;
     public TextMeshProUGUI focusCountText;
     public TextMeshProUGUI baseCountText;
@@ -22,6 +24,7 @@ public class ScoringSystem : MonoBehaviour
     public TextMeshProUGUI fillScoreText;
     public TextMeshProUGUI detailsScoreText;
     public TextMeshProUGUI greenScoreText;
+    public TextMeshProUGUI colorScoreText;
 
     private GameObject[] toDestroy;
     private int focusCount = 0;
@@ -29,6 +32,22 @@ public class ScoringSystem : MonoBehaviour
     private int fillCount = 0;
     private int detailsCount = 0;
     private int greenCount = 0;
+    private int yellowColored = 0;
+    private int lightOrangeColored = 0;
+    private int orangeColored = 0;
+    private int darkOrangeColored = 0;
+    private int redColored = 0;
+    private int pinkColored = 0;
+    private int violetColored = 0;
+    private int darkBlueColored = 0;
+    private int blueColored = 0;
+    private int lightBlueColored = 0;
+    private int greenColored = 0;
+    private int lightGreenColored = 0;
+    private int monochromeCount = 0;
+    private int contrastCount = 0;
+    private int harmonyCount = 0;
+    private int contrastHarmonyCount = 0;
     private float totalScore = 0;
     private float focusScore = 0;
     private float baseScore = 0;
@@ -36,8 +55,9 @@ public class ScoringSystem : MonoBehaviour
     private float detailsScore = 0;
     private float greenScore = 0;
     private bool isOpen = false;
+    private string colorString;
 
-    private void CheckType()
+    private int CheckType()
     {
         foreach (var item in addedFlowers)
         {
@@ -125,7 +145,426 @@ public class ScoringSystem : MonoBehaviour
             greenScore = 50;
         else
             greenScore = 0;
-        totalScore = focusScore + baseScore + fillScore + detailsScore + greenScore;
+        int typeScore = (int)(focusScore + baseScore + fillScore + detailsScore + greenScore);
+        return typeScore;
+    }
+
+    private int CheckColor()
+    {
+        foreach (var item in flowerColors)
+        {
+            switch (item)
+            {
+                case FlowerColor.Yellow:
+                    yellowColored++;
+                    break;
+                case FlowerColor.LightOrange:
+                    lightOrangeColored++;
+                    break;
+                case FlowerColor.Orange:
+                    orangeColored++;
+                    break;
+                case FlowerColor.DarkOrange:
+                    darkOrangeColored++;
+                    break;
+                case FlowerColor.Red:
+                    redColored++;
+                    break;
+                case FlowerColor.Pink:
+                    pinkColored++;
+                    break;
+                case FlowerColor.Violet:
+                    violetColored++;
+                    break;
+                case FlowerColor.DarkBlue:
+                    darkBlueColored++;
+                    break;
+                case FlowerColor.Blue:
+                    blueColored++;
+                    break;
+                case FlowerColor.LightBlue:
+                    lightBlueColored++;
+                    break;
+                case FlowerColor.Green:
+                    greenColored++;
+                    break;
+                case FlowerColor.LightGreen:
+                    lightGreenColored++;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        CheckMonochrome();
+        CheckContrast();
+        CheckHarmony();
+        CheckContrastHarmony();
+
+        int[] combos = { monochromeCount, contrastCount, harmonyCount, contrastHarmonyCount };
+        int max = 0;
+        int maxCombo = 4;
+        for (int i = 0; i < combos.Length; i++)
+        {
+            if (combos[i] > max)
+            {
+                max = combos[i];
+                maxCombo = i;
+            }
+        }
+        int colorScore = 0;
+        switch (maxCombo)
+        {
+            case 0:
+                colorScore = CheckMonochrome();
+                colorString = "Монохромная цветовая гамма";
+                break;
+            case 1:
+                colorScore = CheckContrast();
+                colorString = "Контрастная цветовая гамма";
+                break;
+            case 2:
+                colorScore = CheckHarmony();
+                colorString = "Гармоническая цветовая гамма";
+                break;
+            case 3:
+                colorScore = CheckContrastHarmony();
+                colorString = "Контрастная гармоническая цветовая гамма";
+                break;
+            default:
+                break;
+        }
+        return colorScore;
+    }    
+
+    private int CheckMonochrome()
+    {
+        int score = 1000;
+        FlowerColor most = flowerColors.GroupBy(i => i).OrderByDescending(grp => grp.Count())
+      .Select(grp => grp.Key).First();
+        foreach (var item in flowerColors)
+        {
+            if (item != most) score -= 30;
+            else monochromeCount++;
+        }
+        return score;
+    }
+
+    private int CheckContrast()
+    {
+        int score = 2000;
+        int yellowViolet = 0;
+        int lightOrangeDarkBlue = 0;
+        int orangeBlue = 0;
+        int darkOrangeLightBlue = 0;
+        int redGreen = 0;
+        int pinkLightGreen = 0;
+        foreach (var item in flowerColors)
+        {
+            switch (item)
+            {
+                case FlowerColor.Yellow:
+                    yellowViolet++;
+                    break;
+                case FlowerColor.LightOrange:
+                    lightOrangeDarkBlue++;
+                    break;
+                case FlowerColor.Orange:
+                    orangeBlue++;
+                    break;
+                case FlowerColor.DarkOrange:
+                    darkOrangeLightBlue++;
+                    break;
+                case FlowerColor.Red:
+                    redGreen++;
+                    break;
+                case FlowerColor.Pink:
+                    pinkLightGreen++;
+                    break;
+                case FlowerColor.Violet:
+                    yellowViolet++;
+                    break;
+                case FlowerColor.DarkBlue:
+                    lightOrangeDarkBlue++;
+                    break;
+                case FlowerColor.Blue:
+                    orangeBlue++;
+                    break;
+                case FlowerColor.LightBlue:
+                    darkOrangeLightBlue++;
+                    break;
+                case FlowerColor.Green:
+                    redGreen++;
+                    break;
+                case FlowerColor.LightGreen:
+                    pinkLightGreen++;
+                    break;
+                default:
+                    break;
+            }
+        }
+        int[] combos = { yellowViolet, lightOrangeDarkBlue, orangeBlue, darkOrangeLightBlue, redGreen, pinkLightGreen };
+        int max = 0;
+        int maxCombo=6;
+        for (int i = 0; i < combos.Length; i++)
+        {
+            if (combos[i] > max)
+            {
+                max = combos[i];
+                maxCombo = i;
+            }
+        }
+        contrastCount = max;
+        switch (maxCombo)
+        {
+            case 0:
+                if (yellowColored == violetColored) score = 1000;
+                break;
+            case 1:
+                if (lightOrangeColored == darkBlueColored) score = 1000;
+                break;
+            case 2:
+                if (orangeColored == blueColored) score = 1000;
+                break;
+            case 3:
+                if (darkOrangeColored == lightBlueColored) score = 1000;
+                break;
+            case 4:
+                if (redColored == greenColored) score = 1000;
+                break;
+            case 5:
+                if (pinkColored == lightGreenColored) score = 1000;
+                break;
+            default:
+                break;
+        }
+        score -= 40 * (flowerColors.Count - max);
+        return score;
+    }
+
+    private int CheckHarmony()
+    {
+        int score = 3000;
+        int yellowRedBlue = 0;
+        int lightOrangePinkLightBlue = 0;
+        int orangeVioletGreen = 0;
+        int darkOrangeDarkBlueLightGreen = 0;
+        foreach (var item in flowerColors)
+        {
+            switch (item)
+            {
+                case FlowerColor.Yellow:
+                    yellowRedBlue++;
+                    break;
+                case FlowerColor.LightOrange:
+                    lightOrangePinkLightBlue++;
+                    break;
+                case FlowerColor.Orange:
+                    orangeVioletGreen++;
+                    break;
+                case FlowerColor.DarkOrange:
+                    darkOrangeDarkBlueLightGreen++;
+                    break;
+                case FlowerColor.Red:
+                    yellowRedBlue++;
+                    break;
+                case FlowerColor.Pink:
+                    lightOrangePinkLightBlue++;
+                    break;
+                case FlowerColor.Violet:
+                    orangeVioletGreen++;
+                    break;
+                case FlowerColor.DarkBlue:
+                    darkOrangeDarkBlueLightGreen++;
+                    break;
+                case FlowerColor.Blue:
+                    yellowRedBlue++;
+                    break;
+                case FlowerColor.LightBlue:
+                    lightOrangePinkLightBlue++;
+                    break;
+                case FlowerColor.Green:
+                    orangeVioletGreen++;
+                    break;
+                case FlowerColor.LightGreen:
+                    darkOrangeDarkBlueLightGreen++;
+                    break;
+                default:
+                    break;
+            }
+        }
+        int[] combos = { yellowRedBlue, lightOrangePinkLightBlue, orangeVioletGreen, darkOrangeDarkBlueLightGreen };
+        int max = 0;
+        int maxCombo = 4;
+        for (int i = 0; i < combos.Length; i++)
+        {
+            if (combos[i] > max)
+            {
+                max = combos[i];
+                maxCombo = i;
+            }
+        }
+        harmonyCount = max;
+        switch (maxCombo)
+        {
+            case 0:
+                if ((yellowColored == redColored) && (yellowColored == blueColored)) score = 1500;
+                break;
+            case 1:
+                if ((lightOrangeColored == pinkColored) && (lightOrangeColored == lightBlueColored)) score = 1500;
+                break;
+            case 2:
+                if ((orangeColored == violetColored) && (orangeColored == greenColored)) score = 1500;
+                break;
+            case 3:
+                if ((darkOrangeColored == darkBlueColored) && (darkOrangeColored == lightGreenColored)) score = 1500;
+                break;
+            default:
+                break;
+        }
+        score -= 60 * (flowerColors.Count - max);
+        return score;
+    }
+
+    private int CheckContrastHarmony()
+    {
+        int score = 3000;
+        int yellowPinkDarkBlue = 0;
+        int lightOrangeVioletBlue = 0;
+        int orangeDarkBlueLightBlue = 0;
+        int darkOrangeBlueGreen = 0;
+        int redLightBlueLightGreen = 0;
+        int pinkGreenYellow = 0;
+        int violetLightGreenLightOrange = 0;
+        int darkBlueYellowOrange = 0;
+        int blueLightOrangeDarkOrange = 0;
+        int lightBlueOrangeRed = 0;
+        int greenDarkOrangePink = 0;
+        int lightGreenRedViolet = 0;
+        foreach (var item in flowerColors)
+        {
+            switch (item)
+            {
+                case FlowerColor.Yellow:
+                    yellowPinkDarkBlue++;
+                    darkBlueYellowOrange++;
+                    pinkGreenYellow++;
+                    break;
+                case FlowerColor.LightOrange:
+                    lightOrangeVioletBlue++;
+                    blueLightOrangeDarkOrange++;
+                    violetLightGreenLightOrange++;
+                    break;
+                case FlowerColor.Orange:
+                    orangeDarkBlueLightBlue++;
+                    darkBlueYellowOrange++;
+                    lightBlueOrangeRed++;
+                    break;
+                case FlowerColor.DarkOrange:
+                    darkOrangeBlueGreen++;
+                    blueLightOrangeDarkOrange++;
+                    greenDarkOrangePink++;
+                    break;
+                case FlowerColor.Red:
+                    redLightBlueLightGreen++;
+                    lightBlueOrangeRed++;
+                    lightGreenRedViolet++;
+                    break;
+                case FlowerColor.Pink:
+                    pinkGreenYellow++;
+                    greenDarkOrangePink++;
+                    yellowPinkDarkBlue++;
+                    break;
+                case FlowerColor.Violet:
+                    violetLightGreenLightOrange++;
+                    lightGreenRedViolet++;
+                    lightOrangeVioletBlue++;
+                    break;
+                case FlowerColor.DarkBlue:
+                    darkBlueYellowOrange++;
+                    orangeDarkBlueLightBlue++;
+                    yellowPinkDarkBlue++;
+                    break;
+                case FlowerColor.Blue:
+                    blueLightOrangeDarkOrange++;
+                    darkOrangeBlueGreen++;
+                    lightOrangeVioletBlue++;
+                    break;
+                case FlowerColor.LightBlue:
+                    lightBlueOrangeRed++;
+                    orangeDarkBlueLightBlue++;
+                    redLightBlueLightGreen++;
+                    break;
+                case FlowerColor.Green:
+                    greenDarkOrangePink++;
+                    darkOrangeBlueGreen++;
+                    pinkGreenYellow++;
+                    break;
+                case FlowerColor.LightGreen:
+                    lightGreenRedViolet++;
+                    redLightBlueLightGreen++;
+                    violetLightGreenLightOrange++;
+                    break;
+                default:
+                    break;
+            }
+        }
+        int[] combos = { yellowPinkDarkBlue, lightOrangeVioletBlue, orangeDarkBlueLightBlue, darkOrangeBlueGreen, redLightBlueLightGreen, pinkGreenYellow, violetLightGreenLightOrange,
+            darkBlueYellowOrange, blueLightOrangeDarkOrange, lightBlueOrangeRed, greenDarkOrangePink, lightGreenRedViolet };
+        int max = 0;
+        int maxCombo = 12;
+        for (int i = 0; i < combos.Length; i++)
+        {
+            if (combos[i] > max)
+            {
+                max = combos[i];
+                maxCombo = i;
+            }
+        }
+        contrastHarmonyCount = max;
+        switch (maxCombo)
+        {
+            case 0:
+                if ((yellowColored == pinkColored) && (yellowColored == darkBlueColored)) score = 1500;
+                break;
+            case 1:
+                if ((lightOrangeColored == violetColored) && (lightOrangeColored == blueColored)) score = 1500;
+                break;
+            case 2:
+                if ((orangeColored == darkBlueColored) && (orangeColored == lightBlueColored)) score = 1500;
+                break;
+            case 3:
+                if ((darkOrangeColored == blueColored) && (darkOrangeColored == greenColored)) score = 1500;
+                break;
+            case 4:
+                if ((redColored == lightBlueColored) && (redColored == lightGreenColored)) score = 1500;
+                break;
+            case 5:
+                if ((pinkColored == greenColored) && (pinkColored == yellowColored)) score = 1500;
+                break;
+            case 6:
+                if ((violetColored == lightGreenColored) && (violetColored == lightOrangeColored)) score = 1500;
+                break;
+            case 7:
+                if ((darkBlueColored == yellowColored) && (darkBlueColored == orangeColored)) score = 1500;
+                break;
+            case 8:
+                if ((blueColored == lightOrangeColored) && (blueColored == darkOrangeColored)) score = 1500;
+                break;
+            case 9:
+                if ((lightBlueColored == orangeColored) && (lightBlueColored == redColored)) score = 1500;
+                break;
+            case 10:
+                if ((greenColored == darkOrangeColored) && (greenColored == pinkColored)) score = 1500;
+                break;
+            case 11:
+                if ((lightGreenColored == redColored) && (lightGreenColored == violetColored)) score = 1500;
+                break;
+            default:
+                break;
+        }
+        score -= 60 * (flowerColors.Count - max);
+        return score;
     }
 
     public void CountScore()
@@ -135,7 +574,8 @@ public class ScoringSystem : MonoBehaviour
             item.GetComponent<SpriteRenderer>().enabled = false;
         bouquet.GetComponent<SpriteRenderer>().enabled = false;
         basket.GetComponent<SpriteRenderer>().enabled = false;
-        CheckType();
+        totalScore += CheckType();
+        totalScore += CheckColor();
         scoreScreen.SetActive(true);
         isOpen = true;
         flowerCountText.text = $"Всего цветков: {addedFlowers.Count}";
@@ -154,6 +594,7 @@ public class ScoringSystem : MonoBehaviour
         greenCountText.text = $"Зелени: {greenCount}";
         greenScoreText.text = $"{greenScore} очков";
         greenCount = 0;
+        colorScoreText.text = $"{colorString}: {CheckColor()} очков";
         totalScoreText.text = $"Итоговый счет: {totalScore}";
     }
 
@@ -165,6 +606,7 @@ public class ScoringSystem : MonoBehaviour
         foreach (var item in toDestroy) //Перебираем цветы на сцене
             Destroy(item);
         addedFlowers.Clear();
+        flowerColors.Clear();
         scoreScreen.SetActive(false);
         isOpen = false;
         GetComponent<SelectType>().InitSelection();
@@ -173,6 +615,30 @@ public class ScoringSystem : MonoBehaviour
     public void AddFlower(GameObject flower)
     {
         addedFlowers.Add(flower);
+    }
+
+    public void AddColor(FlowerColor color)
+    {
+        flowerColors.Add(color);
+    }
+
+    public void RemoveLast()
+    {
+        int greenPre = 0;
+        int greenNow = 0;
+        foreach (var item in addedFlowers)
+        {
+            if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")
+                greenPre++;            
+        }        
+        addedFlowers.RemoveAt(addedFlowers.Count - 1);
+        foreach (var item in addedFlowers)
+        {
+            if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")
+                greenNow++;
+        }
+        if (greenNow == greenPre)
+            flowerColors.RemoveAt(flowerColors.Count - 1);
     }
 
     public bool CheckIsOpen()

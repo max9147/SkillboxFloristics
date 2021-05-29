@@ -15,4 +15,5 @@ MonoBehaviour:
   imageC: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
   imageL: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
   imageR: {fileID: 21300000, guid: ca025984550a38b4dbbb704feca23449, type: 3}
+  color: 6
   size: Base

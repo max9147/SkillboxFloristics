@@ -15,4 +15,5 @@ MonoBehaviour:
   imageC: {fileID: 21300000, guid: a63c00c6ca7e47f4593fca2a0fa81f6b, type: 3}
   imageL: {fileID: 21300000, guid: 414fb26ef44929c40a4843b3369cf1f4, type: 3}
   imageR: {fileID: 21300000, guid: e8ea3f2a711b90b4ab723309fcc6186c, type: 3}
+  color: 8
   size: Focus

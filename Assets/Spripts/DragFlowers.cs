@@ -140,6 +140,8 @@ public class DragFlowers : MonoBehaviour
     private void ReleaseFlower() //—читаем цветок используемым в букете
     {
         gameManager.GetComponent<ScoringSystem>().AddFlower(flowerToDrag);
+        if (flower.size != "Green")
+            gameManager.GetComponent<ScoringSystem>().AddColor(flower.color);
         flowerToDrag = null;
         canTake = true;
         buttonBack.interactable = true;

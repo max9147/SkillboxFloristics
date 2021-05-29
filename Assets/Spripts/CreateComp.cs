@@ -47,6 +47,7 @@ public class CreateComp : MonoBehaviour
             basket.GetComponent<ArrangeBasket>().ClearBasket();
         }
         GetComponent<ScoringSystem>().addedFlowers.Clear();
+        GetComponent<ScoringSystem>().flowerColors.Clear();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
         {
@@ -61,7 +62,7 @@ public class CreateComp : MonoBehaviour
     public void PressRemove()
     {
         buttonBack.GetComponent<AudioSource>().Play();
-        GetComponent<ScoringSystem>().addedFlowers.RemoveAt(GetComponent<ScoringSystem>().addedFlowers.Count - 1);
+        GetComponent<ScoringSystem>().RemoveLast();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         if (bouquet.activeInHierarchy)
         {
