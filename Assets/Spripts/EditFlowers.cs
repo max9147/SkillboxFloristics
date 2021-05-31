@@ -10,7 +10,7 @@ public class EditFlowers : MonoBehaviour
     {
         Destroy(GameObject.Find("Highlight(Clone)"));
 
-        Instantiate(highlight, flower.transform.position,flower.transform.rotation);
+        //Instantiate(highlight, flower.transform.position,flower.transform.rotation);
     }
 
     public void Disselect()

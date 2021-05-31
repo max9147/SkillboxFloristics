@@ -212,6 +212,10 @@ public class ScoringSystem : MonoBehaviour
                 maxCombo = i;
             }
         }
+        monochromeCount = 0;
+        contrastCount = 0;
+        harmonyCount = 0;
+        contrastHarmonyCount = 0;
         int colorScore = 0;
         switch (maxCombo)
         {
