@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dianthus
   m_EditorClassIdentifier: 
   imageC: {fileID: 21300000, guid: 65ad2dca00b2a464088de97d9692a3a0, type: 3}
-  imageL: {fileID: 21300000, guid: eeee4e1793a591346a33a5f80aa98eaa, type: 3}
-  imageR: {fileID: 21300000, guid: cad62259694b9514ea6c7f44b61fa3cf, type: 3}
+  imageL: {fileID: 21300000, guid: 65ad2dca00b2a464088de97d9692a3a0, type: 3}
+  imageR: {fileID: 21300000, guid: 65ad2dca00b2a464088de97d9692a3a0, type: 3}
   color: 5
   size: Base

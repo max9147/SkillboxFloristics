@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoringSystem : MonoBehaviour
 {
     public GameObject scoreScreen;
-    public GameObject bouquet;
-    public GameObject basket;
     public GameObject soundButton;
+    public GameObject sizeSlider;
+    public GameObject positionArrow;
+    public GameObject[] stars;
     public List<GameObject> addedFlowers = new List<GameObject>();
     public List<FlowerColor> flowerColors = new List<FlowerColor>();
+    public Sprite starActive;
     public TextMeshProUGUI flowerCountText;
     public TextMeshProUGUI focusCountText;
     public TextMeshProUGUI baseCountText;
@@ -48,6 +51,7 @@ public class ScoringSystem : MonoBehaviour
     private int contrastCount = 0;
     private int harmonyCount = 0;
     private int contrastHarmonyCount = 0;
+    private int starCount = 0;
     private float totalScore = 0;
     private float focusScore = 0;
     private float baseScore = 0;
@@ -146,6 +150,10 @@ public class ScoringSystem : MonoBehaviour
         else
             greenScore = 0;
         int typeScore = (int)(focusScore + baseScore + fillScore + detailsScore + greenScore);
+
+        if (focusScore != 0 && baseScore != 0 && fillScore != 0 && detailsScore != 0 && greenScore != 0) starCount++;
+        if (typeScore >= 350) starCount++;
+
         return typeScore;
     }
 
@@ -212,6 +220,8 @@ public class ScoringSystem : MonoBehaviour
                 maxCombo = i;
             }
         }
+        if (max >= 5) starCount++;
+        if (max >= 10) starCount++;
         monochromeCount = 0;
         contrastCount = 0;
         harmonyCount = 0;
@@ -587,15 +597,11 @@ public class ScoringSystem : MonoBehaviour
 
     public void CountScore()
     {
-        toDestroy = GameObject.FindGameObjectsWithTag("Flower");
-        foreach (var item in toDestroy)
-            item.GetComponent<SpriteRenderer>().enabled = false;
-        bouquet.GetComponent<SpriteRenderer>().enabled = false;
-        basket.GetComponent<SpriteRenderer>().enabled = false;
         totalScore += CheckType();
         totalScore += CheckColor();
         scoreScreen.SetActive(true);
         isOpen = true;
+        for (int i = 0; i < starCount; i++) stars[i].GetComponent<Image>().sprite = starActive;
         flowerCountText.text = $"Всего цветков: {addedFlowers.Count}";
         focusCountText.text = $"Фокусных: {focusCount}";
         focusScoreText.text = $"{focusScore} очков";
@@ -619,8 +625,7 @@ public class ScoringSystem : MonoBehaviour
     public void CloseScore()
     {
         soundButton.GetComponent<AudioSource>().Play();
-        bouquet.GetComponent<SpriteRenderer>().enabled = true;
-        basket.GetComponent<SpriteRenderer>().enabled = true;
+        toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
             Destroy(item);
         addedFlowers.Clear();
@@ -628,6 +633,8 @@ public class ScoringSystem : MonoBehaviour
         scoreScreen.SetActive(false);
         isOpen = false;
         totalScore = 0;
+        sizeSlider.GetComponent<RectTransform>().localPosition = new Vector3(-140, 0, 0);
+        positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
         GetComponent<SelectType>().InitSelection();
     }
 

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MusicControl : MonoBehaviour
 {
     public GameObject soundButton;
+    public AudioMixer mixer;
 
     private bool isPlaying = true;
 
@@ -14,12 +16,12 @@ public class MusicControl : MonoBehaviour
         if (isPlaying)
         {
             isPlaying = false;
-            GetComponent<AudioSource>().enabled = false;
+            mixer.SetFloat("Volume", -80);
         }
         else
         {
             isPlaying = true;
-            GetComponent<AudioSource>().enabled = true;
+            mixer.SetFloat("Volume", 0);
         }
     }
 }

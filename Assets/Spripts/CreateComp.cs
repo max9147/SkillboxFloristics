@@ -8,6 +8,8 @@ public class CreateComp : MonoBehaviour
 {
     public GameObject bouquet;
     public GameObject basket;
+    public GameObject sizeSlider;
+    public GameObject positionArrow;
     public GameObject[] flowerSpawers;
     public Button buttonCreate;
     public Button buttonReset;
@@ -22,14 +24,8 @@ public class CreateComp : MonoBehaviour
         buttonReset.interactable = false;
         buttonBack.interactable = false;
         GetComponent<ScoringSystem>().CountScore();
-        if (bouquet.activeInHierarchy)
-        {
-            bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
-        }
-        if (basket.activeInHierarchy)
-        {
-            basket.GetComponent<ArrangeBasket>().ClearBasket();
-        }
+        if (bouquet.activeInHierarchy) bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
+        if (basket.activeInHierarchy) basket.GetComponent<ArrangeBasket>().ClearBasket();
     }
 
     public void PressReset()
@@ -38,14 +34,10 @@ public class CreateComp : MonoBehaviour
         buttonCreate.interactable = false;
         buttonReset.interactable = false;
         buttonBack.interactable = false;
-        if (bouquet.activeInHierarchy)
-        {
-            bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
-        }
-        if (basket.activeInHierarchy)
-        {
-            basket.GetComponent<ArrangeBasket>().ClearBasket();
-        }
+        sizeSlider.GetComponent<RectTransform>().localPosition = new Vector3(-140, 0, 0);
+        positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
+        if (bouquet.activeInHierarchy) bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
+        if (basket.activeInHierarchy) basket.GetComponent<ArrangeBasket>().ClearBasket();
         GetComponent<ScoringSystem>().addedFlowers.Clear();
         GetComponent<ScoringSystem>().flowerColors.Clear();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
@@ -63,9 +55,11 @@ public class CreateComp : MonoBehaviour
     {
         buttonBack.GetComponent<AudioSource>().Play();
         GetComponent<ScoringSystem>().RemoveLast();
+        sizeSlider.GetComponent<RectTransform>().localPosition -= new Vector3(8, 0, 0);
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         if (bouquet.activeInHierarchy)
         {
+            positionArrow.transform.eulerAngles -= new Vector3(0, 0, bouquet.GetComponent<ArrangeBouquet>().GetRotation());
             foreach (var item in toDestroy) //Перебираем цветы на сцене
             {
                 if (item.GetComponent<SpriteRenderer>().sortingOrder == bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount()) //Находим цветы
@@ -88,6 +82,7 @@ public class CreateComp : MonoBehaviour
         }
         if (basket.activeInHierarchy)
         {
+            positionArrow.transform.eulerAngles -= new Vector3(0, 0, basket.GetComponent<ArrangeBasket>().GetRotation());
             foreach (var item in toDestroy) //Перебираем цветы на сцене
             {
                 if (item.GetComponent<SpriteRenderer>().sortingOrder == basket.GetComponent<ArrangeBasket>().GetFlowerCount()) //Находим цветы

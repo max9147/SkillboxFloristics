@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Chrysanthemum
   m_EditorClassIdentifier: 
   imageC: {fileID: 21300000, guid: 27ed4a339c48bcc4db9a8fdcc33d5d20, type: 3}
-  imageL: {fileID: 21300000, guid: 99e01941abaaff74da87e753f9d522fe, type: 3}
-  imageR: {fileID: 21300000, guid: adcdc033b9558d74d9da452c7c4d29e3, type: 3}
+  imageL: {fileID: 21300000, guid: 27ed4a339c48bcc4db9a8fdcc33d5d20, type: 3}
+  imageR: {fileID: 21300000, guid: 27ed4a339c48bcc4db9a8fdcc33d5d20, type: 3}
+  color: 0
   size: Base
