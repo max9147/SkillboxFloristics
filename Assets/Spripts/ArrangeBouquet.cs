@@ -12,6 +12,7 @@ public class ArrangeBouquet : MonoBehaviour
     public Button buttonBack;
 
     private GameObject collisionFlower; //÷веток только что вошедший в букет
+    private List<float> rotations = new List<float>();
     private int flowerCount; //„исло цветков в букете
     private float positionValue = 0;
     private float lastRotation = 0;
@@ -59,6 +60,8 @@ public class ArrangeBouquet : MonoBehaviour
 
     public float GetRotation()
     {
+        lastRotation = rotations[rotations.Count - 1];
+        rotations.RemoveAt(rotations.Count - 1);
         positionValue -= lastRotation;
         return lastRotation;
     }
@@ -75,7 +78,7 @@ public class ArrangeBouquet : MonoBehaviour
             }
             if (collisionFlower)
             {
-                lastRotation = (collisionFlower.transform.position.x - transform.position.x) * -40;
+                rotations.Add((collisionFlower.transform.position.x - transform.position.x) * -40);
                 positionValue -= (collisionFlower.transform.position.x - transform.position.x) * 40;
                 Vector3 arrowRotation = positionArrow.transform.eulerAngles;
                 if (positionValue > 90) arrowRotation.z = 90;
