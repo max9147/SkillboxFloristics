@@ -34,7 +34,7 @@ public class CreateComp : MonoBehaviour
         buttonCreate.interactable = false;
         buttonReset.interactable = false;
         buttonBack.interactable = false;
-        sizeSlider.GetComponent<RectTransform>().localPosition = new Vector3(-140, 0, 0);
+        sizeSlider.GetComponent<RectTransform>().localPosition = new Vector3(-150, 0, 0);
         positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
         if (bouquet.activeInHierarchy) bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
         if (basket.activeInHierarchy) basket.GetComponent<ArrangeBasket>().ClearBasket();
@@ -54,12 +54,16 @@ public class CreateComp : MonoBehaviour
     public void PressRemove()
     {
         buttonBack.GetComponent<AudioSource>().Play();
+        if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 1 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 1 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
+            sizeSlider.GetComponent<RectTransform>().localPosition -= new Vector3(10, 0, 0);            
         GetComponent<ScoringSystem>().RemoveLast();
-        sizeSlider.GetComponent<RectTransform>().localPosition -= new Vector3(8, 0, 0);
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         if (bouquet.activeInHierarchy)
         {
-            positionArrow.transform.eulerAngles -= new Vector3(0, 0, bouquet.GetComponent<ArrangeBouquet>().GetRotation());
+            float rotation = bouquet.GetComponent<ArrangeBouquet>().GetRotation();
+            if (rotation > 90) positionArrow.transform.eulerAngles = new Vector3(0, 0, 90);
+            else if (rotation < -90) positionArrow.transform.eulerAngles = new Vector3(0, 0, -90);
+            else positionArrow.transform.eulerAngles = new Vector3(0, 0, rotation);
             foreach (var item in toDestroy) //Перебираем цветы на сцене
             {
                 if (item.GetComponent<SpriteRenderer>().sortingOrder == bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount()) //Находим цветы
@@ -74,7 +78,7 @@ public class CreateComp : MonoBehaviour
                     buttonBack.interactable = false;
                 }
 
-                if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() < 20 || bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 35)
+                if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() < 10 || bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 30)
                 {
                     buttonCreate.interactable = false;
                 }
@@ -82,7 +86,10 @@ public class CreateComp : MonoBehaviour
         }
         if (basket.activeInHierarchy)
         {
-            positionArrow.transform.eulerAngles -= new Vector3(0, 0, basket.GetComponent<ArrangeBasket>().GetRotation());
+            float rotation = basket.GetComponent<ArrangeBasket>().GetRotation();
+            if (rotation > 90) positionArrow.transform.eulerAngles = new Vector3(0, 0, 90);
+            else if (rotation < -90) positionArrow.transform.eulerAngles = new Vector3(0, 0, -90);
+            else positionArrow.transform.eulerAngles = new Vector3(0, 0, rotation);
             foreach (var item in toDestroy) //Перебираем цветы на сцене
             {
                 if (item.GetComponent<SpriteRenderer>().sortingOrder == basket.GetComponent<ArrangeBasket>().GetFlowerCount()) //Находим цветы
@@ -97,13 +104,13 @@ public class CreateComp : MonoBehaviour
                     buttonBack.interactable = false;
                 }
 
-                if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() < 20 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 35)
+                if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() < 10 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 30)
                 {
                     buttonCreate.interactable = false;
                 }
             }
         }
-        if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 20 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 35) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 25 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 35))
+        if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
         {
             buttonCreate.interactable = true;
         }

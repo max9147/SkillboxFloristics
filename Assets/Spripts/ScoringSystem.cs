@@ -92,63 +92,64 @@ public class ScoringSystem : MonoBehaviour
             }
         }
 
-        if (((float)focusCount / addedFlowers.Count) > 0.11f && ((float)focusCount / addedFlowers.Count) < 0.182f)
+        if (((float)focusCount / addedFlowers.Count) >= 0.071f && ((float)focusCount / addedFlowers.Count) <= 0.25f)
         {
-            focusScore = 112 - Mathf.Ceil(Mathf.Abs(0.146f - ((float)focusCount / addedFlowers.Count)) * 690);
+            focusScore = 125 - Mathf.Ceil(Mathf.Abs(0.161f - ((float)focusCount / addedFlowers.Count)) * 620);
             if (focusScore > 100) focusScore = 100;
         }
         else
         {
-            if (Mathf.Abs(0.146f - ((float)focusCount / addedFlowers.Count)) * 690 > 100)
+            if (Mathf.Abs(0.161f - ((float)focusCount / addedFlowers.Count)) * 620 > 100)
                 focusScore = 0;
             else
-                focusScore = 100 - Mathf.Ceil(Mathf.Abs(0.146f - ((float)focusCount / addedFlowers.Count)) * 690);
+                focusScore = 100 - Mathf.Ceil(Mathf.Abs(0.161f - ((float)focusCount / addedFlowers.Count)) * 620);
         }
 
 
-        if (((float)baseCount / addedFlowers.Count) > 0.312f && ((float)baseCount / addedFlowers.Count) < 0.458f)
+        if (((float)baseCount / addedFlowers.Count) >= 0.285f && ((float)baseCount / addedFlowers.Count) <= 0.6f)
         {
-            baseScore = 110 - Mathf.Ceil(Mathf.Abs(0.385f - ((float)baseCount / addedFlowers.Count)) * 270);
+            baseScore = 110 - Mathf.Ceil(Mathf.Abs(0.443f - ((float)baseCount / addedFlowers.Count)) * 225);
             if (baseScore > 100) baseScore = 100;
         }
         else
         {
-            if (Mathf.Abs(0.385f - ((float)baseCount / addedFlowers.Count)) * 270 > 100)
+            if (Mathf.Abs(0.443f - ((float)baseCount / addedFlowers.Count)) * 225 > 100)
                 baseScore = 0;
             else
-                baseScore = 100 - Mathf.Ceil(Mathf.Abs(0.385f - ((float)baseCount / addedFlowers.Count)) * 270);
+                baseScore = 100 - Mathf.Ceil(Mathf.Abs(0.443f - ((float)baseCount / addedFlowers.Count)) * 225);
         }
 
-        if (((float)fillCount / addedFlowers.Count) > 0.171f && ((float)fillCount / addedFlowers.Count) < 0.301f)
+        if (((float)fillCount / addedFlowers.Count) >= 0.2f && ((float)fillCount / addedFlowers.Count) <= 0.467f)
         {
-            fillScore = 113 - Mathf.Ceil(Mathf.Abs(0.236f - ((float)fillCount / addedFlowers.Count)) * 430);
+            fillScore = 110 - Mathf.Ceil(Mathf.Abs(0.333f - ((float)fillCount / addedFlowers.Count)) * 300);
             if (fillScore > 100) fillScore = 100;
         }
         else
         {
-            if (Mathf.Abs(0.236f - ((float)fillCount / addedFlowers.Count)) * 430 > 100)
+            if (Mathf.Abs(0.333f - ((float)fillCount / addedFlowers.Count)) * 300 > 100)
                 fillScore = 0;
             else
-                fillScore = 100 - Mathf.Ceil(Mathf.Abs(0.236f - ((float)fillCount / addedFlowers.Count)) * 430);
+                fillScore = 100 - Mathf.Ceil(Mathf.Abs(0.333f - ((float)fillCount / addedFlowers.Count)) * 300);
         }
 
-        if (((float)detailsCount / addedFlowers.Count) > 0.173f && ((float)detailsCount / addedFlowers.Count) < 0.251f)
+        if (((float)detailsCount / addedFlowers.Count) >= 0.1f && ((float)detailsCount / addedFlowers.Count) <= 0.334f)
         {
-            detailsScore = 113 - Mathf.Ceil(Mathf.Abs(0.212f - ((float)detailsCount / addedFlowers.Count)) * 480);
+            detailsScore = 117 - Mathf.Ceil(Mathf.Abs(0.217f - ((float)detailsCount / addedFlowers.Count)) * 460);
             if (detailsScore > 100) detailsScore = 100;
         }
         else
         {
-            if (Mathf.Abs(0.212f - ((float)detailsCount / addedFlowers.Count)) * 480 > 100)
+            if (Mathf.Abs(0.217f - ((float)detailsCount / addedFlowers.Count)) * 460 > 100)
                 detailsScore = 0;
             else
-                detailsScore = 100 - Mathf.Ceil(Mathf.Abs(0.212f - ((float)detailsCount / addedFlowers.Count)) * 480);
+                detailsScore = 100 - Mathf.Ceil(Mathf.Abs(0.217f - ((float)detailsCount / addedFlowers.Count)) * 460);
         }
 
         if (greenCount > 0 && greenCount < 3)
-            greenScore = 50;
+            greenScore = 100;
         else
             greenScore = 0;
+
         int typeScore = (int)(focusScore + baseScore + fillScore + detailsScore + greenScore);
 
         if (focusScore != 0 && baseScore != 0 && fillScore != 0 && detailsScore != 0 && greenScore != 0) starCount++;
@@ -272,7 +273,7 @@ public class ScoringSystem : MonoBehaviour
       .Select(grp => grp.Key).First();
         foreach (var item in flowerColors)
         {
-            if (item != most) score -= 30;
+            if (item != most) score -= 35;
             else monochromeCount++;
         }
         return score;
@@ -366,7 +367,7 @@ public class ScoringSystem : MonoBehaviour
             default:
                 break;
         }
-        score -= 40 * (flowerColors.Count - max);
+        score -= 70 * (flowerColors.Count - max);
         return score;
     }
 
@@ -450,7 +451,7 @@ public class ScoringSystem : MonoBehaviour
             default:
                 break;
         }
-        score -= 60 * (flowerColors.Count - max);
+        score -= 105 * (flowerColors.Count - max);
         return score;
     }
 
@@ -591,7 +592,7 @@ public class ScoringSystem : MonoBehaviour
             default:
                 break;
         }
-        score -= 60 * (flowerColors.Count - max);
+        score -= 105 * (flowerColors.Count - max);
         return score;
     }
 
@@ -633,7 +634,8 @@ public class ScoringSystem : MonoBehaviour
         scoreScreen.SetActive(false);
         isOpen = false;
         totalScore = 0;
-        sizeSlider.GetComponent<RectTransform>().localPosition = new Vector3(-140, 0, 0);
+        starCount = 0;
+        sizeSlider.GetComponent<RectTransform>().localPosition = new Vector3(-150, 0, 0);
         positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
         GetComponent<SelectType>().InitSelection();
     }

@@ -129,7 +129,7 @@ public class DragFlowers : MonoBehaviour
             {
                 canTake = true;
                 Destroy(flowerToDrag);
-                if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 20 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 35) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 25 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 35))
+                if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
                 {
                     buttonCreate.interactable = true;
                 }

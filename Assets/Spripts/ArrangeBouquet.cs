@@ -63,7 +63,7 @@ public class ArrangeBouquet : MonoBehaviour
         lastRotation = rotations[rotations.Count - 1];
         rotations.RemoveAt(rotations.Count - 1);
         positionValue -= lastRotation;
-        return lastRotation;
+        return positionValue;
     }
 
     public bool CheckFlowerPos() //Проверка на нахождение цветка в области букета
@@ -71,8 +71,8 @@ public class ArrangeBouquet : MonoBehaviour
         if (flowerInside)
         {
             flowerCount++;
-            if (flowerCount <= 35) sizeSlider.GetComponent<RectTransform>().localPosition += new Vector3(8, 0, 0);
-            if (flowerCount >= 20 && flowerCount <= 35)
+            if (flowerCount <= 30) sizeSlider.GetComponent<RectTransform>().localPosition += new Vector3(10, 0, 0);
+            if (flowerCount >= 10 && flowerCount <= 30)
             {
                 buttonCreate.interactable = true;
             }
