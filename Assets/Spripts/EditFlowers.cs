@@ -6,15 +6,19 @@ public class EditFlowers : MonoBehaviour
 {
     public GameObject highlight;
 
+    private GameObject prevFlower;
+    private string prevLayer;
+
     public void SelectFlower(GameObject flower)
     {
-        Destroy(GameObject.Find("Highlight(Clone)"));
-
-        //Instantiate(highlight, flower.transform.position,flower.transform.rotation);
+        if (flower.GetComponent<SpriteRenderer>().sortingLayerName == "Default") return;
+        prevFlower = flower;
+        prevLayer = flower.GetComponent<SpriteRenderer>().sortingLayerName;
+        flower.GetComponent<SpriteRenderer>().sortingLayerName = "Foreground";        
     }
 
-    public void Disselect()
+    public void DisselectFlower()
     {
-        Destroy(GameObject.Find("Highlight(Clone)"));
+        if (prevFlower) prevFlower.GetComponent<SpriteRenderer>().sortingLayerName = prevLayer;
     }
 }

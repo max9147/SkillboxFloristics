@@ -11,8 +11,13 @@ public class SelectFlowers : MonoBehaviour
         gameManager = GameObject.Find("GameManager");
     }
 
-    private void OnMouseDown()
+    private void OnMouseEnter()
     {
         gameManager.GetComponent<EditFlowers>().SelectFlower(gameObject);
+    }
+
+    private void OnMouseExit()
+    {
+        gameManager.GetComponent<EditFlowers>().DisselectFlower();
     }
 }
