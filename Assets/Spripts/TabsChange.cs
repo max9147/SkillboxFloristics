@@ -72,7 +72,7 @@ public class TabsChange : MonoBehaviour
                 fillFlowers.SetActive(false);
                 detailFlowers.SetActive(false);
                 green.SetActive(true);
-                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 1200);
+                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 1800);
                 descriptionText.text = "Зелень в букете может выполнять техническую роль (фиксация стеблей, создание зеленой подушки) или декоративную (интересный окрас " +
                     "или форма листьев, ветвей). Для создания выигрышного подбора рекомендуем сочетать несколько видов зелени, отличающейся по размеру, форме или окрасу листа.";
                 break;

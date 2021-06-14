@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shamilacium
   m_EditorClassIdentifier: 
   imageC: {fileID: 21300000, guid: d6a64cde96b5cc24288a43ea44987fd4, type: 3}
-  imageL: {fileID: 21300000, guid: 64791f172f0b01c42baf463720b6b125, type: 3}
-  imageR: {fileID: 21300000, guid: 6ff45c6135d9ac54c8e2c1ef01814b7b, type: 3}
+  imageL: {fileID: 21300000, guid: d6a64cde96b5cc24288a43ea44987fd4, type: 3}
+  imageR: {fileID: 21300000, guid: d6a64cde96b5cc24288a43ea44987fd4, type: 3}
   color: 6
   size: Fill

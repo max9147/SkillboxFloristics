@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8576419055343598565}
   - component: {fileID: -1106090474372284375}
   m_Layer: 0
-  m_Name: Tulip 7
+  m_Name: MatiolaWhite
   m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21, y: 2.12}
+  m_Size: {x: 0.2, y: 2.67}
   m_EdgeRadius: 0
 --- !u!50 &-8576419055343598565
 Rigidbody2D:

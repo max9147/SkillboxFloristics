@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DianthusBush
   m_EditorClassIdentifier: 
   imageC: {fileID: 21300000, guid: 1a192bcb70b50e44caba6a0b86e91953, type: 3}
-  imageL: {fileID: 21300000, guid: 148ae8d13662c4042bff7aa472b60aef, type: 3}
-  imageR: {fileID: 21300000, guid: d05a78ee97c258343ab64147ddd1e8b9, type: 3}
+  imageL: {fileID: 21300000, guid: 1a192bcb70b50e44caba6a0b86e91953, type: 3}
+  imageR: {fileID: 21300000, guid: 1a192bcb70b50e44caba6a0b86e91953, type: 3}
   color: 7
   size: Fill

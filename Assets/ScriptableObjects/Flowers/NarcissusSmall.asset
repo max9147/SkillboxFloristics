@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: NarcissusSmall
   m_EditorClassIdentifier: 
   imageC: {fileID: 21300000, guid: 5e0aef5c6f8d1f84fa99db95be17fc89, type: 3}
-  imageL: {fileID: 21300000, guid: 70f6ecf6a4d69154e958d6046ea9db16, type: 3}
-  imageR: {fileID: 21300000, guid: 219e9ef5c3bb15b4e93f95108fa4792b, type: 3}
+  imageL: {fileID: 21300000, guid: 5e0aef5c6f8d1f84fa99db95be17fc89, type: 3}
+  imageR: {fileID: 21300000, guid: 5e0aef5c6f8d1f84fa99db95be17fc89, type: 3}
+  color: 0
   size: Details

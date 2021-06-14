@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Freesia
   m_EditorClassIdentifier: 
   imageC: {fileID: 21300000, guid: fbb3e818f518cd0478a2bc69434e0b56, type: 3}
-  imageL: {fileID: 21300000, guid: 9f1a5e76a028ded4fb32da16d0c70ba9, type: 3}
-  imageR: {fileID: 21300000, guid: 1ec242c002dc0234c874240c2bebb199, type: 3}
+  imageL: {fileID: 21300000, guid: fbb3e818f518cd0478a2bc69434e0b56, type: 3}
+  imageR: {fileID: 21300000, guid: fbb3e818f518cd0478a2bc69434e0b56, type: 3}
   color: 3
   size: Details
