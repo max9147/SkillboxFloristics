@@ -20,4 +20,9 @@ public class SelectFlowers : MonoBehaviour
     {
         gameManager.GetComponent<EditFlowers>().DisselectFlower();
     }
+
+    private void OnMouseDown()
+    {
+        gameManager.GetComponent<EditFlowers>().StartEdit(gameObject);
+    }
 }
