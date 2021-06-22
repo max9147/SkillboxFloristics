@@ -650,7 +650,7 @@ public class ScoringSystem : MonoBehaviour
         flowerColors.Add(color);
     }
 
-    public void RemoveLast()
+    public void RemoveFromScoring()
     {
         int greenPre = 0;
         int greenNow = 0;
@@ -660,6 +660,25 @@ public class ScoringSystem : MonoBehaviour
                 greenPre++;            
         }        
         addedFlowers.RemoveAt(addedFlowers.Count - 1);
+        foreach (var item in addedFlowers)
+        {
+            if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")
+                greenNow++;
+        }
+        if (greenNow == greenPre)
+            flowerColors.RemoveAt(flowerColors.Count - 1);
+    }
+
+    public void RemoveFromScoring(int id)
+    {
+        int greenPre = 0;
+        int greenNow = 0;
+        foreach (var item in addedFlowers)
+        {
+            if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")
+                greenPre++;
+        }
+        addedFlowers.RemoveAt(id);
         foreach (var item in addedFlowers)
         {
             if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")

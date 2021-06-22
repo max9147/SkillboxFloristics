@@ -44,7 +44,7 @@ public class ArrangeBasket : MonoBehaviour
         positionValue = 0;
     }
 
-    public void RemoveLast()
+    public void RemoveFlower()
     {
         flowerCount--;
     }
@@ -58,6 +58,14 @@ public class ArrangeBasket : MonoBehaviour
     {
         lastRotation = rotations[rotations.Count - 1];
         rotations.RemoveAt(rotations.Count - 1);
+        positionValue -= lastRotation;
+        return positionValue;
+    }
+
+    public float GetRotation(int id)
+    {
+        lastRotation = rotations[id];
+        rotations.RemoveAt(id);
         positionValue -= lastRotation;
         return positionValue;
     }

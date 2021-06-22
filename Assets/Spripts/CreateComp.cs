@@ -20,6 +20,7 @@ public class CreateComp : MonoBehaviour
     public void PressCreate() //Нажатие на кнопку создать букет
     {
         buttonCreate.GetComponent<AudioSource>().Play();
+        GetComponent<EditFlowers>().StopEdit();
         buttonCreate.interactable = false; //Запрещаем нажимать на создание букета после создания
         buttonReset.interactable = false;
         buttonBack.interactable = false;
@@ -31,6 +32,7 @@ public class CreateComp : MonoBehaviour
     public void PressReset()
     {
         buttonReset.GetComponent<AudioSource>().Play();
+        GetComponent<EditFlowers>().StopEdit();
         buttonCreate.interactable = false;
         buttonReset.interactable = false;
         buttonBack.interactable = false;
@@ -54,9 +56,10 @@ public class CreateComp : MonoBehaviour
     public void PressRemove()
     {
         buttonBack.GetComponent<AudioSource>().Play();
+        GetComponent<EditFlowers>().StopEdit();
         if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 1 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 1 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
             sizeSlider.GetComponent<RectTransform>().localPosition -= new Vector3(10, 0, 0);            
-        GetComponent<ScoringSystem>().RemoveLast();
+        GetComponent<ScoringSystem>().RemoveFromScoring();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         if (bouquet.activeInHierarchy)
         {
@@ -69,7 +72,7 @@ public class CreateComp : MonoBehaviour
                 if (item.GetComponent<SpriteRenderer>().sortingOrder == bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount()) //Находим цветы
                 {
                     Destroy(item);
-                    bouquet.GetComponent<ArrangeBouquet>().RemoveLast();
+                    bouquet.GetComponent<ArrangeBouquet>().RemoveFlower();
                 }
 
                 if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() == 0)
@@ -95,7 +98,7 @@ public class CreateComp : MonoBehaviour
                 if (item.GetComponent<SpriteRenderer>().sortingOrder == basket.GetComponent<ArrangeBasket>().GetFlowerCount()) //Находим цветы
                 {
                     Destroy(item);
-                    basket.GetComponent<ArrangeBasket>().RemoveLast();
+                    basket.GetComponent<ArrangeBasket>().RemoveFlower();
                 }
 
                 if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() == 0)
