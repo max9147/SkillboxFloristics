@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ArrangeBouquet : MonoBehaviour
 {
-    public GameObject sizeSlider;
+    public Slider sizeSlider;
     public GameObject positionArrow;
     public Button buttonCreate;
     public Button buttonReset;
@@ -79,7 +79,7 @@ public class ArrangeBouquet : MonoBehaviour
         if (flowerInside)
         {
             flowerCount++;
-            if (flowerCount <= 30) sizeSlider.GetComponent<RectTransform>().localPosition += new Vector3(10, 0, 0);
+            if (flowerCount <= 30) sizeSlider.value += 1f / 30;
             if (flowerCount >= 10 && flowerCount <= 30)
             {
                 buttonCreate.interactable = true;

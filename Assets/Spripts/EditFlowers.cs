@@ -9,12 +9,12 @@ public class EditFlowers : MonoBehaviour
     public GameObject canvas;
     public GameObject bouquet;
     public GameObject basket;
-    public GameObject sizeSlider;
     public GameObject positionArrow;
     public Camera mainCam;
     public Button buttonCreate;
     public Button buttonReset;
     public Button buttonBack;
+    public Slider sizeSlider;
 
     private GameObject prevFlower;
     private GameObject curMenu;
@@ -65,7 +65,7 @@ public class EditFlowers : MonoBehaviour
         Destroy(curMenu);
 
         if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 1 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 1 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
-            sizeSlider.GetComponent<RectTransform>().localPosition -= new Vector3(10, 0, 0);
+            sizeSlider.value -= 1f / 30;
         GetComponent<ScoringSystem>().RemoveFromScoring(flower.GetComponent<SpriteRenderer>().sortingOrder - 1);
 
         flowers = GameObject.FindGameObjectsWithTag("Flower");

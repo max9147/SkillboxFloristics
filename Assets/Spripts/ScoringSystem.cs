@@ -9,7 +9,6 @@ public class ScoringSystem : MonoBehaviour
 {
     public GameObject scoreScreen;
     public GameObject soundButton;
-    public GameObject sizeSlider;
     public GameObject positionArrow;
     public GameObject[] stars;
     public List<GameObject> addedFlowers = new List<GameObject>();
@@ -28,6 +27,8 @@ public class ScoringSystem : MonoBehaviour
     public TextMeshProUGUI detailsScoreText;
     public TextMeshProUGUI greenScoreText;
     public TextMeshProUGUI colorScoreText;
+    public TextMeshProUGUI colorScoreTextNumber;
+    public Slider sizeSlider;
 
     private GameObject[] toDestroy;
     private int focusCount = 0;
@@ -603,24 +604,25 @@ public class ScoringSystem : MonoBehaviour
         scoreScreen.SetActive(true);
         isOpen = true;
         for (int i = 0; i < starCount; i++) stars[i].GetComponent<Image>().sprite = starActive;
-        flowerCountText.text = $"Всего цветков: {addedFlowers.Count}";
-        focusCountText.text = $"Фокусных: {focusCount}";
+        flowerCountText.text = addedFlowers.Count.ToString();
+        focusCountText.text = focusCount.ToString();
         focusScoreText.text = $"{focusScore} очков";
         focusCount = 0;
-        baseCountText.text = $"Базовых: {baseCount}";
+        baseCountText.text = baseCount.ToString();
         baseScoreText.text = $"{baseScore} очков";
         baseCount = 0;
-        fillCountText.text = $"Заполняющих: {fillCount}";
+        fillCountText.text = fillCount.ToString();
         fillScoreText.text = $"{fillScore} очков";
         fillCount = 0;
-        detailsCountText.text = $"Деталей: {detailsCount}";
+        detailsCountText.text = detailsCount.ToString();
         detailsScoreText.text = $"{detailsScore} очков";
         detailsCount = 0;
-        greenCountText.text = $"Зелени: {greenCount}";
+        greenCountText.text = greenCount.ToString();
         greenScoreText.text = $"{greenScore} очков";
         greenCount = 0;
-        colorScoreText.text = $"{colorString}: {CheckColor()} очков";
-        totalScoreText.text = $"Итоговый счет: {totalScore}";
+        colorScoreText.text = colorString.ToString();
+        colorScoreTextNumber.text = CheckColor().ToString();
+        totalScoreText.text = totalScore.ToString();
     }
 
     public void CloseScore()
@@ -635,7 +637,7 @@ public class ScoringSystem : MonoBehaviour
         isOpen = false;
         totalScore = 0;
         starCount = 0;
-        sizeSlider.GetComponent<RectTransform>().localPosition = new Vector3(-150, 0, 0);
+        sizeSlider.value = 0;
         positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
         GetComponent<SelectType>().InitSelection();
     }

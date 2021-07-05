@@ -28,7 +28,7 @@ public class DragFlowers : MonoBehaviour
     private void OnMouseDown()
     {
         ray = mainCam.ScreenPointToRay(Input.mousePosition); //Проверка на нахождение курсора в content
-        if (canTake && !gameManager.GetComponent<ScoringSystem>().CheckIsOpen() && !gameManager.GetComponent<SelectType>().CheckIsOpen() && !gameManager.GetComponent<TabsChange>().CheckDescriptionOpen() && ray.origin.y < 3.7f && ray.origin.y > -2.9f)
+        if (canTake && !gameManager.GetComponent<ScoringSystem>().CheckIsOpen() && !gameManager.GetComponent<SelectType>().CheckIsOpen() && !gameManager.GetComponent<TabsChange>().CheckDescriptionOpen() && ray.origin.y < 2.7f && ray.origin.y > -1.7f)
         {
             gameManager.GetComponent<EditFlowers>().StopEdit();
             bouquet.transform.position = new Vector3(bouquet.transform.position.x, bouquet.transform.position.y, -0.01f);

@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class ArrangeBasket : MonoBehaviour
 {
-    public GameObject sizeSlider;
     public GameObject positionArrow;
     public Button buttonCreate;
     public Button buttonReset;
     public Button buttonBack;
+    public Slider sizeSlider;
 
     private GameObject collisionFlower; //÷веток только что вошедший в букет
     private List<float> rotations = new List<float>();
@@ -74,8 +74,8 @@ public class ArrangeBasket : MonoBehaviour
     {
         if (flowerInside)
         {
-            flowerCount++;
-            if (flowerCount <= 30) sizeSlider.GetComponent<RectTransform>().localPosition += new Vector3(10, 0, 0);
+            flowerCount++;            
+            if (flowerCount <= 30) sizeSlider.value += 1f / 30;
             if (flowerCount >= 10 && flowerCount <= 30)
             {
                 buttonCreate.interactable = true;
