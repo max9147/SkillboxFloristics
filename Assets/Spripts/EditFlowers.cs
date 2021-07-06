@@ -24,7 +24,7 @@ public class EditFlowers : MonoBehaviour
 
     public void SelectFlower(GameObject flower)
     {
-        if (flower.GetComponent<SpriteRenderer>().sortingLayerName == "Default" || isEditing) return;
+        if (flower.GetComponent<SpriteRenderer>().sortingLayerName == "Default" || isEditing || GetComponent<ScoringSystem>().CheckIsOpen()) return;
         prevFlower = flower;
         prevLayer = flower.GetComponent<SpriteRenderer>().sortingLayerName;
         flower.GetComponent<SpriteRenderer>().sortingLayerName = "Foreground";        
@@ -37,14 +37,14 @@ public class EditFlowers : MonoBehaviour
 
     public void StartEdit(GameObject flower)
     {
-        if (curMenu) return;
+        if (curMenu || GetComponent<ScoringSystem>().CheckIsOpen()) return;
         isEditing = false;
         DisselectFlower();
         SelectFlower(flower);
         isEditing = true;
         curMenu = Instantiate(editMenu, canvas.transform);
         Vector3 curPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Текущая позиция курсора
-        curMenu.transform.position = curPos - new Vector3(1, 1.5f, 0);
+        curMenu.transform.position = curPos - new Vector3(0, 0.7f, 0);
         curMenu.transform.Find("ExitButton").GetComponentInChildren<Button>().onClick.AddListener(delegate { this.StopEdit(); });
         curMenu.transform.Find("RemoveButton").GetComponentInChildren<Button>().onClick.AddListener(delegate { this.RemoveFlower(flower); });
         curMenu.transform.Find("LayerUpButton").GetComponentInChildren<Button>().onClick.AddListener(delegate { this.LayerUp(flower); });
@@ -65,7 +65,7 @@ public class EditFlowers : MonoBehaviour
         Destroy(curMenu);
 
         if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 1 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 1 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
-            sizeSlider.value -= 1f / 30;
+            sizeSlider.value -= 0.033f;
         GetComponent<ScoringSystem>().RemoveFromScoring(flower.GetComponent<SpriteRenderer>().sortingOrder - 1);
 
         flowers = GameObject.FindGameObjectsWithTag("Flower");

@@ -58,7 +58,7 @@ public class CreateComp : MonoBehaviour
         buttonBack.GetComponent<AudioSource>().Play();
         GetComponent<EditFlowers>().StopEdit();
         if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 1 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 1 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
-            sizeSlider.value -= 1f / 30;         
+            sizeSlider.value -= 0.033f;         
         GetComponent<ScoringSystem>().RemoveFromScoring();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         if (bouquet.activeInHierarchy)

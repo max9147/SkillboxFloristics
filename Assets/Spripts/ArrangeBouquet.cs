@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class ArrangeBouquet : MonoBehaviour
 {
-    public Slider sizeSlider;
     public GameObject positionArrow;
     public Button buttonCreate;
     public Button buttonReset;
     public Button buttonBack;
+    public Slider sizeSlider;
 
     private GameObject collisionFlower; //÷веток только что вошедший в букет
     private List<float> rotations = new List<float>();
@@ -79,7 +79,7 @@ public class ArrangeBouquet : MonoBehaviour
         if (flowerInside)
         {
             flowerCount++;
-            if (flowerCount <= 30) sizeSlider.value += 1f / 30;
+            if (flowerCount <= 30) sizeSlider.value += 0.033f;
             if (flowerCount >= 10 && flowerCount <= 30)
             {
                 buttonCreate.interactable = true;

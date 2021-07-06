@@ -8975,11 +8975,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e6e2ed32862714ebd08b625986eca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeSlider: {fileID: 1932454989}
   positionArrow: {fileID: 769987332}
   buttonCreate: {fileID: 413580513}
   buttonReset: {fileID: 760961038}
   buttonBack: {fileID: 313873359}
+  sizeSlider: {fileID: 1932454989}
 --- !u!60 &357295955
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9269,8 +9269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 555, y: -293.9}
-  m_SizeDelta: {x: 150, y: 50}
+  m_AnchoredPosition: {x: 521.8, y: -287.7}
+  m_SizeDelta: {x: 150, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373338347
 MonoBehaviour:
@@ -11786,8 +11786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334, y: -22.4}
-  m_SizeDelta: {x: 605, y: 600}
+  m_AnchoredPosition: {x: 317, y: -18}
+  m_SizeDelta: {x: 570, y: 587}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484038533
 MonoBehaviour:
@@ -11802,14 +11802,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.71810126, g: 0.7139551, b: 0.7924528, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ad2c71779631e4c43902b04a92ac340e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18282,7 +18282,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bouquet: {fileID: 357295950}
   basket: {fileID: 745225666}
-  sizeSlider: {fileID: 1932454989}
   positionArrow: {fileID: 769987332}
   flowerSpawers:
   - {fileID: 545545065}
@@ -18297,6 +18296,7 @@ MonoBehaviour:
   buttonCreate: {fileID: 413580513}
   buttonReset: {fileID: 760961038}
   buttonBack: {fileID: 313873359}
+  sizeSlider: {fileID: 1932454989}
 --- !u!82 &810505140
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18467,7 +18467,7 @@ MonoBehaviour:
   buttonCreate: {fileID: 413580513}
   buttonReset: {fileID: 760961038}
   buttonBack: {fileID: 313873359}
-  sizeSlider: {fileID: 0}
+  sizeSlider: {fileID: 1932454989}
 --- !u!114 &810505144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36716,7 +36716,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.75
+  m_fontSize: 31.8
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -38490,8 +38490,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334, y: 2.4}
-  m_SizeDelta: {x: 590, y: 530}
+  m_AnchoredPosition: {x: 316.9, y: 4.4}
+  m_SizeDelta: {x: 550, y: 530}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1754712686
 MonoBehaviour:
@@ -38513,7 +38513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3d66f65f3b047e4a8354ab71538c1f0, type: 2}
   m_sharedMaterial: {fileID: -6018224497819984975, guid: a3d66f65f3b047e4a8354ab71538c1f0, type: 2}
@@ -38579,7 +38579,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1754712687
