@@ -36,11 +36,9 @@ public class EditFlowers : MonoBehaviour
     }
 
     public void StartEdit(GameObject flower)
-    {
+    {        
         if (curMenu || GetComponent<ScoringSystem>().CheckIsOpen()) return;
-        isEditing = false;
-        DisselectFlower();
-        SelectFlower(flower);
+        flower.GetComponent<SpriteRenderer>().sortingLayerName = prevLayer;
         isEditing = true;
         curMenu = Instantiate(editMenu, canvas.transform);
         Vector3 curPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Текущая позиция курсора
@@ -54,7 +52,6 @@ public class EditFlowers : MonoBehaviour
     public void StopEdit()
     {
         isEditing = false;
-        DisselectFlower();
         Destroy(curMenu);
     }
 
@@ -120,7 +117,6 @@ public class EditFlowers : MonoBehaviour
 
     public void LayerUp(GameObject flower)
     {
-        flower.GetComponent<SpriteRenderer>().sortingLayerName = prevLayer;
         flowers = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in flowers) //Перебираем цветы на сцене
         {
@@ -128,6 +124,8 @@ public class EditFlowers : MonoBehaviour
             {
                 item.GetComponent<SpriteRenderer>().sortingOrder--;
                 flower.GetComponent<SpriteRenderer>().sortingOrder++;
+                if (item.GetComponent<SpriteRenderer>().sortingLayerName != flower.GetComponent<SpriteRenderer>().sortingLayerName)
+                    flower.GetComponent<SpriteRenderer>().sortingLayerName = item.GetComponent<SpriteRenderer>().sortingLayerName;
                 break;
             }
         }
@@ -135,7 +133,6 @@ public class EditFlowers : MonoBehaviour
 
     public void LayerDown(GameObject flower)
     {
-        flower.GetComponent<SpriteRenderer>().sortingLayerName = prevLayer;
         flowers = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in flowers) //Перебираем цветы на сцене
         {
@@ -143,6 +140,8 @@ public class EditFlowers : MonoBehaviour
             {
                 item.GetComponent<SpriteRenderer>().sortingOrder++;
                 flower.GetComponent<SpriteRenderer>().sortingOrder--;
+                if (item.GetComponent<SpriteRenderer>().sortingLayerName != flower.GetComponent<SpriteRenderer>().sortingLayerName)
+                    flower.GetComponent<SpriteRenderer>().sortingLayerName = item.GetComponent<SpriteRenderer>().sortingLayerName;
                 break;
             }
         }

@@ -75,6 +75,7 @@ public class DragFlowers : MonoBehaviour
                 if (bouquet.GetComponent<ArrangeBouquet>().CheckFlowerInside())
                 {
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = flower.size; //Перемещаем цветок на его слой
+                    flowerToDrag.GetComponent<SelectFlowers>().type = flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName;
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingOrder = bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() + 1;
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
 
@@ -106,6 +107,7 @@ public class DragFlowers : MonoBehaviour
                 else if (basket.GetComponent<ArrangeBasket>().CheckFlowerInside())
                 {
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = flower.size; //Перемещаем цветок на его слой
+                    flowerToDrag.GetComponent<SelectFlowers>().type = flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName;
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingOrder = basket.GetComponent<ArrangeBasket>().GetFlowerCount() + 1;
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
                     flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри корзины

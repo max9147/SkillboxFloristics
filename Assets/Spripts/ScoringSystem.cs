@@ -66,7 +66,7 @@ public class ScoringSystem : MonoBehaviour
     {
         foreach (var item in addedFlowers)
         {
-            switch (item.GetComponent<SpriteRenderer>().sortingLayerName)
+            switch (item.GetComponent<SelectFlowers>().type)
             {
                 case "Focus":
                     focusCount++;

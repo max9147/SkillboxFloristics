@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SelectFlowers : MonoBehaviour
 {
+    public string type;
+
     private GameObject gameManager;
 
     private void Start()
