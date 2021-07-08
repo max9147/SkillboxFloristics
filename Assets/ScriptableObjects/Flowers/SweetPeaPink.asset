@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: SweetPeaPink
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: 94e7b09b2b92dd84e983fe25ada7e196, type: 3}
-  imageL: {fileID: 21300000, guid: 10c518c608c43254ea1c4e19d2d4f2d4, type: 3}
-  imageR: {fileID: 21300000, guid: 6c272e71b4c8e4e4b9891dcef9312c71, type: 3}
+  imageC: {fileID: 21300000, guid: b52ba1324fb7b4347ad086ccf7b8a7ec, type: 3}
+  imageL: {fileID: 21300000, guid: b52ba1324fb7b4347ad086ccf7b8a7ec, type: 3}
+  imageR: {fileID: 21300000, guid: b52ba1324fb7b4347ad086ccf7b8a7ec, type: 3}
   color: 6
   size: Details
+  flowerName: "\u0414\u0443\u0448\u0438\u0441\u0442\u044B\u0439 \u0433\u043E\u0440\u043E\u0448\u0435\u043A
+    \u0440\u043E\u0437\u043E\u0432\u044B\u0439"

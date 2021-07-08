@@ -27,4 +27,5 @@ public class Flower : ScriptableObject
     public Sprite imageR;
     public FlowerColor color;
     public string size;
+    public string flowerName;
 }

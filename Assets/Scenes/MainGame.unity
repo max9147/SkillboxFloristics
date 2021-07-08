@@ -233,7 +233,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 150}
+  m_SizeDelta: {x: 60, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12567928
 MonoBehaviour:
@@ -517,7 +517,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 60, y: 150}
+  m_SizeDelta: {x: 65, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23226354
 MonoBehaviour:
@@ -827,7 +827,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &65778814
@@ -1147,7 +1149,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &70909602
@@ -1249,7 +1253,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 150}
+  m_SizeDelta: {x: 65, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &71498386
 MonoBehaviour:
@@ -1559,7 +1563,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &74429152
@@ -1879,7 +1885,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &86596923
@@ -2007,7 +2015,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &87858482
@@ -2327,7 +2337,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &93218248
@@ -2676,7 +2688,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &117131111
@@ -2900,7 +2914,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &118408022
@@ -3220,7 +3236,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &124969320
@@ -3444,7 +3462,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &134408898
@@ -3668,7 +3688,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &139249434
@@ -4117,7 +4139,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &176452764
@@ -4741,7 +4765,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &210148027
@@ -4944,7 +4970,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &219258587
@@ -5339,7 +5367,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &232712299
@@ -5595,7 +5625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6a97527169a1bd44e94fbb34c2d9eb9b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b9d688a30469c341b22b585d11ab262, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5903,7 +5933,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &267268346
@@ -6127,7 +6159,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &272348062
@@ -6255,7 +6289,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &273056966
@@ -6580,7 +6616,7 @@ GameObject:
   - component: {fileID: 284411943}
   - component: {fileID: 284411942}
   m_Layer: 5
-  m_Name: Gipsofila3
+  m_Name: GipsofilaViolet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6625,7 +6661,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd7d7a90d02d6214eb478b5e02dde589, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cef33905559f74646ba6eca66d9f54dd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6678,7 +6714,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 110, y: 150}
+  m_SizeDelta: {x: 100, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &299229806
 MonoBehaviour:
@@ -7097,7 +7133,7 @@ GameObject:
   - component: {fileID: 318817725}
   - component: {fileID: 318817724}
   m_Layer: 5
-  m_Name: Gipsofila3Spawner
+  m_Name: GipsofilaVioletSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7232,14 +7268,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 519420031}
-  flower: {fileID: 11400000, guid: 4bf5e2bbf910a1a4c8d8658f19c6e383, type: 2}
-  flowerPrefab: {fileID: 3732360458341616958, guid: ee24dc8875e7833468b166938a61145a, type: 3}
+  flower: {fileID: 11400000, guid: 53e2c53c71bd7254396fe9f574d2d140, type: 2}
+  flowerPrefab: {fileID: 3732360458341616958, guid: 3863806c76ae31244a73b0c7320a7082, type: 3}
   bouquet: {fileID: 357295950}
   bouquetTip: {fileID: 535042131}
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &318817726
@@ -7367,7 +7405,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &332559670
@@ -7821,7 +7861,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &338803756
@@ -8120,7 +8162,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &342686147
@@ -8399,9 +8443,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSizeBase: 72
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -8437,7 +8481,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &351433421
@@ -8522,6 +8566,232 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352012741}
+  m_CullTransparentMesh: 1
+--- !u!1 &352642145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352642146}
+  - component: {fileID: 352642151}
+  - component: {fileID: 352642150}
+  - component: {fileID: 352642149}
+  - component: {fileID: 352642148}
+  - component: {fileID: 352642147}
+  m_Layer: 5
+  m_Name: GipsofilaOrangeSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &352642146
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352642145}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1971749336}
+  m_Father: {fileID: 457838642}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 200}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &352642147
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352642145}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -5103785549398910943, guid: 2156adcc50c29394c996a7a30fa4e5e5, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 3b722f8911d856c42ab811e31cfac986, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &352642148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352642145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c27e48d70fb004382ec1416cd430da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 519420031}
+  flower: {fileID: 11400000, guid: 4bf5e2bbf910a1a4c8d8658f19c6e383, type: 2}
+  flowerPrefab: {fileID: 3732360458341616958, guid: ee24dc8875e7833468b166938a61145a, type: 3}
+  bouquet: {fileID: 357295950}
+  bouquetTip: {fileID: 535042131}
+  basket: {fileID: 745225666}
+  basketTip: {fileID: 833937164}
+  content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
+  gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
+  buttonCreate: {fileID: 413580513}
+  buttonBack: {fileID: 313873359}
+--- !u!61 &352642149
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352642145}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.58, y: 2.38}
+    newSize: {x: 1.11, y: 1.67}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 150, y: 150}
+  m_EdgeRadius: 0
+--- !u!114 &352642150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352642145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 349bb544b4e97d347860401b02c0d754, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &352642151
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352642145}
   m_CullTransparentMesh: 1
 --- !u!1 &352829544
 GameObject:
@@ -8680,7 +8950,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &352829548
@@ -8841,7 +9113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &357295951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9166,7 +9438,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &368801198
@@ -9269,8 +9543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 521.8, y: -287.7}
-  m_SizeDelta: {x: 150, y: 40}
+  m_AnchoredPosition: {x: 537.9, y: -284}
+  m_SizeDelta: {x: 120, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373338347
 MonoBehaviour:
@@ -9348,8 +9622,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ca0cb987036000f4da3eca8a7c1fdaf3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -9636,7 +9910,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &383910142
@@ -10245,7 +10521,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &403048986
@@ -10603,7 +10881,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &433206956
@@ -11320,7 +11600,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &454161955
@@ -11592,6 +11874,7 @@ RectTransform:
   - {fileID: 1846990465}
   - {fileID: 1448013051}
   - {fileID: 318817723}
+  - {fileID: 352642146}
   - {fileID: 925958282}
   - {fileID: 1471512804}
   m_Father: {fileID: 98349552}
@@ -11786,8 +12069,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 317, y: -18}
-  m_SizeDelta: {x: 570, y: 587}
+  m_AnchoredPosition: {x: 317, y: -17}
+  m_SizeDelta: {x: 570, y: 589}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484038533
 MonoBehaviour:
@@ -11984,7 +12267,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &491881307
@@ -12244,7 +12529,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 150}
+  m_SizeDelta: {x: 70, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &525575305
 MonoBehaviour:
@@ -12442,7 +12727,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &545545068
@@ -12891,7 +13178,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &564350355
@@ -13410,7 +13699,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &601071128
@@ -13730,7 +14021,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &617402399
@@ -13847,14 +14140,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.71810126, g: 0.7139551, b: 0.7924528, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 197d063cfe844274fb06d40f33d57630, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14029,7 +14322,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &667922393
@@ -14253,7 +14548,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &682939836
@@ -14685,7 +14982,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &719387695
@@ -14851,7 +15150,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &723482266
@@ -15133,7 +15434,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &727896924
@@ -15261,7 +15564,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &738885744
@@ -16124,7 +16429,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &761469306
@@ -16444,7 +16751,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &762640319
@@ -16706,7 +17015,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &765020025
@@ -17026,7 +17337,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &769695957
@@ -17229,7 +17542,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &777189384
@@ -17774,7 +18089,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &793338310
@@ -18148,7 +18465,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &804104390
@@ -18468,6 +18787,7 @@ MonoBehaviour:
   buttonReset: {fileID: 760961038}
   buttonBack: {fileID: 313873359}
   sizeSlider: {fileID: 1932454989}
+  isDragging: 0
 --- !u!114 &810505144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18721,7 +19041,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &826024656
@@ -19215,7 +19537,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &846131116
@@ -19611,7 +19935,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &858080902
@@ -20006,7 +20332,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &878996107
@@ -20230,7 +20558,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &896015668
@@ -20569,7 +20899,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &916054691
@@ -21004,7 +21336,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &922855239
@@ -21105,11 +21439,11 @@ RectTransform:
   m_Children:
   - {fileID: 38386015}
   m_Father: {fileID: 457838642}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 170, y: 200}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &925958283
@@ -21228,7 +21562,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &925958285
@@ -21405,7 +21741,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 60, y: 150}
+  m_SizeDelta: {x: 55, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &945457679
 MonoBehaviour:
@@ -21747,7 +22083,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &954585872
@@ -22037,7 +22375,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &963781327
@@ -22400,7 +22740,7 @@ GameObject:
   - component: {fileID: 981225176}
   - component: {fileID: 981225175}
   m_Layer: 5
-  m_Name: Gipsofila1
+  m_Name: GipsofilaWhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22445,7 +22785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2f0ade8b626a5aa4ba0a3da61d3b083e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0571906fc185afa45bde56f0d156fcc8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22620,7 +22960,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &984015571
@@ -22699,7 +23041,7 @@ GameObject:
   - component: {fileID: 988435444}
   - component: {fileID: 988435443}
   m_Layer: 5
-  m_Name: Gipsofila2
+  m_Name: GipsofilaPink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22744,7 +23086,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db50f3bf103cb6a4bb107f860b99495f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9bb40f679352b3b4c9039ef00a439fc0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22931,7 +23273,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 60, y: 150}
+  m_SizeDelta: {x: 75, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009134018
 MonoBehaviour:
@@ -22953,7 +23295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 299f390832dd49d448115b756983cbbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8852bd0dfd7a684488feb681521b881, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23262,7 +23604,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1009940927
@@ -23547,7 +23891,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1012398987
@@ -23649,7 +23995,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 110, y: 150}
+  m_SizeDelta: {x: 100, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013702372
 MonoBehaviour:
@@ -23846,7 +24192,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1015953656
@@ -24107,7 +24455,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1019202857
@@ -24465,7 +24815,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1029501647
@@ -24610,7 +24962,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1031315205}
   m_OnClick:
     m_PersistentCalls:
@@ -24647,8 +24999,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ca0cb987036000f4da3eca8a7c1fdaf3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -24822,7 +25174,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1034120147
@@ -25046,7 +25400,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1034487904
@@ -25174,7 +25530,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1048522619
@@ -25372,7 +25730,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 150}
+  m_SizeDelta: {x: 110, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050439704
 MonoBehaviour:
@@ -25394,7 +25752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 94e7b09b2b92dd84e983fe25ada7e196, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b52ba1324fb7b4347ad086ccf7b8a7ec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25523,7 +25881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 441.5, y: -313.9}
+  m_AnchoredPosition: {x: 410.5, y: -313.9}
   m_SizeDelta: {x: 200, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1062318776
@@ -25765,7 +26123,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1063734808
@@ -26197,7 +26557,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1076568628
@@ -26421,7 +26783,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1076966386
@@ -26645,7 +27009,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1088427122
@@ -26869,7 +27235,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1091042783
@@ -26971,7 +27339,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 150}
+  m_SizeDelta: {x: 110, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098881720
 MonoBehaviour:
@@ -26993,7 +27361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fe715569d2065254196ddc30ad3ef13a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e24b82e4cb5bf914cb352d335bccad00, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27208,7 +27576,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1121253561
@@ -27432,7 +27802,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1123486844
@@ -27656,7 +28028,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1125883075
@@ -27880,7 +28254,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1130348601
@@ -27982,7 +28358,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 150}
+  m_SizeDelta: {x: 80, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1141827195
 MonoBehaviour:
@@ -28179,7 +28555,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1148799494
@@ -28356,7 +28734,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 150}
+  m_SizeDelta: {x: 60, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1168321670
 MonoBehaviour:
@@ -28553,7 +28931,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1174706282
@@ -28681,7 +29061,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1176127586
@@ -29076,7 +29458,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1200480176
@@ -29300,7 +29684,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1202661220
@@ -29428,7 +29814,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1221808070
@@ -29748,7 +30136,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1223767087
@@ -29850,7 +30240,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 150}
+  m_SizeDelta: {x: 110, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1228857416
 MonoBehaviour:
@@ -29872,7 +30262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e243164268e5d0d4db787464e1d0cd5f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8795146db950c5f46bdd97e9f5f5fee2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -29974,10 +30364,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 24
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -30013,7 +30403,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1242772816
@@ -30181,7 +30571,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1265337479
@@ -30405,7 +30797,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1275197255
@@ -30779,7 +31173,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1307642013
@@ -31003,7 +31399,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1308532943
@@ -31436,7 +31834,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1314009725
@@ -32004,8 +32404,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ca0cb987036000f4da3eca8a7c1fdaf3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -32463,7 +32863,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1414578529
@@ -32565,7 +32967,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 150}
+  m_SizeDelta: {x: 110, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421068160
 MonoBehaviour:
@@ -32587,7 +32989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a22493304105fdd49916bc31400f2cd2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61a048b7fac73684c99703da067da860, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -32666,7 +33068,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1431033703
@@ -32864,7 +33268,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 150}
+  m_SizeDelta: {x: 70, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435968805
 MonoBehaviour:
@@ -32919,7 +33323,7 @@ GameObject:
   - component: {fileID: 1448013053}
   - component: {fileID: 1448013052}
   m_Layer: 5
-  m_Name: Gipsofila2Spawner
+  m_Name: GipsofilaPinkSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33055,13 +33459,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCam: {fileID: 519420031}
   flower: {fileID: 11400000, guid: 1a0d917f3c51d434d8b4454f90a10cea, type: 2}
-  flowerPrefab: {fileID: 3732360458341616958, guid: 3863806c76ae31244a73b0c7320a7082, type: 3}
+  flowerPrefab: {fileID: 3732360458341616958, guid: 0466e151bd5f09d47a4bc04b4c9c609c, type: 3}
   bouquet: {fileID: 357295950}
   bouquetTip: {fileID: 535042131}
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1448013054
@@ -33297,7 +33703,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 150}
+  m_SizeDelta: {x: 60, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1469168094
 MonoBehaviour:
@@ -33371,11 +33777,11 @@ RectTransform:
   m_Children:
   - {fileID: 754014515}
   m_Father: {fileID: 457838642}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170, y: 200}
+  m_AnchoredPosition: {x: 340, y: 200}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1471512805
@@ -33494,7 +33900,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1471512807
@@ -34214,7 +34622,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 150}
+  m_SizeDelta: {x: 65, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513733650
 MonoBehaviour:
@@ -34315,7 +34723,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1525919673
@@ -34614,7 +35024,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1550458042
@@ -35246,7 +35658,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 150}
+  m_SizeDelta: {x: 60, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1600414878
 MonoBehaviour:
@@ -35518,7 +35930,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1602770087
@@ -35742,7 +36156,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1606451561
@@ -36041,7 +36457,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1652359954
@@ -36218,7 +36636,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 150}
+  m_SizeDelta: {x: 110, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673823792
 MonoBehaviour:
@@ -36240,7 +36658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c3aa7da073ae02a458d0787671942844, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8438d1647be06db439d80b26676ac812, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -36565,7 +36983,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1687989626
@@ -36716,10 +37136,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.8
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -36755,7 +37175,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1688630004
@@ -37222,7 +37642,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1709281138
@@ -37499,7 +37921,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -322.3, y: -307}
-  m_SizeDelta: {x: 569, y: 445}
+  m_SizeDelta: {x: 569, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1713102938
 MonoBehaviour:
@@ -37530,7 +37952,19 @@ MonoBehaviour:
   m_VerticalScrollbarSpacing: -3
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: EditFlowers, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1713102939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37956,7 +38390,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1742788974
@@ -38107,10 +38543,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54.45
-  m_fontSizeBase: 24
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -38146,7 +38582,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1746989903
@@ -38314,7 +38750,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1754183381
@@ -38490,8 +38928,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 316.9, y: 4.4}
-  m_SizeDelta: {x: 550, y: 530}
+  m_AnchoredPosition: {x: 316.9, y: 10.3}
+  m_SizeDelta: {x: 550, y: 510}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1754712686
 MonoBehaviour:
@@ -38540,7 +38978,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -38897,7 +39335,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1769125893
@@ -39121,7 +39561,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1772338895
@@ -39432,7 +39874,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 150}
+  m_SizeDelta: {x: 70, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1790059440
 MonoBehaviour:
@@ -39507,7 +39949,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 150}
+  m_SizeDelta: {x: 90, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1801687149
 MonoBehaviour:
@@ -39837,7 +40279,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1802464263
@@ -40014,7 +40458,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 150}
+  m_SizeDelta: {x: 90, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1820156470
 MonoBehaviour:
@@ -40353,7 +40797,7 @@ GameObject:
   - component: {fileID: 1846990467}
   - component: {fileID: 1846990466}
   m_Layer: 5
-  m_Name: Gipsofila1Spawner
+  m_Name: GipsofilaWhiteSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40495,7 +40939,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1846990468
@@ -40597,7 +41043,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 150}
+  m_SizeDelta: {x: 60, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847658728
 MonoBehaviour:
@@ -40794,7 +41240,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1863376831
@@ -41018,7 +41466,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1872832391
@@ -41296,7 +41746,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1880533117
@@ -41616,7 +42068,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1893101094
@@ -41840,7 +42294,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1899138737
@@ -42552,7 +43008,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1962376311
@@ -42828,6 +43286,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969580065}
   m_CullTransparentMesh: 1
+--- !u!1 &1971749335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1971749336}
+  - component: {fileID: 1971749338}
+  - component: {fileID: 1971749337}
+  m_Layer: 5
+  m_Name: GipsofilaOrange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1971749336
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971749335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 352642146}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1971749337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971749335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 39c6aab77571573469bb775fb8abea4a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1971749338
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971749335}
+  m_CullTransparentMesh: 1
 --- !u!1 &1972574080
 GameObject:
   m_ObjectHideFlags: 0
@@ -42863,7 +43396,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 150}
+  m_SizeDelta: {x: 70, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1972574082
 MonoBehaviour:
@@ -43060,7 +43593,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1977610893
@@ -43284,7 +43819,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1986593746
@@ -43583,7 +44120,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1989735977
@@ -44045,8 +44584,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 546, y: -282.6}
-  m_SizeDelta: {x: 100, y: 50}
+  m_AnchoredPosition: {x: 531.3, y: -282.6}
+  m_SizeDelta: {x: 130, y: 46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2014474927
 MonoBehaviour:
@@ -44124,8 +44663,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ca0cb987036000f4da3eca8a7c1fdaf3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -44668,7 +45207,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 150}
+  m_SizeDelta: {x: 60, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2057014641
 MonoBehaviour:
@@ -44940,7 +45479,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2060894170
@@ -45068,7 +45609,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2063429340
@@ -45361,13 +45904,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCam: {fileID: 519420031}
   flower: {fileID: 11400000, guid: 2ea35a463e3b6694999187c62c81ab69, type: 2}
-  flowerPrefab: {fileID: 3732360458341616958, guid: 0c2fa717d35967b4aa70ad5728c3452b, type: 3}
+  flowerPrefab: {fileID: 3732360458341616958, guid: aa4ba79957a1a76438bcfb1a2d95e4ca, type: 3}
   bouquet: {fileID: 357295950}
   bouquetTip: {fileID: 535042131}
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2078546583
@@ -45837,7 +46382,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2105796524
@@ -46061,7 +46608,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2111890697
@@ -46419,7 +46968,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2120783539
@@ -46622,7 +47173,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2124798770
@@ -46942,7 +47495,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2128229089
@@ -47241,7 +47796,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2135856852
@@ -47540,7 +48097,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2139372170
@@ -47764,7 +48323,9 @@ MonoBehaviour:
   basket: {fileID: 745225666}
   basketTip: {fileID: 833937164}
   content: {fileID: 98349551}
+  desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  canvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2143530324

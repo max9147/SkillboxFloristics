@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: Ornitogalum
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: 6a97527169a1bd44e94fbb34c2d9eb9b, type: 3}
-  imageL: {fileID: 21300000, guid: 6a97527169a1bd44e94fbb34c2d9eb9b, type: 3}
-  imageR: {fileID: 21300000, guid: 6a97527169a1bd44e94fbb34c2d9eb9b, type: 3}
+  imageC: {fileID: 21300000, guid: 7b9d688a30469c341b22b585d11ab262, type: 3}
+  imageL: {fileID: 21300000, guid: bdcbbf89cc700074a87a8237984b7c2b, type: 3}
+  imageR: {fileID: 21300000, guid: 9134e319c22e5954a9552c6dd950246b, type: 3}
+  color: 0
   size: Details
+  flowerName: "\u041E\u0440\u043D\u0438\u0442\u043E\u0433\u0430\u043B\u0443\u043C"

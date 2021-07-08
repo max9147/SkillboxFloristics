@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -14,11 +15,14 @@ public class DragFlowers : MonoBehaviour
     public GameObject basket;
     public GameObject basketTip;
     public GameObject content; //Контент элемента scrollview
+    public GameObject desctiptionMenu;
     public GameObject gameManager;
+    public GameObject canvas;
     public Button buttonCreate;
     public Button buttonBack;
 
     private GameObject flowerToDrag;
+    private GameObject curMenu;
     private Vector3 snappedPos;
     private Ray ray;
     private float contentPos;
@@ -36,6 +40,7 @@ public class DragFlowers : MonoBehaviour
             GetComponent<AudioSource>().Play();
             contentPos = content.GetComponent<RectTransform>().localPosition.y; //Положение content во время взятия цветка
             buttonCreate.interactable = false; //Запрещаем создавать композицию пока тащим цветок
+            gameManager.GetComponent<EditFlowers>().isDragging = true;
             isDragging = true;
             canTake = false;
             Vector3 spawnPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Координаты курсора, но z=0
@@ -46,6 +51,7 @@ public class DragFlowers : MonoBehaviour
     private void OnMouseUp()
     {
         isDragging = false;
+        gameManager.GetComponent<EditFlowers>().isDragging = false;
 
         if (bouquet.GetComponent<ArrangeBouquet>().CheckFlowerPos() || basket.GetComponent<ArrangeBasket>().CheckFlowerPos()) //Проверка на нахождение цветка в области композиции
         {            
@@ -54,6 +60,25 @@ public class DragFlowers : MonoBehaviour
 
         bouquet.transform.position = new Vector3(bouquet.transform.position.x, bouquet.transform.position.y, 0.01f);
         basket.transform.position = new Vector3(basket.transform.position.x, basket.transform.position.y, 0.01f);
+    }
+
+    private void OnMouseEnter()
+    {
+        if (transform.position.y <= -1.8f || transform.position.y >= 2.5f) return;
+        if (gameManager.GetComponent<TabsChange>().CheckDescriptionOpen() || gameManager.GetComponent<ScoringSystem>().CheckIsOpen() || gameManager.GetComponent<SelectType>().CheckIsOpen() || gameManager.GetComponent<EditFlowers>().isDragging) return;
+        curMenu = Instantiate(desctiptionMenu, canvas.transform);
+        curMenu.transform.Find("FlowerNameText").GetComponent<TextMeshProUGUI>().text = flower.flowerName;
+        if (transform.position.y >= -0.85f) curMenu.transform.position = transform.position - new Vector3(0, 0.6f, 0);
+        else
+        {
+            curMenu.transform.position = transform.position + new Vector3(0, 0.6f, 0);
+            curMenu.transform.Find("Background").localScale = new Vector3(1, -1, 1);
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        Destroy(curMenu);
     }
 
     private void Update()

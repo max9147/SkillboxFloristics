@@ -15,8 +15,12 @@ public class TabsChange : MonoBehaviour
     public GameObject green;
     public TextMeshProUGUI descriptionText;
 
+    private GameObject toDestroy;
+
     public void ChangeTab(int id)
     {
+        toDestroy = GameObject.FindGameObjectWithTag("Description");
+        Destroy(toDestroy);
         content.GetComponent<AudioSource>().Play();
         content.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
         switch (id)
@@ -84,6 +88,8 @@ public class TabsChange : MonoBehaviour
 
     public void OpenDescription()
     {
+        toDestroy = GameObject.FindGameObjectWithTag("Description");
+        Destroy(toDestroy);
         content.GetComponent<AudioSource>().Play();
         if (description.activeInHierarchy) description.SetActive(false);
         else description.SetActive(true);

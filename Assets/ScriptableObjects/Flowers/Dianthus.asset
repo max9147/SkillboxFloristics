@@ -17,3 +17,4 @@ MonoBehaviour:
   imageR: {fileID: 21300000, guid: 65ad2dca00b2a464088de97d9692a3a0, type: 3}
   color: 5
   size: Base
+  flowerName: "\u0413\u0432\u043E\u0437\u0434\u0438\u043A\u0430"

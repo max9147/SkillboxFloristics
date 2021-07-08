@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: Kraspedia
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: 299f390832dd49d448115b756983cbbc, type: 3}
-  imageL: {fileID: 21300000, guid: 299f390832dd49d448115b756983cbbc, type: 3}
-  imageR: {fileID: 21300000, guid: 299f390832dd49d448115b756983cbbc, type: 3}
+  imageC: {fileID: 21300000, guid: f8852bd0dfd7a684488feb681521b881, type: 3}
+  imageL: {fileID: 21300000, guid: 7eb039c7cc22f6b4395ee273e879708f, type: 3}
+  imageR: {fileID: 21300000, guid: 8e7bb3e9adbd25d4096979212d25e274, type: 3}
   color: 1
   size: Details
+  flowerName: "\u041A\u0440\u0430\u0441\u043F\u0435\u0434\u0438\u044F"

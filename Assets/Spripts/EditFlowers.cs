@@ -15,6 +15,7 @@ public class EditFlowers : MonoBehaviour
     public Button buttonReset;
     public Button buttonBack;
     public Slider sizeSlider;
+    public bool isDragging = false;
 
     private GameObject prevFlower;
     private GameObject curMenu;
