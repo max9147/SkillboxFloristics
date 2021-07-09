@@ -43,7 +43,8 @@ public class EditFlowers : MonoBehaviour
         isEditing = true;
         curMenu = Instantiate(editMenu, canvas.transform);
         Vector3 curPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Текущая позиция курсора
-        curMenu.transform.position = curPos - new Vector3(0, 0.7f, 0);
+        if (curPos.y >= -2.2f) curMenu.transform.position = curPos - new Vector3(0, 0.7f, 0);
+        else curMenu.transform.position = new Vector3(curPos.x, -2.9f, 0);
         curMenu.transform.Find("ExitButton").GetComponentInChildren<Button>().onClick.AddListener(delegate { this.StopEdit(); });
         curMenu.transform.Find("RemoveButton").GetComponentInChildren<Button>().onClick.AddListener(delegate { this.RemoveFlower(flower); });
         curMenu.transform.Find("LayerUpButton").GetComponentInChildren<Button>().onClick.AddListener(delegate { this.LayerUp(flower); });
