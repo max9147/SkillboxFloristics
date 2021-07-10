@@ -31,7 +31,7 @@ public class TabsChange : MonoBehaviour
                 fillFlowers.SetActive(false);
                 detailFlowers.SetActive(false);
                 green.SetActive(false);
-                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 900);
+                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 1570);
                 descriptionText.text = "Фокусные цветы - это главные растения в подборе, как правило, это необычные элитарные растения или растения доминирующие " +
                     "за счет большого размера или яркого окраса.";
                 break;
@@ -42,7 +42,7 @@ public class TabsChange : MonoBehaviour
                 fillFlowers.SetActive(false);
                 detailFlowers.SetActive(false);
                 green.SetActive(false);
-                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 900);
+                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 1440);
                 descriptionText.text = "Базовые цветы - их задача состоит в подчеркивании красоты фокусного цветка, в создании объема букета. Их цена обычно ниже, чем у фокусных цветов. " +
                     "Одно и то же растение может выступать в букете как фокусное растение, так и как базовое, в зависимости от общего ассортимента. " +
                     "В составе базовых растений лучше замешивать не меньше 3 - х видов или сортов растений с разным размеров головы, отличающиеся по внешнему строению.";
@@ -65,7 +65,7 @@ public class TabsChange : MonoBehaviour
                 fillFlowers.SetActive(false);
                 detailFlowers.SetActive(true);
                 green.SetActive(false);
-                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 650);
+                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 660);
                 descriptionText.text = "Как правило, это растения с небольшим размером бутона, не всегда добавляющие подбору объема, но при этом их необычная легкая структура усиливает " +
                     "выразительные качества состава. Обычно их располагают над общим уровнем цветов и часто называют “бабочками”.";
                 break;
@@ -76,7 +76,7 @@ public class TabsChange : MonoBehaviour
                 fillFlowers.SetActive(false);
                 detailFlowers.SetActive(false);
                 green.SetActive(true);
-                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 780);
+                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 790);
                 descriptionText.text = "Зелень в букете может выполнять техническую роль (фиксация стеблей, создание зеленой подушки) или декоративную (интересный окрас " +
                     "или форма листьев, ветвей). Для создания выигрышного подбора рекомендуем сочетать несколько видов зелени, отличающейся по размеру, форме или окрасу листа.";
                 break;

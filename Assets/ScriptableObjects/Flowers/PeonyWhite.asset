@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
+  m_Name: PeonyWhite
+  m_EditorClassIdentifier: 
+  imageC: {fileID: 21300000, guid: 1c53e7f07ca5f2f4d81337d28ffc7c7e, type: 3}
+  imageL: {fileID: 21300000, guid: 5a47b4113299b0e42a34b5c4a9968ffe, type: 3}
+  imageR: {fileID: 21300000, guid: 33805fa1f359c45499fbf9c5fc108187, type: 3}
+  color: 0
+  size: Focus
+  flowerName: "\u041F\u0438\u043E\u043D \u0431\u0435\u043B\u044B\u0439"

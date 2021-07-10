@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: Freesia
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: fbb3e818f518cd0478a2bc69434e0b56, type: 3}
-  imageL: {fileID: 21300000, guid: fbb3e818f518cd0478a2bc69434e0b56, type: 3}
-  imageR: {fileID: 21300000, guid: fbb3e818f518cd0478a2bc69434e0b56, type: 3}
+  imageC: {fileID: 21300000, guid: 362cb1a4732a45f49b3bf1cbe91f2131, type: 3}
+  imageL: {fileID: 21300000, guid: 6415f82bd3dd15144b1d75dc0d03a099, type: 3}
+  imageR: {fileID: 21300000, guid: 8501a704ac2c4264da2b4e54b103b9f3, type: 3}
   color: 3
   size: Details
   flowerName: "\u0424\u0440\u0435\u0437\u0438\u044F"

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
+  m_Name: GerberaWhite
+  m_EditorClassIdentifier: 
+  imageC: {fileID: 21300000, guid: 1deaa0c13d0a3984c92978dedfbb28fa, type: 3}
+  imageL: {fileID: 21300000, guid: 9e0a77ba2560ad047b841664b76ffe9b, type: 3}
+  imageR: {fileID: 21300000, guid: 09dff65a0df199941b8c7da8d0780855, type: 3}
+  color: 0
+  size: Base
+  flowerName: "\u0413\u0435\u0440\u0431\u0435\u0440\u0430 \u0431\u0435\u043B\u0430\u044F"
