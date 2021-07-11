@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
+  m_Name: DahliaBord
+  m_EditorClassIdentifier: 
+  imageC: {fileID: 21300000, guid: cf5a16cd2606e2a4ba63f2389d489e8a, type: 3}
+  imageL: {fileID: 21300000, guid: 6047bf64faa4cab44ace880ea9524bf5, type: 3}
+  imageR: {fileID: 21300000, guid: d7f8e7b4ac2de6847b59dba1c96e49e4, type: 3}
+  color: 5
+  size: Base
+  flowerName: "\u0413\u0435\u043E\u0440\u0433\u0438\u043D \u0431\u043E\u0440\u0434\u043E\u0432\u044B\u0439"

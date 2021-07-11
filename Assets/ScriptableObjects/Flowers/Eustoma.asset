@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: Eustoma
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: 7d96cd1fc4ca15643824b9582d5d231b, type: 3}
-  imageL: {fileID: 21300000, guid: 5d2edac6eef487f48a6b8375ef57d8ae, type: 3}
-  imageR: {fileID: 21300000, guid: a5aa91442fe726b4eb133c1aef1f29b6, type: 3}
+  imageC: {fileID: 21300000, guid: c35beb5d55a24a246a2653bcc2f024ab, type: 3}
+  imageL: {fileID: 21300000, guid: c35beb5d55a24a246a2653bcc2f024ab, type: 3}
+  imageR: {fileID: 21300000, guid: c35beb5d55a24a246a2653bcc2f024ab, type: 3}
   color: 7
   size: Base
   flowerName: "\u042D\u0443\u0441\u0442\u043E\u043C\u0430"

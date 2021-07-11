@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
+  m_Name: TulipPink
+  m_EditorClassIdentifier: 
+  imageC: {fileID: 21300000, guid: 384dcc0a6e0e88a449d40aca1d78826a, type: 3}
+  imageL: {fileID: 21300000, guid: 8ff4cfd79ed4571499e6b4c3b81ea6ea, type: 3}
+  imageR: {fileID: 21300000, guid: 8cf7526fe8727db4090a468acfb6f712, type: 3}
+  color: 6
+  size: Base
+  flowerName: "\u0422\u044E\u043B\u044C\u043F\u0430\u043D \u0440\u043E\u0437\u043E\u0432\u044B\u0439"

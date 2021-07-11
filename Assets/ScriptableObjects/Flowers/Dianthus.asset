@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: Dianthus
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: 65ad2dca00b2a464088de97d9692a3a0, type: 3}
-  imageL: {fileID: 21300000, guid: 65ad2dca00b2a464088de97d9692a3a0, type: 3}
-  imageR: {fileID: 21300000, guid: 65ad2dca00b2a464088de97d9692a3a0, type: 3}
+  imageC: {fileID: 21300000, guid: 769a1b3ebc5754d4d804f1656831d35b, type: 3}
+  imageL: {fileID: 21300000, guid: 769a1b3ebc5754d4d804f1656831d35b, type: 3}
+  imageR: {fileID: 21300000, guid: 769a1b3ebc5754d4d804f1656831d35b, type: 3}
   color: 5
   size: Base
   flowerName: "\u0413\u0432\u043E\u0437\u0434\u0438\u043A\u0430"

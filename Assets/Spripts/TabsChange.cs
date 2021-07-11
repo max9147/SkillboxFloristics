@@ -42,7 +42,7 @@ public class TabsChange : MonoBehaviour
                 fillFlowers.SetActive(false);
                 detailFlowers.SetActive(false);
                 green.SetActive(false);
-                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 1440);
+                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 3130);
                 descriptionText.text = "Базовые цветы - их задача состоит в подчеркивании красоты фокусного цветка, в создании объема букета. Их цена обычно ниже, чем у фокусных цветов. " +
                     "Одно и то же растение может выступать в букете как фокусное растение, так и как базовое, в зависимости от общего ассортимента. " +
                     "В составе базовых растений лучше замешивать не меньше 3 - х видов или сортов растений с разным размеров головы, отличающиеся по внешнему строению.";
@@ -54,7 +54,7 @@ public class TabsChange : MonoBehaviour
                 fillFlowers.SetActive(true);
                 detailFlowers.SetActive(false);
                 green.SetActive(false);
-                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 400);
+                content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 1050);
                 descriptionText.text = "Растения с мелким бутоном или с цветками небольшого размера, собранными в соцветия. Они заполняют пространство " +
                     "между крупными бутонами, добавляют в букет разноразмерности.";
                 break;
