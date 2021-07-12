@@ -17,7 +17,6 @@ public class DragFlowers : MonoBehaviour
     public GameObject content; //Контент элемента scrollview
     public GameObject desctiptionMenu;
     public GameObject gameManager;
-    public GameObject canvas;
     public Button buttonCreate;
     public Button buttonBack;
 
@@ -62,7 +61,7 @@ public class DragFlowers : MonoBehaviour
     {
         if (transform.position.y <= -1.8f || transform.position.y >= 2.5f) return;
         if (gameManager.GetComponent<TabsChange>().CheckDescriptionOpen() || gameManager.GetComponent<ScoringSystem>().CheckIsOpen() || gameManager.GetComponent<SelectType>().CheckIsOpen() || gameManager.GetComponent<EditFlowers>().isDragging) return;
-        curMenu = Instantiate(desctiptionMenu, canvas.transform);
+        curMenu = Instantiate(desctiptionMenu, transform);
         curMenu.transform.Find("FlowerNameText").GetComponent<TextMeshProUGUI>().text = flower.flowerName;
         if (transform.position.y >= -0.85f) curMenu.transform.position = transform.position - new Vector3(0, 0.6f, 0);
         else

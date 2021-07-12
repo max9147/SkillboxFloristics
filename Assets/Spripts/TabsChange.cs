@@ -7,7 +7,6 @@ public class TabsChange : MonoBehaviour
 {
     public GameObject description;
     public GameObject content;
-    public GameObject soundButton;
     public GameObject focusFlowers;
     public GameObject baseFlowers;
     public GameObject fillFlowers;

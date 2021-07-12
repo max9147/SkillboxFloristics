@@ -10,6 +10,7 @@ public class EditFlowers : MonoBehaviour
     public GameObject bouquet;
     public GameObject basket;
     public GameObject positionArrow;
+    public GameObject soundButton;
     public Camera mainCam;
     public Button buttonCreate;
     public Button buttonReset;
@@ -53,12 +54,14 @@ public class EditFlowers : MonoBehaviour
 
     public void StopEdit()
     {
+        soundButton.GetComponent<AudioSource>().Play();
         isEditing = false;
         Destroy(curMenu);
     }
 
     public void RemoveFlower(GameObject flower)
     {
+        soundButton.GetComponent<AudioSource>().Play();
         isEditing = false;
         Destroy(flower);
         Destroy(curMenu);
@@ -119,6 +122,7 @@ public class EditFlowers : MonoBehaviour
 
     public void LayerUp(GameObject flower)
     {
+        soundButton.GetComponent<AudioSource>().Play();
         flowers = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in flowers) //Перебираем цветы на сцене
         {
@@ -135,6 +139,7 @@ public class EditFlowers : MonoBehaviour
 
     public void LayerDown(GameObject flower)
     {
+        soundButton.GetComponent<AudioSource>().Play();
         flowers = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in flowers) //Перебираем цветы на сцене
         {
