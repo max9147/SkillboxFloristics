@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TabsChange : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class TabsChange : MonoBehaviour
     public GameObject fillFlowers;
     public GameObject detailFlowers;
     public GameObject green;
+    public GameObject[] buttons;
+    public Sprite button;
+    public Sprite buttonGreen;
+    public Sprite buttonPressed;
+    public Sprite buttonGreenPressed;
     public TextMeshProUGUI descriptionText;
 
     private GameObject toDestroy;
@@ -22,9 +28,16 @@ public class TabsChange : MonoBehaviour
         Destroy(toDestroy);
         content.GetComponent<AudioSource>().Play();
         content.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
+
+        foreach (var item in buttons)
+            item.GetComponent<Image>().sprite = button;
+        buttons[4].GetComponent<Image>().sprite = buttonGreen;
+        if (id == 5) buttons[4].GetComponent<Image>().sprite = buttonGreenPressed;
+        else buttons[id - 1].GetComponent<Image>().sprite = buttonPressed;
+
         switch (id)
         {
-            case 1:
+            case 1:                
                 focusFlowers.SetActive(true);
                 baseFlowers.SetActive(false);
                 fillFlowers.SetActive(false);

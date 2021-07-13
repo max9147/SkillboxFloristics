@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: NarcissusBig
   m_EditorClassIdentifier: 
   imageC: {fileID: 21300000, guid: fc47c08cb4f16554ab0b1bb403934c39, type: 3}
-  imageL: {fileID: 21300000, guid: fc47c08cb4f16554ab0b1bb403934c39, type: 3}
-  imageR: {fileID: 21300000, guid: fc47c08cb4f16554ab0b1bb403934c39, type: 3}
+  imageL: {fileID: 21300000, guid: b7caeaef1833a01469f0610c42a22835, type: 3}
+  imageR: {fileID: 21300000, guid: e5b95297241ddad40804799699da49e0, type: 3}
   color: 0
   size: Base
   flowerName: "\u041D\u0430\u0440\u0446\u0438\u0441\u0441 \u0431\u043E\u043B\u044C\u0448\u043E\u0439"

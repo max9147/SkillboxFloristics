@@ -54,7 +54,6 @@ public class EditFlowers : MonoBehaviour
 
     public void StopEdit()
     {
-        soundButton.GetComponent<AudioSource>().Play();
         isEditing = false;
         Destroy(curMenu);
     }
