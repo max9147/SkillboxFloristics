@@ -51,6 +51,7 @@ public class CreateComp : MonoBehaviour
         {
             item.GetComponent<DragFlowers>().AllowTaking();
         }
+        GetComponent<SelectType>().InitSelection();
     }
 
     public void PressRemove()

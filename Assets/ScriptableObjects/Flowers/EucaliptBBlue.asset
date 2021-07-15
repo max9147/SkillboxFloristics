@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: EucaliptBBlue
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: 25a4ffae6ccd62948a7cd78e7a0f1098, type: 3}
-  imageL: {fileID: 21300000, guid: 25a4ffae6ccd62948a7cd78e7a0f1098, type: 3}
-  imageR: {fileID: 21300000, guid: 25a4ffae6ccd62948a7cd78e7a0f1098, type: 3}
+  imageC: {fileID: 21300000, guid: c1ada9aab7896204ea4dc26c9920e03d, type: 3}
+  imageL: {fileID: 21300000, guid: c1ada9aab7896204ea4dc26c9920e03d, type: 3}
+  imageR: {fileID: 21300000, guid: c1ada9aab7896204ea4dc26c9920e03d, type: 3}
   color: 0
   size: Green
   flowerName: "\u042D\u0432\u043A\u0430\u043B\u0438\u043F\u0442 \u0431\u044D\u0431\u0438

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: RuskusItal
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: b18b460cb4a490a4fa2857719df79e4c, type: 3}
-  imageL: {fileID: 21300000, guid: b18b460cb4a490a4fa2857719df79e4c, type: 3}
-  imageR: {fileID: 21300000, guid: b18b460cb4a490a4fa2857719df79e4c, type: 3}
+  imageC: {fileID: 21300000, guid: 9567a96186e5cfd49b6cf2d266235a75, type: 3}
+  imageL: {fileID: 21300000, guid: 9567a96186e5cfd49b6cf2d266235a75, type: 3}
+  imageR: {fileID: 21300000, guid: 9567a96186e5cfd49b6cf2d266235a75, type: 3}
   color: 0
   size: Green
   flowerName: "\u0420\u0443\u0441\u043A\u0443\u0441 \u0438\u0442\u0430\u043B\u044C\u044F\u043D\u0441\u043A\u0438\u0439"

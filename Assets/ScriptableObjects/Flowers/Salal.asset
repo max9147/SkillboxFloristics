@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Salal
   m_EditorClassIdentifier: 
   imageC: {fileID: 21300000, guid: a9bdd8f6a923d1b499415078aec4fd1e, type: 3}
-  imageL: {fileID: 21300000, guid: a9bdd8f6a923d1b499415078aec4fd1e, type: 3}
-  imageR: {fileID: 21300000, guid: a9bdd8f6a923d1b499415078aec4fd1e, type: 3}
+  imageL: {fileID: 21300000, guid: 1257175f1446cbf479707f20af59d483, type: 3}
+  imageR: {fileID: 21300000, guid: 6644b57a16d2ea341a71794b5d1ccd23, type: 3}
   color: 0
   size: Green
   flowerName: "\u0421\u0430\u043B\u0430\u043B"

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: Monstera
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: b781daa73bc10a3419f2cd0e4b7baafd, type: 3}
-  imageL: {fileID: 21300000, guid: b781daa73bc10a3419f2cd0e4b7baafd, type: 3}
-  imageR: {fileID: 21300000, guid: b781daa73bc10a3419f2cd0e4b7baafd, type: 3}
+  imageC: {fileID: 21300000, guid: a5a09bd9c971c7b4aa34d945b573549a, type: 3}
+  imageL: {fileID: 21300000, guid: a5a09bd9c971c7b4aa34d945b573549a, type: 3}
+  imageR: {fileID: 21300000, guid: a5a09bd9c971c7b4aa34d945b573549a, type: 3}
   color: 0
   size: Green
   flowerName: "\u041C\u043E\u043D\u0441\u0442\u0435\u0440\u0430"

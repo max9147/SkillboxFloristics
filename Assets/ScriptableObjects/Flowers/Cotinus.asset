@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: Cotinus
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: bddf93716c7103b49960dc352f37c9c3, type: 3}
-  imageL: {fileID: 21300000, guid: bddf93716c7103b49960dc352f37c9c3, type: 3}
-  imageR: {fileID: 21300000, guid: bddf93716c7103b49960dc352f37c9c3, type: 3}
+  imageC: {fileID: 21300000, guid: fd9927065515d75488da1505deaf19f3, type: 3}
+  imageL: {fileID: 21300000, guid: fd9927065515d75488da1505deaf19f3, type: 3}
+  imageR: {fileID: 21300000, guid: fd9927065515d75488da1505deaf19f3, type: 3}
   color: 0
   size: Green
   flowerName: "\u041A\u043E\u0442\u0438\u043D\u0443\u0441"

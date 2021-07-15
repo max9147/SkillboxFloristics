@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bb756f46c0083488821881d795bf1d, type: 3}
   m_Name: Samshit
   m_EditorClassIdentifier: 
-  imageC: {fileID: 21300000, guid: d68b7990ad6c4954a996e13be762fd66, type: 3}
-  imageL: {fileID: 21300000, guid: d68b7990ad6c4954a996e13be762fd66, type: 3}
-  imageR: {fileID: 21300000, guid: d68b7990ad6c4954a996e13be762fd66, type: 3}
+  imageC: {fileID: 21300000, guid: 0b50abd24288c484691895a2d8d3a841, type: 3}
+  imageL: {fileID: 21300000, guid: 0b50abd24288c484691895a2d8d3a841, type: 3}
+  imageR: {fileID: 21300000, guid: 0b50abd24288c484691895a2d8d3a841, type: 3}
   color: 0
   size: Green
   flowerName: "\u0421\u0430\u043C\u0448\u0438\u0442"
