@@ -108,7 +108,7 @@ public class DragFlowers : MonoBehaviour
                         snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 2, 0); //Находим место цветка в букете
                     }
 
-                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 5); //Перемещаем цветок в букет
+                    flowerToDrag.transform.position = snappedPos;
                     flowerToDrag.transform.up = (bouquetTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри букета
 
                     if (bouquet.transform.position.x - flowerToDrag.transform.position.x > 0.35f) //Если цветок в левой части букета
@@ -132,7 +132,7 @@ public class DragFlowers : MonoBehaviour
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
                     flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри корзины
                     snappedPos = new Vector3((basket.transform.position.x + curPos.x) / 2, curPos.y+2, 0); //Находим место цветка в корзине
-                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, snappedPos, 5); //Перемещаем цветок в корзину
+                    flowerToDrag.transform.position = snappedPos;
                 }
                 else
                 {
@@ -140,7 +140,7 @@ public class DragFlowers : MonoBehaviour
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.None;
                     flowerToDrag.GetComponent<SpriteRenderer>().sprite = flower.imageC;
                     flowerToDrag.transform.rotation = Quaternion.identity; //Обнуляем вращение цветка
-                    flowerToDrag.transform.position = Vector3.MoveTowards(flowerToDrag.transform.position, curPos, 5f); //Перемещаем цветок к курсору
+                    flowerToDrag.transform.position = curPos;
                 }
             }
             else

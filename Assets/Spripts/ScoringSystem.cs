@@ -161,6 +161,11 @@ public class ScoringSystem : MonoBehaviour
 
     private int CheckColor()
     {
+        if (flowerColors.Count == 0)
+        {
+            colorString = "Нет цветовой гаммы";
+            return 0;
+        }
         foreach (var item in flowerColors)
         {
             switch (item)
