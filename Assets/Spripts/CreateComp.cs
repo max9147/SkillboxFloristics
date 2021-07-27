@@ -52,6 +52,7 @@ public class CreateComp : MonoBehaviour
             item.GetComponent<DragFlowers>().AllowTaking();
         }
         GetComponent<SelectType>().InitSelection();
+        GetComponent<ScoringSystem>().CheckColorMeter();
     }
 
     public void PressRemove()
@@ -118,5 +119,6 @@ public class CreateComp : MonoBehaviour
         {
             buttonCreate.interactable = true;
         }
+        GetComponent<ScoringSystem>().CheckColorMeter();
     }
 }

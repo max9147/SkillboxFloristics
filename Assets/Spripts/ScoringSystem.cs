@@ -10,6 +10,10 @@ public class ScoringSystem : MonoBehaviour
     public GameObject scoreScreen;
     public GameObject soundButton;
     public GameObject positionArrow;
+    public GameObject MonochromeMeter;
+    public GameObject ContrastMeter;
+    public GameObject HarmonyMeter;
+    public GameObject ContrastHarmonyMeter;
     public GameObject[] stars;
     public List<GameObject> addedFlowers = new List<GameObject>();
     public List<FlowerColor> flowerColors = new List<FlowerColor>();
@@ -31,6 +35,10 @@ public class ScoringSystem : MonoBehaviour
     public Slider sizeSlider;
 
     private GameObject[] toDestroy;
+    private FlowerColor most;
+    private int contrastMaxCombo = 0;
+    private int harmonyMaxCombo = 0;
+    private int contrastHarmonyMaxCombo = 0;
     private int focusCount = 0;
     private int baseCount = 0;
     private int fillCount = 0;
@@ -275,7 +283,7 @@ public class ScoringSystem : MonoBehaviour
     private int CheckMonochrome()
     {
         int score = 1000;
-        FlowerColor most = flowerColors.GroupBy(i => i).OrderByDescending(grp => grp.Count())
+        most = flowerColors.GroupBy(i => i).OrderByDescending(grp => grp.Count())
       .Select(grp => grp.Key).First();
         foreach (var item in flowerColors)
         {
@@ -340,17 +348,17 @@ public class ScoringSystem : MonoBehaviour
         }
         int[] combos = { yellowViolet, lightOrangeDarkBlue, orangeBlue, darkOrangeLightBlue, redGreen, pinkLightGreen };
         int max = 0;
-        int maxCombo=6;
+        contrastMaxCombo=6;
         for (int i = 0; i < combos.Length; i++)
         {
             if (combos[i] > max)
             {
                 max = combos[i];
-                maxCombo = i;
+                contrastMaxCombo = i;
             }
         }
         contrastCount = max;
-        switch (maxCombo)
+        switch (contrastMaxCombo)
         {
             case 0:
                 if (yellowColored == violetColored) score = 1000;
@@ -430,17 +438,17 @@ public class ScoringSystem : MonoBehaviour
         }
         int[] combos = { yellowRedBlue, lightOrangePinkLightBlue, orangeVioletGreen, darkOrangeDarkBlueLightGreen };
         int max = 0;
-        int maxCombo = 4;
+        harmonyMaxCombo = 4;
         for (int i = 0; i < combos.Length; i++)
         {
             if (combos[i] > max)
             {
                 max = combos[i];
-                maxCombo = i;
+                harmonyMaxCombo = i;
             }
         }
         harmonyCount = max;
-        switch (maxCombo)
+        switch (harmonyMaxCombo)
         {
             case 0:
                 if ((yellowColored == redColored) && (yellowColored == blueColored)) score = 1500;
@@ -547,17 +555,17 @@ public class ScoringSystem : MonoBehaviour
         int[] combos = { yellowPinkDarkBlue, lightOrangeVioletBlue, orangeDarkBlueLightBlue, darkOrangeBlueGreen, redLightBlueLightGreen, pinkGreenYellow, violetLightGreenLightOrange,
             darkBlueYellowOrange, blueLightOrangeDarkOrange, lightBlueOrangeRed, greenDarkOrangePink, lightGreenRedViolet };
         int max = 0;
-        int maxCombo = 12;
+        contrastHarmonyMaxCombo = 12;
         for (int i = 0; i < combos.Length; i++)
         {
             if (combos[i] > max)
             {
                 max = combos[i];
-                maxCombo = i;
+                contrastHarmonyMaxCombo = i;
             }
         }
         contrastHarmonyCount = max;
-        switch (maxCombo)
+        switch (contrastHarmonyMaxCombo)
         {
             case 0:
                 if ((yellowColored == pinkColored) && (yellowColored == darkBlueColored)) score = 1500;
@@ -645,6 +653,7 @@ public class ScoringSystem : MonoBehaviour
         sizeSlider.value = 0;
         positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
         GetComponent<SelectType>().InitSelection();
+        CheckColorMeter();
     }
 
     public void AddFlower(GameObject flower)
@@ -693,6 +702,236 @@ public class ScoringSystem : MonoBehaviour
         }
         if (greenNow == greenPre)
             flowerColors.RemoveAt(flowerColors.Count - 1);
+    }
+
+    public void CheckColorMeter()
+    {
+        MonochromeMeter.SetActive(false);
+        ContrastMeter.SetActive(false);
+        HarmonyMeter.SetActive(false);
+        ContrastHarmonyMeter.SetActive(false);
+
+        if (flowerColors.Count == 0) return;
+
+        foreach (var item in flowerColors)
+        {
+            switch (item)
+            {
+                case FlowerColor.Yellow:
+                    yellowColored++;
+                    break;
+                case FlowerColor.LightOrange:
+                    lightOrangeColored++;
+                    break;
+                case FlowerColor.Orange:
+                    orangeColored++;
+                    break;
+                case FlowerColor.DarkOrange:
+                    darkOrangeColored++;
+                    break;
+                case FlowerColor.Red:
+                    redColored++;
+                    break;
+                case FlowerColor.Pink:
+                    pinkColored++;
+                    break;
+                case FlowerColor.Violet:
+                    violetColored++;
+                    break;
+                case FlowerColor.DarkBlue:
+                    darkBlueColored++;
+                    break;
+                case FlowerColor.Blue:
+                    blueColored++;
+                    break;
+                case FlowerColor.LightBlue:
+                    lightBlueColored++;
+                    break;
+                case FlowerColor.Green:
+                    greenColored++;
+                    break;
+                case FlowerColor.LightGreen:
+                    lightGreenColored++;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        CheckMonochrome();
+        CheckContrast();
+        CheckHarmony();
+        CheckContrastHarmony();
+
+        int[] combos = { monochromeCount, contrastCount, harmonyCount, contrastHarmonyCount };
+        int max = 0;
+        int maxCombo = 4;
+        for (int i = 0; i < combos.Length; i++)
+        {
+            if (combos[i] > max)
+            {                
+                max = combos[i];
+                maxCombo = i;
+            }
+        }        
+        switch (maxCombo)
+        {
+            case 0:
+                MonochromeMeter.SetActive(true);
+                if (most == FlowerColor.White) MonochromeMeter.transform.localPosition = new Vector3(0, -50, 0);
+                else MonochromeMeter.transform.localPosition = new Vector3(0, 0, 0);
+                switch (most)
+                {
+                    case FlowerColor.Yellow:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 0);
+                        break;
+                    case FlowerColor.LightOrange:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 30);
+                        break;
+                    case FlowerColor.Orange:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 60);
+                        break;
+                    case FlowerColor.DarkOrange:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 90);
+                        break;
+                    case FlowerColor.Red:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 240);
+                        break;
+                    case FlowerColor.Pink:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 210);
+                        break;
+                    case FlowerColor.Violet:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 180);
+                        break;
+                    case FlowerColor.DarkBlue:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 150);
+                        break;
+                    case FlowerColor.Blue:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 120);
+                        break;
+                    case FlowerColor.LightBlue:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 90);
+                        break;
+                    case FlowerColor.Green:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 60);
+                        break;
+                    case FlowerColor.LightGreen:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 30);
+                        break;
+                    default:
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 0);
+                        break;
+                }
+                break;
+            case 1:
+                ContrastMeter.SetActive(true);
+                switch (contrastMaxCombo)
+                {
+                    case 0:
+                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 0);
+                        break;
+                    case 1:
+                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 330);
+                        break;
+                    case 2:
+                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 300);
+                        break;
+                    case 3:
+                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 270);
+                        break;
+                    case 4:
+                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 240);
+                        break;
+                    case 5:
+                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 210);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 2:
+                HarmonyMeter.SetActive(true);
+                switch (harmonyMaxCombo)
+                {
+                    case 0:
+                        HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 0);
+                        break;
+                    case 1:
+                        HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 330);
+                        break;
+                    case 2:
+                        HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 300);
+                        break;
+                    case 3:
+                        HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 270);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 3:
+                ContrastHarmonyMeter.SetActive(true);
+                switch (contrastHarmonyMaxCombo)
+                {
+                    case 0:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 0);
+                        break;
+                    case 1:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 330);
+                        break;
+                    case 2:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 300);
+                        break;
+                    case 3:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 270);
+                        break;
+                    case 4:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 240);
+                        break;
+                    case 5:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 210);
+                        break;
+                    case 6:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 180);
+                        break;
+                    case 7:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 150);
+                        break;
+                    case 8:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 120);
+                        break;
+                    case 9:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 90);
+                        break;
+                    case 10:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 60);
+                        break;
+                    case 11:
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 30);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            default:
+                break;
+        }
+        monochromeCount = 0;
+        contrastCount = 0;
+        harmonyCount = 0;
+        contrastHarmonyCount = 0;
+        yellowColored = 0;
+        lightOrangeColored = 0;
+        orangeColored = 0;
+        darkOrangeColored = 0;
+        redColored = 0;
+        pinkColored = 0;
+        violetColored = 0;
+        darkBlueColored = 0;
+        blueColored = 0;
+        lightBlueColored = 0;
+        greenColored = 0;
+        lightGreenColored = 0;
     }
 
     public bool CheckIsOpen()

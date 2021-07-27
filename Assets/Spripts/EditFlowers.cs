@@ -117,6 +117,8 @@ public class EditFlowers : MonoBehaviour
 
         foreach (var item in flowers) //Перебираем цветы на сцене
             if (item.GetComponent<SpriteRenderer>().sortingOrder > flower.GetComponent<SpriteRenderer>().sortingOrder) item.GetComponent<SpriteRenderer>().sortingOrder--;
+
+        GetComponent<ScoringSystem>().CheckColorMeter();
     }
 
     public void LayerUp(GameObject flower)
@@ -130,7 +132,10 @@ public class EditFlowers : MonoBehaviour
                 item.GetComponent<SpriteRenderer>().sortingOrder--;
                 flower.GetComponent<SpriteRenderer>().sortingOrder++;
                 if (item.GetComponent<SpriteRenderer>().sortingLayerName != flower.GetComponent<SpriteRenderer>().sortingLayerName)
+                {
                     flower.GetComponent<SpriteRenderer>().sortingLayerName = item.GetComponent<SpriteRenderer>().sortingLayerName;
+                    prevLayer = flower.GetComponent<SpriteRenderer>().sortingLayerName;
+                }
                 break;
             }
         }
@@ -147,7 +152,10 @@ public class EditFlowers : MonoBehaviour
                 item.GetComponent<SpriteRenderer>().sortingOrder++;
                 flower.GetComponent<SpriteRenderer>().sortingOrder--;
                 if (item.GetComponent<SpriteRenderer>().sortingLayerName != flower.GetComponent<SpriteRenderer>().sortingLayerName)
+                {
                     flower.GetComponent<SpriteRenderer>().sortingLayerName = item.GetComponent<SpriteRenderer>().sortingLayerName;
+                    prevLayer = flower.GetComponent<SpriteRenderer>().sortingLayerName;
+                }
                 break;
             }
         }

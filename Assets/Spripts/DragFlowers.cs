@@ -50,6 +50,7 @@ public class DragFlowers : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (!flowerToDrag) return;
         isDragging = false;
         gameManager.GetComponent<EditFlowers>().isDragging = false;        
         if (bouquet.GetComponent<ArrangeBouquet>().CheckFlowerPos() || basket.GetComponent<ArrangeBasket>().CheckFlowerPos()) ReleaseFlower();
@@ -162,6 +163,7 @@ public class DragFlowers : MonoBehaviour
 
     private void ReleaseFlower() //—читаем цветок используемым в букете
     {
+        gameManager.GetComponent<ScoringSystem>().CheckColorMeter();
         gameManager.GetComponent<ScoringSystem>().AddFlower(flowerToDrag);
         if (flower.size != "Green")
             gameManager.GetComponent<ScoringSystem>().AddColor(flower.color);
