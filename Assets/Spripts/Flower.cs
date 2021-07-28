@@ -5,18 +5,12 @@ using UnityEngine;
 public enum FlowerColor
 {
     White,
-    Yellow,
-    LightOrange,
-    Orange,
-    DarkOrange,
     Red,
-    Pink,
-    Violet,
-    DarkBlue,
+    Yellow,
     Blue,
-    LightBlue,
     Green,
-    LightGreen
+    Violet,
+    Orange
 };
 
 [CreateAssetMenu]

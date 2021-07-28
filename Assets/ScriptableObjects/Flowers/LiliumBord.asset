@@ -15,6 +15,6 @@ MonoBehaviour:
   imageC: {fileID: 21300000, guid: 373568cf37a90cb4ead420b741196b7d, type: 3}
   imageL: {fileID: 21300000, guid: 9c1cfea1e7e79224cab2348a8bbfd9dd, type: 3}
   imageR: {fileID: 21300000, guid: f68b55b6bc8474644b16ee18eb626025, type: 3}
-  color: 5
+  color: 1
   size: Focus
   flowerName: "\u041B\u0438\u043B\u0438\u044F \u0431\u043E\u0440\u0434\u043E\u0432\u0430\u044F"

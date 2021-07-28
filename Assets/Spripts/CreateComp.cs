@@ -119,6 +119,7 @@ public class CreateComp : MonoBehaviour
         {
             buttonCreate.interactable = true;
         }
+
         GetComponent<ScoringSystem>().CheckColorMeter();
     }
 }

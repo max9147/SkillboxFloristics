@@ -15,6 +15,6 @@ MonoBehaviour:
   imageC: {fileID: 21300000, guid: 790fb80379129b64abfb5cb793439a45, type: 3}
   imageL: {fileID: 21300000, guid: 6b596648bb67b824ebbb978c4c631508, type: 3}
   imageR: {fileID: 21300000, guid: 8e6281f31dee4a04a9f0fe8120d554ee, type: 3}
-  color: 6
+  color: 1
   size: Base
   flowerName: "\u0422\u044E\u043B\u044C\u043F\u0430\u043D \u0444\u0443\u043A\u0441\u0438\u044F"

@@ -14,6 +14,13 @@ public class ScoringSystem : MonoBehaviour
     public GameObject ContrastMeter;
     public GameObject HarmonyMeter;
     public GameObject ContrastHarmonyMeter;
+    public GameObject yellowColor;
+    public GameObject orangeColor;
+    public GameObject redColor;
+    public GameObject violetColor;
+    public GameObject blueColor;
+    public GameObject greenColor;
+    public GameObject whiteColor;
     public GameObject[] stars;
     public List<GameObject> addedFlowers = new List<GameObject>();
     public List<FlowerColor> flowerColors = new List<FlowerColor>();
@@ -44,18 +51,13 @@ public class ScoringSystem : MonoBehaviour
     private int fillCount = 0;
     private int detailsCount = 0;
     private int greenCount = 0;
-    private int yellowColored = 0;
-    private int lightOrangeColored = 0;
-    private int orangeColored = 0;
-    private int darkOrangeColored = 0;
     private int redColored = 0;
-    private int pinkColored = 0;
-    private int violetColored = 0;
-    private int darkBlueColored = 0;
+    private int yellowColored = 0;
     private int blueColored = 0;
-    private int lightBlueColored = 0;
     private int greenColored = 0;
-    private int lightGreenColored = 0;
+    private int violetColored = 0;
+    private int orangeColored = 0;
+    private int whiteColored = 0;
     private int monochromeCount = 0;
     private int contrastCount = 0;
     private int harmonyCount = 0;
@@ -181,38 +183,23 @@ public class ScoringSystem : MonoBehaviour
                 case FlowerColor.Yellow:
                     yellowColored++;
                     break;
-                case FlowerColor.LightOrange:
-                    lightOrangeColored++;
-                    break;
                 case FlowerColor.Orange:
                     orangeColored++;
-                    break;
-                case FlowerColor.DarkOrange:
-                    darkOrangeColored++;
                     break;
                 case FlowerColor.Red:
                     redColored++;
                     break;
-                case FlowerColor.Pink:
-                    pinkColored++;
-                    break;
                 case FlowerColor.Violet:
                     violetColored++;
-                    break;
-                case FlowerColor.DarkBlue:
-                    darkBlueColored++;
                     break;
                 case FlowerColor.Blue:
                     blueColored++;
                     break;
-                case FlowerColor.LightBlue:
-                    lightBlueColored++;
-                    break;
                 case FlowerColor.Green:
                     greenColored++;
                     break;
-                case FlowerColor.LightGreen:
-                    lightGreenColored++;
+                case FlowerColor.White:
+                    whiteColored++;
                     break;
                 default:
                     break;
@@ -265,17 +252,12 @@ public class ScoringSystem : MonoBehaviour
         }
 
         yellowColored = 0;
-        lightOrangeColored = 0;
         orangeColored = 0;
-        darkOrangeColored = 0;
         redColored = 0;
-        pinkColored = 0;
         violetColored = 0;
-        darkBlueColored = 0;
         blueColored = 0;
-        lightBlueColored = 0;
         greenColored = 0;
-        lightGreenColored = 0;
+        whiteColored = 0;
 
         return colorScore;
     }
@@ -297,11 +279,8 @@ public class ScoringSystem : MonoBehaviour
     {
         int score = 2000;
         int yellowViolet = 0;
-        int lightOrangeDarkBlue = 0;
         int orangeBlue = 0;
-        int darkOrangeLightBlue = 0;
         int redGreen = 0;
-        int pinkLightGreen = 0;
         foreach (var item in flowerColors)
         {
             switch (item)
@@ -309,46 +288,33 @@ public class ScoringSystem : MonoBehaviour
                 case FlowerColor.Yellow:
                     yellowViolet++;
                     break;
-                case FlowerColor.LightOrange:
-                    lightOrangeDarkBlue++;
-                    break;
                 case FlowerColor.Orange:
                     orangeBlue++;
-                    break;
-                case FlowerColor.DarkOrange:
-                    darkOrangeLightBlue++;
                     break;
                 case FlowerColor.Red:
                     redGreen++;
                     break;
-                case FlowerColor.Pink:
-                    pinkLightGreen++;
-                    break;
                 case FlowerColor.Violet:
                     yellowViolet++;
-                    break;
-                case FlowerColor.DarkBlue:
-                    lightOrangeDarkBlue++;
                     break;
                 case FlowerColor.Blue:
                     orangeBlue++;
                     break;
-                case FlowerColor.LightBlue:
-                    darkOrangeLightBlue++;
-                    break;
                 case FlowerColor.Green:
                     redGreen++;
-                    break;
-                case FlowerColor.LightGreen:
-                    pinkLightGreen++;
                     break;
                 default:
                     break;
             }
         }
-        int[] combos = { yellowViolet, lightOrangeDarkBlue, orangeBlue, darkOrangeLightBlue, redGreen, pinkLightGreen };
+
+        if (yellowColored == 0 || violetColored == 0) yellowViolet = 0;
+        if (orangeColored == 0 || blueColored == 0) orangeBlue = 0;
+        if (redColored == 0 || greenColored == 0) redGreen = 0;
+
+        int[] combos = { yellowViolet, orangeBlue, redGreen };
         int max = 0;
-        contrastMaxCombo=6;
+        contrastMaxCombo = 3;
         for (int i = 0; i < combos.Length; i++)
         {
             if (combos[i] > max)
@@ -364,19 +330,10 @@ public class ScoringSystem : MonoBehaviour
                 if (yellowColored == violetColored) score = 1000;
                 break;
             case 1:
-                if (lightOrangeColored == darkBlueColored) score = 1000;
-                break;
-            case 2:
                 if (orangeColored == blueColored) score = 1000;
                 break;
-            case 3:
-                if (darkOrangeColored == lightBlueColored) score = 1000;
-                break;
-            case 4:
+            case 2:
                 if (redColored == greenColored) score = 1000;
-                break;
-            case 5:
-                if (pinkColored == lightGreenColored) score = 1000;
                 break;
             default:
                 break;
@@ -389,9 +346,7 @@ public class ScoringSystem : MonoBehaviour
     {
         int score = 3000;
         int yellowRedBlue = 0;
-        int lightOrangePinkLightBlue = 0;
         int orangeVioletGreen = 0;
-        int darkOrangeDarkBlueLightGreen = 0;
         foreach (var item in flowerColors)
         {
             switch (item)
@@ -399,46 +354,32 @@ public class ScoringSystem : MonoBehaviour
                 case FlowerColor.Yellow:
                     yellowRedBlue++;
                     break;
-                case FlowerColor.LightOrange:
-                    lightOrangePinkLightBlue++;
-                    break;
                 case FlowerColor.Orange:
                     orangeVioletGreen++;
-                    break;
-                case FlowerColor.DarkOrange:
-                    darkOrangeDarkBlueLightGreen++;
                     break;
                 case FlowerColor.Red:
                     yellowRedBlue++;
                     break;
-                case FlowerColor.Pink:
-                    lightOrangePinkLightBlue++;
-                    break;
                 case FlowerColor.Violet:
                     orangeVioletGreen++;
-                    break;
-                case FlowerColor.DarkBlue:
-                    darkOrangeDarkBlueLightGreen++;
                     break;
                 case FlowerColor.Blue:
                     yellowRedBlue++;
                     break;
-                case FlowerColor.LightBlue:
-                    lightOrangePinkLightBlue++;
-                    break;
                 case FlowerColor.Green:
                     orangeVioletGreen++;
-                    break;
-                case FlowerColor.LightGreen:
-                    darkOrangeDarkBlueLightGreen++;
                     break;
                 default:
                     break;
             }
         }
-        int[] combos = { yellowRedBlue, lightOrangePinkLightBlue, orangeVioletGreen, darkOrangeDarkBlueLightGreen };
+
+        if (yellowColored == 0 || redColored == 0 || blueColored == 0) yellowRedBlue = 0;
+        if (orangeColored == 0 || violetColored == 0 || greenColored == 0) orangeVioletGreen = 0;
+
+        int[] combos = { yellowRedBlue, orangeVioletGreen };
         int max = 0;
-        harmonyMaxCombo = 4;
+        harmonyMaxCombo = 2;
         for (int i = 0; i < combos.Length; i++)
         {
             if (combos[i] > max)
@@ -454,13 +395,7 @@ public class ScoringSystem : MonoBehaviour
                 if ((yellowColored == redColored) && (yellowColored == blueColored)) score = 1500;
                 break;
             case 1:
-                if ((lightOrangeColored == pinkColored) && (lightOrangeColored == lightBlueColored)) score = 1500;
-                break;
-            case 2:
                 if ((orangeColored == violetColored) && (orangeColored == greenColored)) score = 1500;
-                break;
-            case 3:
-                if ((darkOrangeColored == darkBlueColored) && (darkOrangeColored == lightGreenColored)) score = 1500;
                 break;
             default:
                 break;
@@ -472,88 +407,90 @@ public class ScoringSystem : MonoBehaviour
     private int CheckContrastHarmony()
     {
         int score = 3000;
-        int yellowPinkDarkBlue = 0;
-        int lightOrangeVioletBlue = 0;
-        int orangeDarkBlueLightBlue = 0;
-        int darkOrangeBlueGreen = 0;
-        int redLightBlueLightGreen = 0;
-        int pinkGreenYellow = 0;
-        int violetLightGreenLightOrange = 0;
-        int darkBlueYellowOrange = 0;
-        int blueLightOrangeDarkOrange = 0;
-        int lightBlueOrangeRed = 0;
-        int greenDarkOrangePink = 0;
-        int lightGreenRedViolet = 0;
+        int yellowVioletBlue = 0;
+        int yellowVioletRed = 0;
+        int orangeBlueGreen = 0;
+        int orangeBlueViolet = 0;
+        int redGreenYellow = 0;
+        int redGreenBlue = 0;
+        int violetYellowGreen = 0;
+        int violetYellowOrange = 0;
+        int blueOrangeRed = 0;
+        int blueOrangeYellow = 0;
+        int greenRedViolet = 0;
+        int greenRedOrange = 0;
         foreach (var item in flowerColors)
         {
             switch (item)
             {
                 case FlowerColor.Yellow:
-                    yellowPinkDarkBlue++;
-                    darkBlueYellowOrange++;
-                    pinkGreenYellow++;
-                    break;
-                case FlowerColor.LightOrange:
-                    lightOrangeVioletBlue++;
-                    blueLightOrangeDarkOrange++;
-                    violetLightGreenLightOrange++;
+                    yellowVioletBlue++;
+                    yellowVioletRed++;
+                    redGreenYellow++;
+                    violetYellowGreen++;
+                    violetYellowOrange++;
+                    blueOrangeYellow++;
                     break;
                 case FlowerColor.Orange:
-                    orangeDarkBlueLightBlue++;
-                    darkBlueYellowOrange++;
-                    lightBlueOrangeRed++;
-                    break;
-                case FlowerColor.DarkOrange:
-                    darkOrangeBlueGreen++;
-                    blueLightOrangeDarkOrange++;
-                    greenDarkOrangePink++;
+                    orangeBlueGreen++;
+                    orangeBlueViolet++;
+                    blueOrangeRed++;
+                    blueOrangeYellow++;
+                    greenRedOrange++;
+                    violetYellowOrange++;
                     break;
                 case FlowerColor.Red:
-                    redLightBlueLightGreen++;
-                    lightBlueOrangeRed++;
-                    lightGreenRedViolet++;
-                    break;
-                case FlowerColor.Pink:
-                    pinkGreenYellow++;
-                    greenDarkOrangePink++;
-                    yellowPinkDarkBlue++;
+                    redGreenBlue++;
+                    redGreenYellow++;
+                    blueOrangeRed++;
+                    greenRedOrange++;
+                    greenRedViolet++;
+                    yellowVioletRed++;
                     break;
                 case FlowerColor.Violet:
-                    violetLightGreenLightOrange++;
-                    lightGreenRedViolet++;
-                    lightOrangeVioletBlue++;
-                    break;
-                case FlowerColor.DarkBlue:
-                    darkBlueYellowOrange++;
-                    orangeDarkBlueLightBlue++;
-                    yellowPinkDarkBlue++;
+                    violetYellowGreen++;
+                    violetYellowOrange++;
+                    greenRedViolet++;
+                    orangeBlueViolet++;
+                    yellowVioletBlue++;
+                    yellowVioletRed++;
                     break;
                 case FlowerColor.Blue:
-                    blueLightOrangeDarkOrange++;
-                    darkOrangeBlueGreen++;
-                    lightOrangeVioletBlue++;
-                    break;
-                case FlowerColor.LightBlue:
-                    lightBlueOrangeRed++;
-                    orangeDarkBlueLightBlue++;
-                    redLightBlueLightGreen++;
+                    blueOrangeRed++;
+                    blueOrangeYellow++;
+                    orangeBlueGreen++;
+                    orangeBlueViolet++;
+                    redGreenBlue++;
+                    yellowVioletBlue++;
                     break;
                 case FlowerColor.Green:
-                    greenDarkOrangePink++;
-                    darkOrangeBlueGreen++;
-                    pinkGreenYellow++;
-                    break;
-                case FlowerColor.LightGreen:
-                    lightGreenRedViolet++;
-                    redLightBlueLightGreen++;
-                    violetLightGreenLightOrange++;
+                    greenRedOrange++;
+                    greenRedViolet++;
+                    orangeBlueGreen++;
+                    redGreenBlue++;
+                    redGreenYellow++;
+                    violetYellowGreen++;
                     break;
                 default:
                     break;
             }
         }
-        int[] combos = { yellowPinkDarkBlue, lightOrangeVioletBlue, orangeDarkBlueLightBlue, darkOrangeBlueGreen, redLightBlueLightGreen, pinkGreenYellow, violetLightGreenLightOrange,
-            darkBlueYellowOrange, blueLightOrangeDarkOrange, lightBlueOrangeRed, greenDarkOrangePink, lightGreenRedViolet };
+
+        if (yellowColored == 0 || violetColored == 0 || blueColored == 0) yellowVioletBlue = 0;
+        if (yellowColored == 0 || violetColored == 0 || redColored == 0) yellowVioletRed = 0;
+        if (orangeColored == 0 || blueColored == 0 || greenColored == 0) orangeBlueGreen = 0;
+        if (orangeColored == 0 || blueColored == 0 || violetColored == 0) orangeBlueViolet = 0;
+        if (redColored == 0 || greenColored == 0 || yellowColored == 0) redGreenYellow = 0;
+        if (redColored == 0 || greenColored == 0 || blueColored == 0) redGreenBlue = 0;
+        if (violetColored == 0 || yellowColored == 0 || greenColored == 0) violetYellowGreen = 0;
+        if (violetColored == 0 || yellowColored == 0 || orangeColored == 0) violetYellowOrange = 0;
+        if (blueColored == 0 || orangeColored == 0 || redColored == 0) blueOrangeRed = 0;
+        if (blueColored == 0 || orangeColored == 0 || yellowColored == 0) blueOrangeYellow = 0;
+        if (greenColored == 0 || redColored == 0 || violetColored == 0) greenRedViolet = 0;
+        if (greenColored == 0 || redColored == 0 || orangeColored == 0) greenRedOrange = 0;
+
+        int[] combos = { yellowVioletBlue, yellowVioletRed, orangeBlueGreen, orangeBlueViolet, redGreenYellow, redGreenBlue, violetYellowGreen,
+            violetYellowOrange, blueOrangeRed, blueOrangeYellow, greenRedViolet, greenRedOrange };
         int max = 0;
         contrastHarmonyMaxCombo = 12;
         for (int i = 0; i < combos.Length; i++)
@@ -568,40 +505,40 @@ public class ScoringSystem : MonoBehaviour
         switch (contrastHarmonyMaxCombo)
         {
             case 0:
-                if ((yellowColored == pinkColored) && (yellowColored == darkBlueColored)) score = 1500;
+                if ((yellowColored == violetColored) && (yellowColored == blueColored)) score = 1500;
                 break;
             case 1:
-                if ((lightOrangeColored == violetColored) && (lightOrangeColored == blueColored)) score = 1500;
+                if ((yellowColored == violetColored) && (yellowColored == redColored)) score = 1500;
                 break;
             case 2:
-                if ((orangeColored == darkBlueColored) && (orangeColored == lightBlueColored)) score = 1500;
+                if ((orangeColored == blueColored) && (orangeColored == greenColored)) score = 1500;
                 break;
             case 3:
-                if ((darkOrangeColored == blueColored) && (darkOrangeColored == greenColored)) score = 1500;
+                if ((orangeColored == blueColored) && (orangeColored == violetColored)) score = 1500;
                 break;
             case 4:
-                if ((redColored == lightBlueColored) && (redColored == lightGreenColored)) score = 1500;
+                if ((redColored == greenColored) && (redColored == yellowColored)) score = 1500;
                 break;
             case 5:
-                if ((pinkColored == greenColored) && (pinkColored == yellowColored)) score = 1500;
+                if ((redColored == greenColored) && (redColored == blueColored)) score = 1500;
                 break;
             case 6:
-                if ((violetColored == lightGreenColored) && (violetColored == lightOrangeColored)) score = 1500;
+                if ((violetColored == yellowColored) && (violetColored == greenColored)) score = 1500;
                 break;
             case 7:
-                if ((darkBlueColored == yellowColored) && (darkBlueColored == orangeColored)) score = 1500;
+                if ((violetColored == yellowColored) && (violetColored == orangeColored)) score = 1500;
                 break;
             case 8:
-                if ((blueColored == lightOrangeColored) && (blueColored == darkOrangeColored)) score = 1500;
+                if ((blueColored == orangeColored) && (blueColored == redColored)) score = 1500;
                 break;
             case 9:
-                if ((lightBlueColored == orangeColored) && (lightBlueColored == redColored)) score = 1500;
+                if ((blueColored == orangeColored) && (blueColored == yellowColored)) score = 1500;
                 break;
             case 10:
-                if ((greenColored == darkOrangeColored) && (greenColored == pinkColored)) score = 1500;
+                if ((greenColored == redColored) && (greenColored == violetColored)) score = 1500;
                 break;
             case 11:
-                if ((lightGreenColored == redColored) && (lightGreenColored == violetColored)) score = 1500;
+                if ((greenColored == redColored) && (greenColored == orangeColored)) score = 1500;
                 break;
             default:
                 break;
@@ -701,7 +638,7 @@ public class ScoringSystem : MonoBehaviour
                 greenNow++;
         }
         if (greenNow == greenPre)
-            flowerColors.RemoveAt(flowerColors.Count - 1);
+            flowerColors.RemoveAt(id);
     }
 
     public void CheckColorMeter()
@@ -711,7 +648,11 @@ public class ScoringSystem : MonoBehaviour
         HarmonyMeter.SetActive(false);
         ContrastHarmonyMeter.SetActive(false);
 
-        if (flowerColors.Count == 0) return;
+        if (flowerColors.Count == 0)
+        {
+            CheckSingleColors();
+            return;
+        }
 
         foreach (var item in flowerColors)
         {
@@ -719,45 +660,31 @@ public class ScoringSystem : MonoBehaviour
             {
                 case FlowerColor.Yellow:
                     yellowColored++;
-                    break;
-                case FlowerColor.LightOrange:
-                    lightOrangeColored++;
-                    break;
+                    break;;
                 case FlowerColor.Orange:
                     orangeColored++;
-                    break;
-                case FlowerColor.DarkOrange:
-                    darkOrangeColored++;
                     break;
                 case FlowerColor.Red:
                     redColored++;
                     break;
-                case FlowerColor.Pink:
-                    pinkColored++;
-                    break;
                 case FlowerColor.Violet:
                     violetColored++;
-                    break;
-                case FlowerColor.DarkBlue:
-                    darkBlueColored++;
                     break;
                 case FlowerColor.Blue:
                     blueColored++;
                     break;
-                case FlowerColor.LightBlue:
-                    lightBlueColored++;
-                    break;
                 case FlowerColor.Green:
                     greenColored++;
                     break;
-                case FlowerColor.LightGreen:
-                    lightGreenColored++;
+                case FlowerColor.White:
+                    whiteColored++;
                     break;
                 default:
                     break;
             }
         }
 
+        CheckSingleColors();
         CheckMonochrome();
         CheckContrast();
         CheckHarmony();
@@ -785,38 +712,20 @@ public class ScoringSystem : MonoBehaviour
                     case FlowerColor.Yellow:
                         MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 0);
                         break;
-                    case FlowerColor.LightOrange:
-                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 30);
-                        break;
                     case FlowerColor.Orange:
-                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 60);
-                        break;
-                    case FlowerColor.DarkOrange:
-                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 90);
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, -60);
                         break;
                     case FlowerColor.Red:
-                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 240);
-                        break;
-                    case FlowerColor.Pink:
-                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 210);
+                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, -120);
                         break;
                     case FlowerColor.Violet:
                         MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 180);
                         break;
-                    case FlowerColor.DarkBlue:
-                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 150);
-                        break;
                     case FlowerColor.Blue:
                         MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 120);
                         break;
-                    case FlowerColor.LightBlue:
-                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 90);
-                        break;
                     case FlowerColor.Green:
                         MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 60);
-                        break;
-                    case FlowerColor.LightGreen:
-                        MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 30);
                         break;
                     default:
                         MonochromeMeter.transform.eulerAngles = new Vector3(0, 0, 0);
@@ -831,19 +740,10 @@ public class ScoringSystem : MonoBehaviour
                         ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 0);
                         break;
                     case 1:
-                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 330);
+                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, -60);
                         break;
                     case 2:
-                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 300);
-                        break;
-                    case 3:
-                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 270);
-                        break;
-                    case 4:
-                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 240);
-                        break;
-                    case 5:
-                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, 210);
+                        ContrastMeter.transform.eulerAngles = new Vector3(0, 0, -120);
                         break;
                     default:
                         break;
@@ -857,13 +757,7 @@ public class ScoringSystem : MonoBehaviour
                         HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 0);
                         break;
                     case 1:
-                        HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 330);
-                        break;
-                    case 2:
-                        HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 300);
-                        break;
-                    case 3:
-                        HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 270);
+                        HarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 60);
                         break;
                     default:
                         break;
@@ -875,39 +769,51 @@ public class ScoringSystem : MonoBehaviour
                 {
                     case 0:
                         ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 0);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(1, 1, 1);
                         break;
                     case 1:
-                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 330);
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 0);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(-1, 1, 1);
                         break;
                     case 2:
-                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 300);
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, -60);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(1, 1, 1);
                         break;
                     case 3:
-                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 270);
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, -60);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(-1, 1, 1);
                         break;
                     case 4:
-                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 240);
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, -120);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(1, 1, 1);
                         break;
                     case 5:
-                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 210);
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, -120);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(-1, 1, 1);
                         break;
                     case 6:
                         ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 180);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(1, 1, 1);
                         break;
                     case 7:
-                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 150);
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 180);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(-1, 1, 1);
                         break;
                     case 8:
                         ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 120);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(1, 1, 1);
                         break;
                     case 9:
-                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 90);
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 120);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(-1, 1, 1);
                         break;
                     case 10:
                         ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 60);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(1, 1, 1);
                         break;
                     case 11:
-                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 30);
+                        ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 60);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(-1, 1, 1);
                         break;
                     default:
                         break;
@@ -921,17 +827,30 @@ public class ScoringSystem : MonoBehaviour
         harmonyCount = 0;
         contrastHarmonyCount = 0;
         yellowColored = 0;
-        lightOrangeColored = 0;
         orangeColored = 0;
-        darkOrangeColored = 0;
         redColored = 0;
-        pinkColored = 0;
         violetColored = 0;
-        darkBlueColored = 0;
         blueColored = 0;
-        lightBlueColored = 0;
         greenColored = 0;
-        lightGreenColored = 0;
+        whiteColored = 0;
+    }
+
+    public void CheckSingleColors()
+    {
+        if (yellowColored > 0) yellowColor.SetActive(true);
+        else yellowColor.SetActive(false);
+        if (orangeColored > 0) orangeColor.SetActive(true);
+        else orangeColor.SetActive(false);
+        if (redColored > 0) redColor.SetActive(true);
+        else redColor.SetActive(false);
+        if (violetColored > 0) violetColor.SetActive(true);
+        else violetColor.SetActive(false);
+        if (blueColored > 0) blueColor.SetActive(true);
+        else blueColor.SetActive(false);
+        if (greenColored > 0) greenColor.SetActive(true);
+        else greenColor.SetActive(false);
+        if (whiteColored > 0) whiteColor.SetActive(true);
+        else whiteColor.SetActive(false);
     }
 
     public bool CheckIsOpen()
