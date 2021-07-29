@@ -21,6 +21,7 @@ public class ScoringSystem : MonoBehaviour
     public GameObject blueColor;
     public GameObject greenColor;
     public GameObject whiteColor;
+    public GameObject endHelpMenu;
     public GameObject[] stars;
     public List<GameObject> addedFlowers = new List<GameObject>();
     public List<FlowerColor> flowerColors = new List<FlowerColor>();
@@ -577,6 +578,7 @@ public class ScoringSystem : MonoBehaviour
 
     public void CloseScore()
     {
+        endHelpMenu.SetActive(false);
         soundButton.GetComponent<AudioSource>().Play();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
@@ -851,6 +853,13 @@ public class ScoringSystem : MonoBehaviour
         else greenColor.SetActive(false);
         if (whiteColored > 0) whiteColor.SetActive(true);
         else whiteColor.SetActive(false);
+    }
+
+    public void ChangeEndHelpState()
+    {
+        soundButton.GetComponent<AudioSource>().Play();
+        if (endHelpMenu.activeInHierarchy) endHelpMenu.SetActive(false);
+        else endHelpMenu.SetActive(true);
     }
 
     public bool CheckIsOpen()

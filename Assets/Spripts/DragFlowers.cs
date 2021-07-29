@@ -17,6 +17,7 @@ public class DragFlowers : MonoBehaviour
     public GameObject content; //Контент элемента scrollview
     public GameObject desctiptionMenu;
     public GameObject gameManager;
+    public GameObject editCanvas;
     public Button buttonCreate;
     public Button buttonBack;
 
@@ -33,6 +34,7 @@ public class DragFlowers : MonoBehaviour
         ray = mainCam.ScreenPointToRay(Input.mousePosition); //Проверка на нахождение курсора в content
         if (canTake && !gameManager.GetComponent<ScoringSystem>().CheckIsOpen() && !gameManager.GetComponent<SelectType>().CheckIsOpen() && !gameManager.GetComponent<TabsChange>().CheckDescriptionOpen() && ray.origin.y < 2.7f && ray.origin.y > -1.7f)
         {
+            editCanvas.GetComponent<Canvas>().sortingLayerName = "Background";
             Destroy(curMenu);
             gameManager.GetComponent<EditFlowers>().StopEdit();
             bouquet.transform.position = new Vector3(bouquet.transform.position.x, bouquet.transform.position.y, -0.01f);
@@ -50,6 +52,7 @@ public class DragFlowers : MonoBehaviour
 
     private void OnMouseUp()
     {
+        editCanvas.GetComponent<Canvas>().sortingLayerName = "Menus";
         if (!flowerToDrag) return;
         isDragging = false;
         gameManager.GetComponent<EditFlowers>().isDragging = false;        

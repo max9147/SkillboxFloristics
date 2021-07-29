@@ -282,6 +282,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &4405993
@@ -732,6 +733,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &14535538
@@ -1375,6 +1377,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &29636654
@@ -1750,6 +1753,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &38292470
@@ -2317,6 +2321,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &52186771
@@ -2542,6 +2547,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &55901417
@@ -2746,6 +2752,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &65778814
@@ -3067,6 +3074,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &70909602
@@ -3480,6 +3488,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &74429152
@@ -3951,6 +3960,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &86596923
@@ -4080,6 +4090,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &87858482
@@ -4401,6 +4412,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &88378200
@@ -4701,6 +4713,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &93218248
@@ -5222,6 +5235,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &103846000
@@ -5597,6 +5611,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &113035784
@@ -5934,6 +5949,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &117131111
@@ -6159,6 +6175,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &118408022
@@ -6480,6 +6497,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &119788712
@@ -6705,6 +6723,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &124969320
@@ -6930,6 +6949,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &134408898
@@ -7155,6 +7175,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &139249434
@@ -7680,6 +7701,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &154704024
@@ -7745,6 +7767,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154704020}
+  m_CullTransparentMesh: 1
+--- !u!1 &159653181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159653182}
+  - component: {fileID: 159653184}
+  - component: {fileID: 159653183}
+  m_Layer: 5
+  m_Name: EndHelp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &159653182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159653181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1349856469}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -218.6, y: -281}
+  m_SizeDelta: {x: 500, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &159653183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159653181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b2202290dbb70354dac94c620aeccd5f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &159653184
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159653181}
   m_CullTransparentMesh: 1
 --- !u!1 &164906536
 GameObject:
@@ -7905,6 +8002,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &164906540
@@ -7982,6 +8080,8 @@ GameObject:
   - component: {fileID: 167734689}
   - component: {fileID: 167734691}
   - component: {fileID: 167734690}
+  - component: {fileID: 167734693}
+  - component: {fileID: 167734692}
   m_Layer: 5
   m_Name: ColorMeter
   m_TagString: Untagged
@@ -8006,6 +8106,7 @@ RectTransform:
   - {fileID: 1360285780}
   - {fileID: 251154475}
   - {fileID: 404313199}
+  - {fileID: 1745693246}
   m_Father: {fileID: 1017450480}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8052,6 +8153,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167734688}
   m_CullTransparentMesh: 1
+--- !u!114 &167734692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167734688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10ec3fa8735a004d99b61d39354b966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &167734693
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167734688}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 18}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 151, y: 170}
+  m_EdgeRadius: 0
 --- !u!1 &169732438
 GameObject:
   m_ObjectHideFlags: 0
@@ -8211,6 +8350,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &169732442
@@ -8511,6 +8651,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &176452764
@@ -8986,6 +9127,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &187252646
@@ -9361,6 +9503,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &191766942
@@ -9661,6 +9804,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &194838272
@@ -9961,6 +10105,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &210148027
@@ -10240,6 +10385,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &219258587
@@ -10711,6 +10857,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &232712299
@@ -10808,7 +10955,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1512566296}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11143,6 +11290,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &241250624
@@ -11208,6 +11356,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241250620}
+  m_CullTransparentMesh: 1
+--- !u!1 &242743076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 242743077}
+  - component: {fileID: 242743079}
+  - component: {fileID: 242743078}
+  m_Layer: 5
+  m_Name: Help
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &242743077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242743076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1671995395}
+  m_Father: {fileID: 1331220966}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 179.7, y: 22.8}
+  m_SizeDelta: {x: 240, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &242743078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242743076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3e3922088798abe48a0717016dcbace5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &242743079
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242743076}
   m_CullTransparentMesh: 1
 --- !u!1 &250030698
 GameObject:
@@ -11784,6 +12008,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &267268346
@@ -12009,6 +12234,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &272348062
@@ -12138,6 +12364,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &273056966
@@ -12409,7 +12636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 514.5, y: -200}
+  m_AnchoredPosition: {x: 462.2, y: -200}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274260345
@@ -12759,6 +12986,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &285840984
@@ -12984,6 +13212,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &287298335
@@ -13209,6 +13438,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &288920834
@@ -13434,6 +13664,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &291771392
@@ -13659,6 +13890,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &298611665
@@ -13959,6 +14191,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &302693007
@@ -14192,7 +14425,7 @@ RectTransform:
   m_Children:
   - {fileID: 1009309340}
   m_Father: {fileID: 1512566296}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -14548,6 +14781,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &318817726
@@ -14827,6 +15061,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &332559670
@@ -15223,6 +15458,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &334106099
@@ -15657,6 +15893,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &338803756
@@ -15957,6 +16194,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &342686147
@@ -16593,6 +16831,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &352642149
@@ -16818,6 +17057,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &352829548
@@ -17019,7 +17259,7 @@ SpriteRenderer:
   m_SortingLayerID: 1652229395
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 439435163ae07de42a52a08cbeca4239, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
@@ -17027,7 +17267,7 @@ SpriteRenderer:
   m_Size: {x: 5.97, y: 5.59}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!224 &357295952
@@ -17382,6 +17622,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &363554261
@@ -17607,6 +17848,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &367253593
@@ -17832,6 +18074,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &368801198
@@ -18453,6 +18696,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &383910142
@@ -18922,7 +19166,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399333390}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
@@ -18931,8 +19175,8 @@ RectTransform:
   - {fileID: 351433419}
   - {fileID: 1376410507}
   - {fileID: 1031315203}
-  m_Father: {fileID: 1512566296}
-  m_RootOrder: 7
+  m_Father: {fileID: 1349856469}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19138,6 +19382,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &403048986
@@ -19438,6 +19683,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &405470317
@@ -19537,7 +19783,7 @@ RectTransform:
   m_Children:
   - {fileID: 1780153141}
   m_Father: {fileID: 1512566296}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -19734,6 +19980,82 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &425636188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 425636189}
+  - component: {fileID: 425636191}
+  - component: {fileID: 425636190}
+  m_Layer: 5
+  m_Name: Help
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &425636189
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425636188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 962876955}
+  m_Father: {fileID: 922554058}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 179.70004, y: 25}
+  m_SizeDelta: {x: 240, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &425636190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425636188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3e3922088798abe48a0717016dcbace5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &425636191
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425636188}
+  m_CullTransparentMesh: 1
 --- !u!1 &426273067
 GameObject:
   m_ObjectHideFlags: 0
@@ -19809,6 +20131,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426273067}
   m_CullTransparentMesh: 1
+--- !u!1 &431844791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 431844792}
+  - component: {fileID: 431844795}
+  - component: {fileID: 431844794}
+  - component: {fileID: 431844793}
+  m_Layer: 5
+  m_Name: EndHelpButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &431844792
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431844791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1340918951}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 566.5, y: -205.2}
+  m_SizeDelta: {x: 40, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &431844793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431844791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 431844794}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 810505141}
+        m_TargetAssemblyTypeName: ScoringSystem, Assembly-CSharp
+        m_MethodName: ChangeEndHelpState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &431844794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431844791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c5046518c3978ce4499101b5185bb3ab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &431844795
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431844791}
+  m_CullTransparentMesh: 1
 --- !u!1 &433206953
 GameObject:
   m_ObjectHideFlags: 0
@@ -19872,6 +20326,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &433206956
@@ -20590,6 +21045,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &454161955
@@ -21360,6 +21816,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &483471282
@@ -21735,6 +22192,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &487121198
@@ -21960,6 +22418,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &491881307
@@ -22060,7 +22519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 414.5, y: -200}
+  m_AnchoredPosition: {x: 362.2, y: -200}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &492877568
@@ -22410,6 +22869,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &518248727
@@ -22851,6 +23311,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &523453570
@@ -23410,6 +23871,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &535990257
@@ -23539,6 +24001,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &545545068
@@ -24085,6 +24548,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &552077460
@@ -24289,6 +24753,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &564350355
@@ -24610,6 +25075,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &566205996
@@ -24968,6 +25434,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &572713035
@@ -25488,6 +25955,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &586484991
@@ -25883,6 +26351,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &601071128
@@ -26204,6 +26673,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &601135746
@@ -26429,6 +26899,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &609984775
@@ -26654,6 +27125,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &610501240
@@ -26879,6 +27351,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &611905600
@@ -27104,6 +27577,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &617402399
@@ -27329,6 +27803,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &623141234
@@ -28079,6 +28554,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &652666208
@@ -28304,6 +28780,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &656816389
@@ -28679,6 +29156,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &667922393
@@ -28904,6 +29382,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &668689642
@@ -29204,6 +29683,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &682939836
@@ -29712,6 +30192,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &704913023
@@ -29937,6 +30418,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &705663012
@@ -30312,6 +30794,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &719387695
@@ -30479,6 +30962,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &723482266
@@ -30837,6 +31321,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &727896924
@@ -31062,6 +31547,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &729982446
@@ -31266,6 +31752,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &738885744
@@ -31847,6 +32334,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &747442824
@@ -32147,6 +32635,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &749007171
@@ -32396,7 +32885,7 @@ RectTransform:
   m_Children:
   - {fileID: 186985320}
   m_Father: {fileID: 1512566296}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -32656,6 +33145,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &761469306
@@ -32977,6 +33467,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &762640319
@@ -33240,6 +33731,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &765020025
@@ -33561,6 +34053,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &769695957
@@ -33661,9 +34154,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.18, y: -22.6}
+  m_AnchoredPosition: {x: 0.90008545, y: -29.949997}
   m_SizeDelta: {x: 14, y: 45}
-  m_Pivot: {x: 0.5, y: 0.2}
+  m_Pivot: {x: 0.5, y: 0.15}
 --- !u!114 &769987334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33725,7 +34218,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776249751}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
@@ -33739,8 +34232,8 @@ RectTransform:
   - {fileID: 576072642}
   - {fileID: 792085857}
   - {fileID: 1062740704}
-  m_Father: {fileID: 1512566296}
-  m_RootOrder: 9
+  m_Father: {fileID: 1349856469}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -33810,6 +34303,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &777189384
@@ -33972,6 +34466,145 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &778917321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778917322}
+  - component: {fileID: 778917324}
+  - component: {fileID: 778917323}
+  m_Layer: 5
+  m_Name: HelpText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &778917322
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778917321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1745693246}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: 170, y: 140}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &778917323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778917321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u0426\u0432\u0435\u0442\u043E\u0432\u043E\u0439 \u043A\u0440\u0443\u0433
+    \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u043A\u0430\u043A\u0438\u0435
+    \u0446\u0432\u0435\u0442\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u044B
+    \u0438 \u043A \u043A\u0430\u043A\u043E\u0439 \u0446\u0432\u0435\u0442\u043E\u0432\u043E\u0439
+    \u0441\u0445\u0435\u043C\u0435 \u0434\u0432\u0438\u0436\u0435\u0442\u0441\u044F
+    \u0431\u0443\u043A\u0435\u0442"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a3d66f65f3b047e4a8354ab71538c1f0, type: 2}
+  m_sharedMaterial: {fileID: -6018224497819984975, guid: a3d66f65f3b047e4a8354ab71538c1f0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &778917324
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778917321}
+  m_CullTransparentMesh: 1
 --- !u!1 &785006535
 GameObject:
   m_ObjectHideFlags: 0
@@ -34281,6 +34914,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &789798110
@@ -34714,6 +35348,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &793338310
@@ -35239,6 +35874,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &804104390
@@ -35464,6 +36100,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &805970606
@@ -35762,6 +36399,7 @@ MonoBehaviour:
   blueColor: {fileID: 1539366546}
   greenColor: {fileID: 370751024}
   whiteColor: {fileID: 2112936220}
+  endHelpMenu: {fileID: 159653181}
   stars:
   - {fileID: 492877566}
   - {fileID: 1808119005}
@@ -36163,6 +36801,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &826024656
@@ -36733,6 +37372,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &841508720
@@ -37033,6 +37673,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &846131116
@@ -37467,6 +38108,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &854130704
@@ -37730,6 +38372,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &858080902
@@ -38051,6 +38694,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &859034760
@@ -38426,6 +39070,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &878996107
@@ -38651,6 +39296,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &884232542
@@ -38951,6 +39597,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &893155117
@@ -39176,6 +39823,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &896015668
@@ -39816,6 +40464,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &915099887
@@ -40041,6 +40690,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &916054691
@@ -40266,6 +40916,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &916713643
@@ -40491,6 +41142,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &917302374
@@ -40702,6 +41354,8 @@ GameObject:
   - component: {fileID: 922554058}
   - component: {fileID: 922554060}
   - component: {fileID: 922554059}
+  - component: {fileID: 922554062}
+  - component: {fileID: 922554061}
   m_Layer: 5
   m_Name: SizeMeter
   m_TagString: Untagged
@@ -40722,8 +41376,9 @@ RectTransform:
   m_Children:
   - {fileID: 2053173913}
   - {fileID: 1932454988}
+  - {fileID: 425636189}
   m_Father: {fileID: 1017450480}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -40768,6 +41423,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922554057}
   m_CullTransparentMesh: 1
+--- !u!114 &922554061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922554057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10ec3fa8735a004d99b61d39354b966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &922554062
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922554057}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1, y: 22}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 152, y: 103}
+  m_EdgeRadius: 0
 --- !u!1 &922855235
 GameObject:
   m_ObjectHideFlags: 0
@@ -40927,6 +41620,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &922855239
@@ -41152,6 +41846,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &925958285
@@ -41993,6 +42688,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &954585872
@@ -42125,6 +42821,142 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &962876954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962876955}
+  - component: {fileID: 962876957}
+  - component: {fileID: 962876956}
+  m_Layer: 5
+  m_Name: HelpText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &962876955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962876954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 425636189}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: 170, y: 140}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &962876956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962876954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0434\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E
+    \u043B\u0438 \u0446\u0432\u0435\u0442\u043E\u0432 \u0432 \u0431\u0443\u043A\u0435\u0442\u0435
+    \u0434\u043B\u044F \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0446\u0438\u0438"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a3d66f65f3b047e4a8354ab71538c1f0, type: 2}
+  m_sharedMaterial: {fileID: -6018224497819984975, guid: a3d66f65f3b047e4a8354ab71538c1f0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &962876957
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962876954}
+  m_CullTransparentMesh: 1
 --- !u!1 &963781323
 GameObject:
   m_ObjectHideFlags: 0
@@ -42284,6 +43116,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &963781327
@@ -42509,6 +43342,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &963869619
@@ -43168,6 +44002,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &980078130
@@ -43468,6 +44303,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &984015571
@@ -43843,6 +44679,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &993377385
@@ -44335,6 +45172,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1007295670
@@ -44978,6 +45816,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1009940927
@@ -45264,6 +46103,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1012398987
@@ -45639,6 +46479,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1014404421
@@ -45939,6 +46780,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1015953656
@@ -46028,15 +46870,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017450479}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 922554058}
   - {fileID: 1331220966}
+  - {fileID: 922554058}
   - {fileID: 167734689}
-  m_Father: {fileID: 1512566296}
-  m_RootOrder: 1
+  m_Father: {fileID: 1349856469}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -46202,6 +47044,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1019202857
@@ -46648,6 +47491,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1029501647
@@ -47006,6 +47850,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1034120147
@@ -47231,6 +48076,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1034487904
@@ -47435,6 +48281,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1048522619
@@ -48235,6 +49082,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1063734808
@@ -48668,6 +49516,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1076568628
@@ -48893,6 +49742,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1076966386
@@ -49193,6 +50043,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1088427122
@@ -49418,6 +50269,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1091042783
@@ -49643,6 +50495,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1093375845
@@ -50018,6 +50871,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1107288297
@@ -50566,6 +51420,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1115702151
@@ -50941,6 +51796,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1121253561
@@ -51241,6 +52097,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1123486844
@@ -51466,6 +52323,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1125883075
@@ -51691,6 +52549,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1130348601
@@ -51916,6 +52775,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1131999254
@@ -52141,6 +53001,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1134387050
@@ -52366,6 +53227,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1140240803
@@ -52666,6 +53528,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1148799494
@@ -53266,6 +54129,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1174706282
@@ -53395,6 +54259,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1176127586
@@ -54091,6 +54956,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1197733307
@@ -54316,6 +55182,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1200480176
@@ -54541,6 +55408,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1202661220
@@ -54766,6 +55634,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1203498941
@@ -54991,6 +55860,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1206861427
@@ -55216,6 +56086,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1214865224
@@ -55495,6 +56366,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1221808070
@@ -55816,6 +56688,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1223767087
@@ -56191,6 +57064,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1229838385
@@ -56491,6 +57365,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1231287489
@@ -56850,6 +57725,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1257315232
@@ -57150,6 +58026,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1260055636
@@ -57450,6 +58327,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1265337479
@@ -57675,6 +58553,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1275197255
@@ -58050,6 +58929,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1290038257
@@ -58275,6 +59155,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1292032565
@@ -58500,6 +59381,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1295318875
@@ -58800,6 +59682,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1297490836
@@ -59100,6 +59983,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1302006342
@@ -59325,6 +60209,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1303445100
@@ -59550,6 +60435,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1307642013
@@ -59850,6 +60736,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1308532943
@@ -60284,6 +61171,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1311860574
@@ -60509,6 +61397,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1314009725
@@ -60681,7 +61570,7 @@ RectTransform:
   - {fileID: 1754712685}
   - {fileID: 373338346}
   m_Father: {fileID: 1512566296}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -60698,7 +61587,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1331220966}
   - component: {fileID: 1331220968}
+  - component: {fileID: 1331220969}
   - component: {fileID: 1331220967}
+  - component: {fileID: 1331220971}
+  - component: {fileID: 1331220970}
   m_Layer: 5
   m_Name: PositionMeter
   m_TagString: Untagged
@@ -60719,13 +61611,14 @@ RectTransform:
   m_Children:
   - {fileID: 17283961}
   - {fileID: 769987333}
+  - {fileID: 242743077}
   m_Father: {fileID: 1017450480}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -555.8, y: 235.2}
-  m_SizeDelta: {x: 120, y: 120}
+  m_SizeDelta: {x: 130, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1331220967
 MonoBehaviour:
@@ -60765,6 +61658,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331220965}
   m_CullTransparentMesh: 1
+--- !u!114 &1331220969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331220965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10ec3fa8735a004d99b61d39354b966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1331220970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331220965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10ec3fa8735a004d99b61d39354b966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1331220971
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331220965}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 20}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 151, y: 132}
+  m_EdgeRadius: 0
 --- !u!1 &1332540377
 GameObject:
   m_ObjectHideFlags: 0
@@ -60878,9 +61821,10 @@ RectTransform:
   - {fileID: 764324262}
   - {fileID: 1561464552}
   - {fileID: 1345588543}
+  - {fileID: 431844792}
   - {fileID: 2014474926}
   m_Father: {fileID: 1512566296}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -61327,7 +62271,12 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1017450480}
+  - {fileID: 399333391}
+  - {fileID: 1661671684}
+  - {fileID: 776249752}
+  - {fileID: 159653182}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -62003,6 +62952,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1379661910
@@ -62378,6 +63328,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1381834469
@@ -62945,6 +63896,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1395554490
@@ -63170,6 +64122,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1403837347
@@ -63470,6 +64423,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1414578529
@@ -63695,6 +64649,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1416122267
@@ -63899,6 +64854,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1431033703
@@ -64520,6 +65476,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1448013054
@@ -64954,6 +65911,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1455505744
@@ -65179,6 +66137,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1455912451
@@ -65629,6 +66588,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1471512807
@@ -66363,6 +67323,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1500438439
@@ -66738,6 +67699,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1508641288
@@ -66971,15 +67933,11 @@ RectTransform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 1}
   m_Children:
   - {fileID: 575645950}
-  - {fileID: 1017450480}
   - {fileID: 1713102937}
   - {fileID: 413580512}
   - {fileID: 760961037}
   - {fileID: 313873358}
   - {fileID: 1328034872}
-  - {fileID: 399333391}
-  - {fileID: 1661671684}
-  - {fileID: 776249752}
   - {fileID: 1340918951}
   - {fileID: 232986611}
   m_Father: {fileID: 0}
@@ -67224,6 +68182,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1514302003
@@ -67449,6 +68408,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1515407602
@@ -67653,6 +68613,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1525919673
@@ -68049,6 +69010,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1533683957
@@ -68445,6 +69407,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1550458042
@@ -68766,6 +69729,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1551010478
@@ -68991,6 +69955,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1557989462
@@ -69091,7 +70056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 564.5, y: -200}
+  m_AnchoredPosition: {x: 512.2, y: -200}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559555636
@@ -69875,6 +70840,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1600328878
@@ -70250,6 +71216,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1602770087
@@ -70475,6 +71442,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1603373757
@@ -70700,6 +71668,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1606451561
@@ -70925,6 +71894,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1610840763
@@ -71375,6 +72345,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1649275285
@@ -71600,6 +72571,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1649395822
@@ -71900,6 +72872,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1652359954
@@ -72139,7 +73112,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661671683}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
@@ -72152,8 +73125,8 @@ RectTransform:
   - {fileID: 588521531}
   - {fileID: 116771173}
   - {fileID: 1383102692}
-  m_Father: {fileID: 1512566296}
-  m_RootOrder: 8
+  m_Father: {fileID: 1349856469}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -72319,6 +73292,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1663279736
@@ -72459,6 +73433,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666456538}
+  m_CullTransparentMesh: 1
+--- !u!1 &1671995394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1671995395}
+  - component: {fileID: 1671995397}
+  - component: {fileID: 1671995396}
+  m_Layer: 5
+  m_Name: HelpText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1671995395
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671995394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 242743077}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: 170, y: 140}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1671995396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671995394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0441\u0431\u0430\u043B\u0430\u043D\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0441\u0442\u044C
+    \u0431\u0443\u043A\u0435\u0442\u0430 \u043E\u0442\u043D\u043E\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u043E
+    \u0446\u0435\u043D\u0442\u0440\u0430 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0446\u0438\u0438"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a3d66f65f3b047e4a8354ab71538c1f0, type: 2}
+  m_sharedMaterial: {fileID: -6018224497819984975, guid: a3d66f65f3b047e4a8354ab71538c1f0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1671995397
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671995394}
   m_CullTransparentMesh: 1
 --- !u!1 &1673823790
 GameObject:
@@ -72769,6 +73879,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1681201614
@@ -73069,6 +74180,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1685739907
@@ -73294,6 +74406,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1687989626
@@ -74012,6 +75125,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1700067509
@@ -74252,6 +75366,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1709281138
@@ -74598,7 +75713,7 @@ RectTransform:
   - {fileID: 829210672}
   - {fileID: 178400021}
   m_Father: {fileID: 1512566296}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -74940,6 +76055,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1725813503
@@ -75374,6 +76490,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1742788974
@@ -75439,6 +76556,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742788970}
+  m_CullTransparentMesh: 1
+--- !u!1 &1745693245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745693246}
+  - component: {fileID: 1745693248}
+  - component: {fileID: 1745693247}
+  m_Layer: 5
+  m_Name: Help
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1745693246
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745693245}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 778917322}
+  m_Father: {fileID: 167734689}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 179.70013, y: 22.5}
+  m_SizeDelta: {x: 240, y: 190}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1745693247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745693245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3e3922088798abe48a0717016dcbace5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1745693248
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745693245}
   m_CullTransparentMesh: 1
 --- !u!1 &1746989900
 GameObject:
@@ -75808,6 +77001,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1750205530
@@ -76108,6 +77302,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1754183381
@@ -76417,7 +77612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 614.5, y: -200}
+  m_AnchoredPosition: {x: 562.2, y: -200}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1756240249
@@ -76692,6 +77887,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1769125893
@@ -76917,6 +78113,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1772338895
@@ -77426,6 +78623,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1781629107
@@ -77726,6 +78924,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1786185578
@@ -78459,6 +79658,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1802464263
@@ -78684,6 +79884,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1806439624
@@ -78784,7 +79985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 464.5, y: -200}
+  m_AnchoredPosition: {x: 412.2, y: -200}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808119007
@@ -78984,6 +80185,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1810662346
@@ -79209,6 +80411,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1816582921
@@ -79659,6 +80862,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1831896145
@@ -79884,6 +81088,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1834044005
@@ -80468,6 +81673,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1846990468
@@ -80918,6 +82124,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1858416555
@@ -81143,6 +82350,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1863376831
@@ -81368,6 +82576,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1872832391
@@ -81743,6 +82952,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1878145363
@@ -81947,6 +83157,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1880533117
@@ -82268,6 +83479,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1893101094
@@ -82493,6 +83705,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1897660654
@@ -82718,6 +83931,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1899138737
@@ -83227,6 +84441,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1923527411
@@ -83595,7 +84810,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1500517735}
   m_HandleRect: {fileID: 0}
@@ -83766,6 +84981,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1933523872
@@ -84466,6 +85682,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1962376311
@@ -84825,6 +86042,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1967095762
@@ -85500,6 +86718,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1977610893
@@ -85800,6 +87019,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1980005176
@@ -86025,6 +87245,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1980368622
@@ -86325,6 +87546,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1986593746
@@ -86625,6 +87847,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1988688806
@@ -86850,6 +88073,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1989735977
@@ -87359,6 +88583,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &1995039339
@@ -87884,6 +89109,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2013961125
@@ -87982,7 +89208,7 @@ RectTransform:
   m_Children:
   - {fileID: 969178140}
   m_Father: {fileID: 1340918951}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -88449,6 +89675,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2035105321
@@ -88674,6 +89901,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2039277878
@@ -89049,6 +90277,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2046069615
@@ -89633,6 +90862,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2060894170
@@ -89837,6 +91067,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2063429340
@@ -90308,6 +91539,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2073530571
@@ -90533,6 +91765,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2074721524
@@ -90758,6 +91991,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2076014136
@@ -90887,6 +92121,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2078546583
@@ -91433,6 +92668,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2105432948
@@ -91733,6 +92969,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2105796524
@@ -91958,6 +93195,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2111890697
@@ -92258,6 +93496,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2115956388
@@ -92617,6 +93856,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2120728348
@@ -92842,6 +94082,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2120783539
@@ -93046,6 +94287,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2124798770
@@ -93367,6 +94609,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2126555045
@@ -93592,6 +94835,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2128229089
@@ -94025,6 +95269,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2135856852
@@ -94250,6 +95495,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2136438993
@@ -94550,6 +95796,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2139372170
@@ -94775,6 +96022,7 @@ MonoBehaviour:
   content: {fileID: 98349551}
   desctiptionMenu: {fileID: 5180834233250536911, guid: 3f6309ed6b991804f9654fcfddda5666, type: 3}
   gameManager: {fileID: 810505136}
+  editCanvas: {fileID: 1349856465}
   buttonCreate: {fileID: 413580513}
   buttonBack: {fileID: 313873359}
 --- !u!61 &2143530324
