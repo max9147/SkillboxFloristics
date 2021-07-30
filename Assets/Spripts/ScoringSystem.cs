@@ -40,6 +40,9 @@ public class ScoringSystem : MonoBehaviour
     public TextMeshProUGUI greenScoreText;
     public TextMeshProUGUI colorScoreText;
     public TextMeshProUGUI colorScoreTextNumber;
+    public TextMeshProUGUI balanceScoreText;
+    public TextMeshProUGUI balanceScoreTextNumber;
+    public TextMeshProUGUI endHelpText;
     public Slider sizeSlider;
 
     private GameObject[] toDestroy;
@@ -71,7 +74,11 @@ public class ScoringSystem : MonoBehaviour
     private float detailsScore = 0;
     private float greenScore = 0;
     private bool isOpen = false;
+    private bool[] endHelpStatus = { false, false, false, false, false };
     private string colorString;
+    private string[] endHelpStrings = { "Попробуй использовать каждый вид цветов для создания совершенного букета.\n", "Букет будет смотреться красивее, если использовать цветы одной цветовой гаммы.\n",
+        "Букет будет смотреться лучше, если использовать только противоположные цвета.\n", "Нарушение правильных пропорций в количестве цветов пойдет букету только на пользу.\n",
+        "Букет будет смотреться совершеннее, если использовать цвета, которые в круге составляют треугольник.\n"};
 
     private int CheckType()
     {
@@ -103,6 +110,8 @@ public class ScoringSystem : MonoBehaviour
                     break;
             }
         }
+
+        if (focusCount == 0 || baseCount == 0 || fillCount == 0 || detailsCount == 0 || greenCount == 0) endHelpStatus[0] = true;
 
         if (((float)focusCount / addedFlowers.Count) >= 0.071f && ((float)focusCount / addedFlowers.Count) <= 0.25f)
         {
@@ -234,18 +243,25 @@ public class ScoringSystem : MonoBehaviour
         {
             case 0:
                 colorScore = CheckMonochrome();
+                if (monochromeCount < flowerColors.Count) endHelpStatus[1] = true;
                 colorString = "Монохромная цветовая гамма";
                 break;
             case 1:
                 colorScore = CheckContrast();
+                if (contrastCount < flowerColors.Count) endHelpStatus[2] = true;
+                if (colorScore <= 1000) endHelpStatus[3] = true;
                 colorString = "Контрастная цветовая гамма";
                 break;
             case 2:
                 colorScore = CheckHarmony();
+                if (colorScore <= 1500) endHelpStatus[3] = true;
+                if (harmonyCount < flowerColors.Count) endHelpStatus[4] = true;
                 colorString = "Гармоническая цветовая гамма";
                 break;
             case 3:
                 colorScore = CheckContrastHarmony();
+                if (colorScore <= 1500) endHelpStatus[3] = true;
+                if (harmonyCount < flowerColors.Count) endHelpStatus[4] = true;
                 colorString = "Контрастная гармоническая цветовая гамма";
                 break;
             default:
@@ -270,7 +286,7 @@ public class ScoringSystem : MonoBehaviour
       .Select(grp => grp.Key).First();
         foreach (var item in flowerColors)
         {
-            if (item != most) score -= 35;
+            if (item != most) score -= 30;
             else monochromeCount++;
         }
         return score;
@@ -339,7 +355,7 @@ public class ScoringSystem : MonoBehaviour
             default:
                 break;
         }
-        score -= 70 * (flowerColors.Count - max);
+        score -= 40 * (flowerColors.Count - max);
         return score;
     }
 
@@ -401,7 +417,7 @@ public class ScoringSystem : MonoBehaviour
             default:
                 break;
         }
-        score -= 105 * (flowerColors.Count - max);
+        score -= 60 * (flowerColors.Count - max);
         return score;
     }
 
@@ -544,14 +560,37 @@ public class ScoringSystem : MonoBehaviour
             default:
                 break;
         }
-        score -= 105 * (flowerColors.Count - max);
+        score -= 60 * (flowerColors.Count - max);
         return score;
+    }
+
+    private int CheckBalance()
+    {
+        if (positionArrow.transform.eulerAngles.z < 20 || positionArrow.transform.eulerAngles.z > 340)
+        {
+            balanceScoreText.text = "Отличный горизонтальный баланс";
+            balanceScoreTextNumber.text = "500";
+            return 500;
+        }
+        else if (positionArrow.transform.eulerAngles.z < 60 || positionArrow.transform.eulerAngles.z > 300)
+        {
+            balanceScoreText.text = "Хороший горизонтальный баланс";
+            balanceScoreTextNumber.text = "250";
+            return 250;
+        }
+        else
+        {
+            balanceScoreText.text = "Плохой горизонтальный баланс";
+            balanceScoreTextNumber.text = "0";
+            return 0;
+        }
     }
 
     public void CountScore()
     {
         totalScore += CheckType();
         totalScore += CheckColor();
+        totalScore += CheckBalance();
         scoreScreen.SetActive(true);
         isOpen = true;
         for (int i = 0; i < starCount; i++) stars[i].GetComponent<Image>().sprite = starActive;
@@ -574,10 +613,21 @@ public class ScoringSystem : MonoBehaviour
         colorScoreText.text = colorString.ToString();
         colorScoreTextNumber.text = CheckColor().ToString();
         totalScoreText.text = totalScore.ToString();
+        for (int i = 0; i < endHelpStatus.Length; i++)
+        {
+            if (endHelpStatus[i])
+            {
+                endHelpText.text += endHelpStrings[i];
+            }
+        }
     }
 
     public void CloseScore()
     {
+        for (int i = 0; i < endHelpStatus.Length; i++)
+        {
+            endHelpStatus[i] = false;
+        }
         endHelpMenu.SetActive(false);
         soundButton.GetComponent<AudioSource>().Play();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
