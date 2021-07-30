@@ -845,11 +845,11 @@ public class ScoringSystem : MonoBehaviour
                         break;
                     case 6:
                         ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 180);
-                        ContrastHarmonyMeter.transform.localScale = new Vector3(1, 1, 1);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(-1, 1, 1);
                         break;
                     case 7:
                         ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 180);
-                        ContrastHarmonyMeter.transform.localScale = new Vector3(-1, 1, 1);
+                        ContrastHarmonyMeter.transform.localScale = new Vector3(1, 1, 1);
                         break;
                     case 8:
                         ContrastHarmonyMeter.transform.eulerAngles = new Vector3(0, 0, 120);
