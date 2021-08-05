@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,7 @@ public class EditFlowers : MonoBehaviour
     public Button buttonReset;
     public Button buttonBack;
     public Slider sizeSlider;
+    public TextMeshProUGUI amountText;
     public bool isDragging = false;
 
     private GameObject prevFlower;
@@ -67,7 +69,8 @@ public class EditFlowers : MonoBehaviour
 
         if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 1 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 1 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
             sizeSlider.value -= 0.033f;
-        GetComponent<ScoringSystem>().RemoveFromScoring(flower.GetComponent<SpriteRenderer>().sortingOrder - 1);
+
+        GetComponent<ScoringSystem>().RemoveFromScoring(flower.GetComponent<SpriteRenderer>().sortingOrder - 1);        
 
         flowers = GameObject.FindGameObjectsWithTag("Flower");
         if (bouquet.activeInHierarchy)
@@ -112,6 +115,11 @@ public class EditFlowers : MonoBehaviour
                     buttonCreate.interactable = false;
             }
         }
+
+        if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 30 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 30) amountText.text = "Много цветов";
+        else if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10) amountText.text = "";
+        else amountText.text = "Мало цветов";
+
         if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
             buttonCreate.interactable = true;
 

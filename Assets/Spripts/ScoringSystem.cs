@@ -43,7 +43,8 @@ public class ScoringSystem : MonoBehaviour
     public TextMeshProUGUI balanceScoreText;
     public TextMeshProUGUI balanceScoreTextNumber;
     public TextMeshProUGUI endHelpText;
-    public Slider sizeSlider;
+    public TextMeshProUGUI amountText;
+    public Slider sizeSlider;    
 
     private GameObject[] toDestroy;
     private FlowerColor most;
@@ -640,9 +641,11 @@ public class ScoringSystem : MonoBehaviour
         totalScore = 0;
         starCount = 0;
         sizeSlider.value = 0;
+        amountText.text = "";
         positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
         GetComponent<SelectType>().InitSelection();
         CheckColorMeter();
+        endHelpText.text = "";
     }
 
     public void AddFlower(GameObject flower)

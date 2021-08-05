@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ArrangeBouquet : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ArrangeBouquet : MonoBehaviour
     public Button buttonReset;
     public Button buttonBack;
     public Slider sizeSlider;
+    public TextMeshProUGUI amountText;
 
     private GameObject collisionFlower; //Цветок только что вошедший в букет
     private List<float> rotations = new List<float>();
@@ -79,10 +81,17 @@ public class ArrangeBouquet : MonoBehaviour
         if (flowerInside)
         {
             flowerCount++;
-            if (flowerCount <= 30) sizeSlider.value += 0.033f;
-            if (flowerCount >= 10 && flowerCount <= 30)
+            if (flowerCount > 30) amountText.text = "Много цветов";
+            else if (flowerCount >= 10)
             {
+                sizeSlider.value += 0.033f;
+                amountText.text = "";
                 buttonCreate.interactable = true;
+            }
+            else
+            {
+                sizeSlider.value += 0.033f;
+                amountText.text = "Мало цветов";
             }
             if (collisionFlower)
             {

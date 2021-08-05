@@ -14,6 +14,7 @@ public class CreateComp : MonoBehaviour
     public Button buttonReset;
     public Button buttonBack;
     public Slider sizeSlider;
+    public TextMeshProUGUI amountText;
 
     private GameObject[] toDestroy;
 
@@ -37,6 +38,7 @@ public class CreateComp : MonoBehaviour
         buttonReset.interactable = false;
         buttonBack.interactable = false;
         sizeSlider.value = 0;
+        amountText.text = "";
         positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
         if (bouquet.activeInHierarchy) bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
         if (basket.activeInHierarchy) basket.GetComponent<ArrangeBasket>().ClearBasket();
@@ -115,6 +117,11 @@ public class CreateComp : MonoBehaviour
                 }
             }
         }
+
+        if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 30 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 30) amountText.text = "Много цветов";
+        else if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10 || (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() == 0 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() == 0)) amountText.text = "";
+        else amountText.text = "Мало цветов";
+
         if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
         {
             buttonCreate.interactable = true;
