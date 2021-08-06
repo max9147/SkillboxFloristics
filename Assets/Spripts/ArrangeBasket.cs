@@ -8,7 +8,6 @@ public class ArrangeBasket : MonoBehaviour
 {
     public GameObject positionArrow;
     public Button buttonCreate;
-    public Button buttonReset;
     public Button buttonBack;
     public Slider sizeSlider;
     public TextMeshProUGUI amountText;
@@ -91,14 +90,34 @@ public class ArrangeBasket : MonoBehaviour
             }
             if (collisionFlower)
             {
-                rotations.Add((collisionFlower.transform.position.x - transform.position.x) * -40);
-                positionValue -= (collisionFlower.transform.position.x - transform.position.x) * 40;
+                float rotateMult = 1;
+                switch (collisionFlower.GetComponent<SelectFlowers>().type)
+                {
+                    case "Focus":
+                        rotateMult = 1.5f;
+                        break;
+                    case "Base":
+                        rotateMult = 1;
+                        break;
+                    case "Fill":
+                        rotateMult = 0.7f;
+                        break;
+                    case "Details":
+                        rotateMult = 0.5f;
+                        break;
+                    case "Green":
+                        rotateMult = 0.3f;
+                        break;
+                    default:
+                        break;
+                }
+                rotations.Add((collisionFlower.transform.position.x - transform.position.x) * -40 * rotateMult);
+                positionValue -= (collisionFlower.transform.position.x - transform.position.x) * 40 * rotateMult;
                 Vector3 arrowRotation = positionArrow.transform.eulerAngles;
                 if (positionValue > 90) arrowRotation.z = 90;
                 else if (positionValue < -90) arrowRotation.z = -90;
                 else arrowRotation.z = positionValue;
                 positionArrow.transform.eulerAngles = arrowRotation;
-                buttonReset.interactable = true;
                 collisionFlower = null;
             }
             return true;

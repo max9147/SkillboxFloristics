@@ -14,7 +14,6 @@ public class EditFlowers : MonoBehaviour
     public GameObject soundButton;
     public Camera mainCam;
     public Button buttonCreate;
-    public Button buttonReset;
     public Button buttonBack;
     public Slider sizeSlider;
     public TextMeshProUGUI amountText;
@@ -23,26 +22,29 @@ public class EditFlowers : MonoBehaviour
     private GameObject prevFlower;
     private GameObject curMenu;
     private GameObject[] flowers;
-    private string prevLayer;
     private bool isEditing = false;
 
     public void SelectFlower(GameObject flower)
     {
         if (flower.GetComponent<SpriteRenderer>().sortingLayerName == "Default" || isEditing || GetComponent<ScoringSystem>().CheckIsOpen()) return;
-        prevFlower = flower;
-        prevLayer = flower.GetComponent<SpriteRenderer>().sortingLayerName;
-        flower.GetComponent<SpriteRenderer>().sortingLayerName = "Foreground";        
+        prevFlower = flower;      
+        flower.GetComponent<SpriteRenderer>().sortingLayerName = "Foreground";
+        flower.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.None;
     }
 
     public void DisselectFlower()
     {
-        if (prevFlower && !isEditing) prevFlower.GetComponent<SpriteRenderer>().sortingLayerName = prevLayer;
+        if (prevFlower && !isEditing)
+        {
+            prevFlower.GetComponent<SpriteRenderer>().sortingLayerName = "Flowers";
+            prevFlower.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
+        }
     }
 
     public void StartEdit(GameObject flower)
     {        
         if (curMenu || GetComponent<ScoringSystem>().CheckIsOpen()) return;
-        flower.GetComponent<SpriteRenderer>().sortingLayerName = prevLayer;
+        flower.GetComponent<SpriteRenderer>().sortingLayerName = "Flowers";
         isEditing = true;
         curMenu = Instantiate(editMenu, canvas.transform);
         Vector3 curPos = new Vector3(mainCam.ScreenToWorldPoint(Input.mousePosition).x, mainCam.ScreenToWorldPoint(Input.mousePosition).y, 0); //Текущая позиция курсора
@@ -86,7 +88,6 @@ public class EditFlowers : MonoBehaviour
 
                 if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() == 0)
                 {
-                    buttonReset.interactable = false;
                     buttonBack.interactable = false;
                 }
 
@@ -107,7 +108,6 @@ public class EditFlowers : MonoBehaviour
 
                 if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() == 0)
                 {
-                    buttonReset.interactable = false;
                     buttonBack.interactable = false;
                 }
 
@@ -139,11 +139,6 @@ public class EditFlowers : MonoBehaviour
             {
                 item.GetComponent<SpriteRenderer>().sortingOrder--;
                 flower.GetComponent<SpriteRenderer>().sortingOrder++;
-                if (item.GetComponent<SpriteRenderer>().sortingLayerName != flower.GetComponent<SpriteRenderer>().sortingLayerName)
-                {
-                    flower.GetComponent<SpriteRenderer>().sortingLayerName = item.GetComponent<SpriteRenderer>().sortingLayerName;
-                    prevLayer = flower.GetComponent<SpriteRenderer>().sortingLayerName;
-                }
                 break;
             }
         }
@@ -159,11 +154,6 @@ public class EditFlowers : MonoBehaviour
             {
                 item.GetComponent<SpriteRenderer>().sortingOrder++;
                 flower.GetComponent<SpriteRenderer>().sortingOrder--;
-                if (item.GetComponent<SpriteRenderer>().sortingLayerName != flower.GetComponent<SpriteRenderer>().sortingLayerName)
-                {
-                    flower.GetComponent<SpriteRenderer>().sortingLayerName = item.GetComponent<SpriteRenderer>().sortingLayerName;
-                    prevLayer = flower.GetComponent<SpriteRenderer>().sortingLayerName;
-                }
                 break;
             }
         }

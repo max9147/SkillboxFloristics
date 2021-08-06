@@ -43,20 +43,8 @@ TagManager:
   - name: Background
     uniqueID: 3869871187
     locked: 0
-  - name: Focus
+  - name: Flowers
     uniqueID: 4216341811
-    locked: 0
-  - name: Base
-    uniqueID: 771156703
-    locked: 0
-  - name: Fill
-    uniqueID: 1140365117
-    locked: 0
-  - name: Details
-    uniqueID: 3976434745
-    locked: 0
-  - name: Green
-    uniqueID: 1521411377
     locked: 0
   - name: Default
     uniqueID: 0

@@ -98,18 +98,17 @@ public class DragFlowers : MonoBehaviour
 
                 if (bouquet.GetComponent<ArrangeBouquet>().CheckFlowerInside())
                 {
-                    flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = flower.size; //Перемещаем цветок на его слой
-                    flowerToDrag.GetComponent<SelectFlowers>().type = flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName;
+                    flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = "Flowers"; //Перемещаем цветок на его слой
+                    flowerToDrag.GetComponent<SelectFlowers>().type = flower.size;
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingOrder = bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() + 1;
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
 
-                    if (flower.size == "Details")
+                    snappedPos = new Vector3(curPos.x, (curPos.y + 1) / 2, 0); //Находим место цветка в букете
+
+                    if (snappedPos.y < 0)
                     {
-                        snappedPos = new Vector3(curPos.x, curPos.y + 1, 0); //Находим место цветка в букете
-                    }
-                    else
-                    {
-                        snappedPos = new Vector3((bouquet.transform.position.x + curPos.x) / 2, (bouquet.transform.position.y + curPos.y) / 2, 0); //Находим место цветка в букете
+                        float deviation = snappedPos.x - bouquet.transform.position.x;
+                        snappedPos.x -= deviation * -snappedPos.y;
                     }
 
                     flowerToDrag.transform.position = snappedPos;
@@ -130,8 +129,8 @@ public class DragFlowers : MonoBehaviour
                 }
                 else if (basket.GetComponent<ArrangeBasket>().CheckFlowerInside())
                 {
-                    flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = flower.size; //Перемещаем цветок на его слой
-                    flowerToDrag.GetComponent<SelectFlowers>().type = flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName;
+                    flowerToDrag.GetComponent<SpriteRenderer>().sortingLayerName = "Flowers"; //Перемещаем цветок на его слой
+                    flowerToDrag.GetComponent<SelectFlowers>().type = flower.size;
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingOrder = basket.GetComponent<ArrangeBasket>().GetFlowerCount() + 1;
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
                     flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри корзины
@@ -167,8 +166,7 @@ public class DragFlowers : MonoBehaviour
     private void ReleaseFlower() //Считаем цветок используемым в букете
     {
         gameManager.GetComponent<ScoringSystem>().AddFlower(flowerToDrag);
-        if (flower.size != "Green")
-            gameManager.GetComponent<ScoringSystem>().AddColor(flower.color);
+        gameManager.GetComponent<ScoringSystem>().AddColor(flower.color);
         flowerToDrag = null;
         canTake = true;
         buttonBack.interactable = true;

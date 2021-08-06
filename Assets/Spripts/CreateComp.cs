@@ -23,7 +23,6 @@ public class CreateComp : MonoBehaviour
         buttonCreate.GetComponent<AudioSource>().Play();
         GetComponent<EditFlowers>().StopEdit();
         buttonCreate.interactable = false; //Запрещаем нажимать на создание букета после создания
-        buttonReset.interactable = false;
         buttonBack.interactable = false;
         GetComponent<ScoringSystem>().CountScore();
         if (bouquet.activeInHierarchy) bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
@@ -35,7 +34,6 @@ public class CreateComp : MonoBehaviour
         buttonReset.GetComponent<AudioSource>().Play();
         GetComponent<EditFlowers>().StopEdit();
         buttonCreate.interactable = false;
-        buttonReset.interactable = false;
         buttonBack.interactable = false;
         sizeSlider.value = 0;
         amountText.text = "";
@@ -81,7 +79,6 @@ public class CreateComp : MonoBehaviour
 
                 if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() == 0)
                 {
-                    buttonReset.interactable = false;
                     buttonBack.interactable = false;
                 }
 
@@ -107,7 +104,6 @@ public class CreateComp : MonoBehaviour
 
                 if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() == 0)
                 {
-                    buttonReset.interactable = false;
                     buttonBack.interactable = false;
                 }
 

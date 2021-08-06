@@ -5,6 +5,7 @@ using UnityEngine;
 public class SelectType : MonoBehaviour
 {
     public GameObject bouquet;
+    public GameObject bouquetBackground;
     public GameObject bouquetTip;
     public GameObject basket;
     public GameObject basketBackground;
@@ -13,6 +14,9 @@ public class SelectType : MonoBehaviour
     public GameObject chooseBasketMenu;
     public GameObject soundButton;
     public Sprite[] bouquets;
+    public Sprite bouquetBG;
+    public Sprite bouquetBGGray;
+    public Sprite bouquetBGBig;
     public Sprite bouquetMaskBig;
     public Sprite bouquetMaskGray;
     public Sprite bouquetMask;
@@ -54,14 +58,20 @@ public class SelectType : MonoBehaviour
         {
             case 0:
                 bouquet.GetComponent<SpriteMask>().sprite = bouquetMaskBig;
+                bouquetBackground.GetComponent<SpriteRenderer>().sprite = bouquetBGBig;
+                bouquetBackground.transform.localScale = new Vector3(1, 1, 1);
                 bouquetTip.transform.localPosition = new Vector3(0.2f, -2.6f, 0);
                 break;          
             case 2:
                 bouquet.GetComponent<SpriteMask>().sprite = bouquetMaskGray;
+                bouquetBackground.GetComponent<SpriteRenderer>().sprite = bouquetBGGray;
+                bouquetBackground.transform.localScale = new Vector3(1.54f, 1.54f, 1);
                 bouquetTip.transform.localPosition = new Vector3(-0.1f, -2.6f, 0);
                 break;
             default:
                 bouquet.GetComponent<SpriteMask>().sprite = bouquetMask;
+                bouquetBackground.GetComponent<SpriteRenderer>().sprite = bouquetBG;
+                bouquetBackground.transform.localScale = new Vector3(1.81f, 1.81f, 1);
                 bouquetTip.transform.localPosition = new Vector3(-0.1f, -2.6f, 0);
                 break;
         }
@@ -101,6 +111,14 @@ public class SelectType : MonoBehaviour
 
         basket.SetActive(true);
         isOpen = false;
+    }
+
+    public void ReturnSelection()
+    {
+        soundButton.GetComponent<AudioSource>().Play();
+        chooseBasketMenu.SetActive(false);
+        chooseBouquetMenu.SetActive(false);
+        selectMenu.SetActive(true);
     }
 
     public bool CheckIsOpen()

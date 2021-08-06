@@ -40,8 +40,6 @@ public class ScoringSystem : MonoBehaviour
     public TextMeshProUGUI greenScoreText;
     public TextMeshProUGUI colorScoreText;
     public TextMeshProUGUI colorScoreTextNumber;
-    public TextMeshProUGUI balanceScoreText;
-    public TextMeshProUGUI balanceScoreTextNumber;
     public TextMeshProUGUI endHelpText;
     public TextMeshProUGUI amountText;
     public Slider sizeSlider;    
@@ -565,33 +563,10 @@ public class ScoringSystem : MonoBehaviour
         return score;
     }
 
-    private int CheckBalance()
-    {
-        if (positionArrow.transform.eulerAngles.z < 20 || positionArrow.transform.eulerAngles.z > 340)
-        {
-            balanceScoreText.text = "Отличный горизонтальный баланс";
-            balanceScoreTextNumber.text = "500";
-            return 500;
-        }
-        else if (positionArrow.transform.eulerAngles.z < 60 || positionArrow.transform.eulerAngles.z > 300)
-        {
-            balanceScoreText.text = "Хороший горизонтальный баланс";
-            balanceScoreTextNumber.text = "250";
-            return 250;
-        }
-        else
-        {
-            balanceScoreText.text = "Плохой горизонтальный баланс";
-            balanceScoreTextNumber.text = "0";
-            return 0;
-        }
-    }
-
     public void CountScore()
     {
         totalScore += CheckType();
         totalScore += CheckColor();
-        totalScore += CheckBalance();
         scoreScreen.SetActive(true);
         isOpen = true;
         for (int i = 0; i < starCount; i++) stars[i].GetComponent<Image>().sprite = starActive;
@@ -660,40 +635,14 @@ public class ScoringSystem : MonoBehaviour
 
     public void RemoveFromScoring()
     {
-        int greenPre = 0;
-        int greenNow = 0;
-        foreach (var item in addedFlowers)
-        {
-            if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")
-                greenPre++;            
-        }        
         addedFlowers.RemoveAt(addedFlowers.Count - 1);
-        foreach (var item in addedFlowers)
-        {
-            if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")
-                greenNow++;
-        }
-        if (greenNow == greenPre)
-            flowerColors.RemoveAt(flowerColors.Count - 1);
+        flowerColors.RemoveAt(flowerColors.Count - 1);
     }
 
     public void RemoveFromScoring(int id)
     {
-        int greenPre = 0;
-        int greenNow = 0;
-        foreach (var item in addedFlowers)
-        {
-            if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")
-                greenPre++;
-        }
         addedFlowers.RemoveAt(id);
-        foreach (var item in addedFlowers)
-        {
-            if (item.GetComponent<SpriteRenderer>().sortingLayerName == "Green")
-                greenNow++;
-        }
-        if (greenNow == greenPre)
-            flowerColors.RemoveAt(id);
+        flowerColors.RemoveAt(id);
     }
 
     public void CheckColorMeter()
