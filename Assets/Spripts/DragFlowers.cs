@@ -104,12 +104,24 @@ public class DragFlowers : MonoBehaviour
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
 
                     snappedPos = new Vector3(curPos.x, (curPos.y + 1) / 2, 0); //Находим место цветка в букете
+                    float deviation = snappedPos.x - bouquet.transform.position.x;
+                    float coeff;
 
-                    if (snappedPos.y < 0)
+                    switch (bouquet.GetComponent<ArrangeBouquet>().bouquetID)
                     {
-                        float deviation = snappedPos.x - bouquet.transform.position.x;
-                        snappedPos.x -= deviation * -snappedPos.y;
-                    }
+                        case 0:
+                            coeff = Mathf.Clamp(snappedPos.y - bouquet.transform.position.y, 0, 2) / 2;
+                            snappedPos.x -= deviation * (1 - coeff);
+                            break;
+                        case 2:
+                            coeff = Mathf.Clamp(snappedPos.y - bouquet.transform.position.y, 0, 3) / 3;
+                            snappedPos.x -= deviation * (1 - coeff * 0.7f);
+                            break;
+                        default:
+                            coeff = Mathf.Clamp(snappedPos.y - bouquet.transform.position.y, 0, 3) / 3;
+                            snappedPos.x -= deviation * (1 - coeff * 0.9f);
+                            break;
+                    }                    
 
                     flowerToDrag.transform.position = snappedPos;
                     flowerToDrag.transform.up = (bouquetTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри букета
@@ -133,9 +145,14 @@ public class DragFlowers : MonoBehaviour
                     flowerToDrag.GetComponent<SelectFlowers>().type = flower.size;
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingOrder = basket.GetComponent<ArrangeBasket>().GetFlowerCount() + 1;
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
-                    flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position) * -1; //Задаем цветку поворот внутри корзины
-                    snappedPos = new Vector3((basket.transform.position.x + curPos.x) / 2, curPos.y+2, 0); //Находим место цветка в корзине
+
+                    snappedPos = new Vector3((basket.transform.position.x + curPos.x) / 2, curPos.y, 0); //Находим место цветка в корзине
+                    float deviation = snappedPos.x - bouquet.transform.position.x;
+                    snappedPos.y = Mathf.Clamp(snappedPos.y, -1.5f, 3);
+
                     flowerToDrag.transform.position = snappedPos;
+
+                    flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position + new Vector3(0, Mathf.Abs(deviation)*3, 0)) * -1f; //Задаем цветку поворот внутри корзины
                 }
                 else
                 {

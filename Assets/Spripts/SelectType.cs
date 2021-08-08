@@ -53,6 +53,7 @@ public class SelectType : MonoBehaviour
         soundButton.GetComponent<AudioSource>().Play();
         chooseBouquetMenu.SetActive(false);
         bouquet.GetComponent<SpriteRenderer>().sprite = bouquets[id];
+        bouquet.GetComponent<ArrangeBouquet>().bouquetID = id;
 
         switch (id)
         {

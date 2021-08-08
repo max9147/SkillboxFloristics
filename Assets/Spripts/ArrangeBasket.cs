@@ -10,7 +10,7 @@ public class ArrangeBasket : MonoBehaviour
     public Button buttonCreate;
     public Button buttonBack;
     public Slider sizeSlider;
-    public TextMeshProUGUI amountText;
+    public TextMeshProUGUI amountText;   
 
     private GameObject collisionFlower; //÷веток только что вошедший в букет
     private List<float> rotations = new List<float>();

@@ -11,6 +11,7 @@ public class ArrangeBouquet : MonoBehaviour
     public Button buttonBack;
     public Slider sizeSlider;
     public TextMeshProUGUI amountText;
+    public int bouquetID;
 
     private GameObject collisionFlower; //÷веток только что вошедший в букет
     private List<float> rotations = new List<float>();
