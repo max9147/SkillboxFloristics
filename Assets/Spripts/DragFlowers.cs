@@ -146,13 +146,13 @@ public class DragFlowers : MonoBehaviour
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingOrder = basket.GetComponent<ArrangeBasket>().GetFlowerCount() + 1;
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
 
-                    snappedPos = new Vector3((basket.transform.position.x + curPos.x) / 2, curPos.y, 0); //Находим место цветка в корзине
+                    snappedPos = new Vector3((basket.transform.position.x + curPos.x) / 2, (curPos.y / 2) + 0.2f, 0); //Находим место цветка в корзине
                     float deviation = snappedPos.x - bouquet.transform.position.x;
-                    snappedPos.y = Mathf.Clamp(snappedPos.y, -1.5f, 3);
+                    //snappedPos.y = Mathf.Clamp(snappedPos.y, -1.2f, 3);
 
                     flowerToDrag.transform.position = snappedPos;
 
-                    flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position + new Vector3(0, Mathf.Abs(deviation)*3, 0)) * -1f; //Задаем цветку поворот внутри корзины
+                    flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position + new Vector3(0, Mathf.Abs(deviation) * 3.8f, 0)) * -1f; //Задаем цветку поворот внутри корзины
                 }
                 else
                 {
@@ -182,6 +182,7 @@ public class DragFlowers : MonoBehaviour
 
     private void ReleaseFlower() //Считаем цветок используемым в букете
     {
+        gameManager.GetComponent<LogSystem>().AddFlowerToLog(flower);
         gameManager.GetComponent<ScoringSystem>().AddFlower(flowerToDrag);
         gameManager.GetComponent<ScoringSystem>().AddColor(flower.color);
         flowerToDrag = null;

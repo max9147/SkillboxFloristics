@@ -6,8 +6,11 @@ using UnityEngine.UI;
 
 public class TabsChange : MonoBehaviour
 {
+    public GameObject bouquet;
+    public GameObject basket;
     public GameObject description;
     public GameObject content;
+    public GameObject log;
     public GameObject focusFlowers;
     public GameObject baseFlowers;
     public GameObject fillFlowers;
@@ -31,13 +34,25 @@ public class TabsChange : MonoBehaviour
 
         foreach (var item in buttons)
             item.GetComponent<Image>().sprite = button;
-        buttons[4].GetComponent<Image>().sprite = buttonGreen;
-        if (id == 5) buttons[4].GetComponent<Image>().sprite = buttonGreenPressed;
-        else buttons[id - 1].GetComponent<Image>().sprite = buttonPressed;
+        buttons[5].GetComponent<Image>().sprite = buttonGreen;
+        if (id == 5) buttons[5].GetComponent<Image>().sprite = buttonGreenPressed;
+        else buttons[id].GetComponent<Image>().sprite = buttonPressed;
 
         switch (id)
         {
-            case 1:                
+            case 0:
+                log.SetActive(true);
+                focusFlowers.SetActive(false);
+                baseFlowers.SetActive(false);
+                fillFlowers.SetActive(false);
+                detailFlowers.SetActive(false);
+                green.SetActive(false);
+                if (bouquet.activeSelf) content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() * 100);
+                else content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, basket.GetComponent<ArrangeBasket>().GetFlowerCount() * 100);
+                descriptionText.text = "Во вкладке \"Ваш букет\" можно смотреть и редактировать цветы, участвующие в композиции.";
+                break;
+            case 1:
+                log.SetActive(false);
                 focusFlowers.SetActive(true);
                 baseFlowers.SetActive(false);
                 fillFlowers.SetActive(false);
@@ -49,6 +64,7 @@ public class TabsChange : MonoBehaviour
                 break;
 
             case 2:
+                log.SetActive(false);
                 focusFlowers.SetActive(false);
                 baseFlowers.SetActive(true);
                 fillFlowers.SetActive(false);
@@ -61,6 +77,7 @@ public class TabsChange : MonoBehaviour
                 break;
 
             case 3:
+                log.SetActive(false);
                 focusFlowers.SetActive(false);
                 baseFlowers.SetActive(false);
                 fillFlowers.SetActive(true);
@@ -72,6 +89,7 @@ public class TabsChange : MonoBehaviour
                 break;
 
             case 4:
+                log.SetActive(false);
                 focusFlowers.SetActive(false);
                 baseFlowers.SetActive(false);
                 fillFlowers.SetActive(false);
@@ -83,6 +101,7 @@ public class TabsChange : MonoBehaviour
                 break;
 
             case 5:
+                log.SetActive(false);
                 focusFlowers.SetActive(false);
                 baseFlowers.SetActive(false);
                 fillFlowers.SetActive(false);

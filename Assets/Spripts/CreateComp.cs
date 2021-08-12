@@ -53,6 +53,7 @@ public class CreateComp : MonoBehaviour
         }
         GetComponent<SelectType>().InitSelection();
         GetComponent<ScoringSystem>().CheckColorMeter();
+        GetComponent<LogSystem>().ClearLog();
     }
 
     public void PressRemove()
@@ -62,6 +63,7 @@ public class CreateComp : MonoBehaviour
         if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 1 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 1 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
             sizeSlider.value -= 0.033f;         
         GetComponent<ScoringSystem>().RemoveFromScoring();
+        GetComponent<LogSystem>().RemoveFromLog();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         if (bouquet.activeInHierarchy)
         {

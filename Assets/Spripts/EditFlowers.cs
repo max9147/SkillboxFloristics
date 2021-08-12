@@ -127,6 +127,7 @@ public class EditFlowers : MonoBehaviour
             if (item.GetComponent<SpriteRenderer>().sortingOrder > flower.GetComponent<SpriteRenderer>().sortingOrder) item.GetComponent<SpriteRenderer>().sortingOrder--;
 
         GetComponent<ScoringSystem>().CheckColorMeter();
+        GetComponent<LogSystem>().RemoveFromLog(flower.GetComponent<SpriteRenderer>().sortingOrder);
     }
 
     public void LayerUp(GameObject flower)

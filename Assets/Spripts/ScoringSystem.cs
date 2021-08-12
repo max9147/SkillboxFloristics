@@ -621,6 +621,7 @@ public class ScoringSystem : MonoBehaviour
         GetComponent<SelectType>().InitSelection();
         CheckColorMeter();
         endHelpText.text = "";
+        GetComponent<LogSystem>().ClearLog();
     }
 
     public void AddFlower(GameObject flower)
