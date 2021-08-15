@@ -132,12 +132,13 @@ public class EditFlowers : MonoBehaviour
 
     public void LayerUp(GameObject flower)
     {
-        soundButton.GetComponent<AudioSource>().Play();
+        soundButton.GetComponent<AudioSource>().Play();        
         flowers = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in flowers) //Перебираем цветы на сцене
         {
             if (item.GetComponent<SpriteRenderer>().sortingOrder == flower.GetComponent<SpriteRenderer>().sortingOrder + 1) //Находим цветы
             {
+                GetComponent<LogSystem>().LayerUpLog(flower.GetComponent<SpriteRenderer>().sortingOrder);
                 item.GetComponent<SpriteRenderer>().sortingOrder--;
                 flower.GetComponent<SpriteRenderer>().sortingOrder++;
                 break;
@@ -147,12 +148,13 @@ public class EditFlowers : MonoBehaviour
 
     public void LayerDown(GameObject flower)
     {
-        soundButton.GetComponent<AudioSource>().Play();
+        soundButton.GetComponent<AudioSource>().Play();        
         flowers = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in flowers) //Перебираем цветы на сцене
         {
             if (item.GetComponent<SpriteRenderer>().sortingOrder == flower.GetComponent<SpriteRenderer>().sortingOrder - 1) //Находим цветы
             {
+                GetComponent<LogSystem>().LayerDownLog(flower.GetComponent<SpriteRenderer>().sortingOrder);
                 item.GetComponent<SpriteRenderer>().sortingOrder++;
                 flower.GetComponent<SpriteRenderer>().sortingOrder--;
                 break;

@@ -69,4 +69,24 @@ public class LogSystem : MonoBehaviour
         }
         content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, logAmount * 100);
     }
+
+    public void LayerUpLog(int id)
+    {
+        logs[id - 1].transform.localPosition -= new Vector3(0, 100, 0);
+        logs[id].transform.localPosition += new Vector3(0, 100, 0);
+
+        GameObject temp = logs[id];
+        logs[id] = logs[id - 1];
+        logs[id - 1] = temp;
+    }
+
+    public void LayerDownLog(int id)
+    {
+        logs[id - 1].transform.localPosition += new Vector3(0, 100, 0);
+        logs[id - 2].transform.localPosition -= new Vector3(0, 100, 0);
+
+        GameObject temp = logs[id - 2];
+        logs[id - 2] = logs[id - 1];
+        logs[id - 1] = temp;
+    }
 }
