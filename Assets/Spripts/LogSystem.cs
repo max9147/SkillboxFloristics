@@ -26,6 +26,26 @@ public class LogSystem : MonoBehaviour
         curLog.transform.localPosition = new Vector3(0, (-logItemHeight * logAmount) + (logItemHeight / 2 * logAmount), 0);
         curLog.transform.Find("FlowerImage").GetComponent<Image>().sprite = flower.imageC;
         curLog.transform.Find("FlowerName").GetComponent<TextMeshProUGUI>().text = flower.flowerName;
+        switch (flower.size)
+        {
+            case "Focus":
+                curLog.transform.Find("FlowerSize").GetComponent<TextMeshProUGUI>().text = "Фокусный";
+                break;
+            case "Base":
+                curLog.transform.Find("FlowerSize").GetComponent<TextMeshProUGUI>().text = "Базовый";
+                break;
+            case "Fill":
+                curLog.transform.Find("FlowerSize").GetComponent<TextMeshProUGUI>().text = "Заполняющий";
+                break;
+            case "Details":
+                curLog.transform.Find("FlowerSize").GetComponent<TextMeshProUGUI>().text = "Детали";
+                break;
+            case "Green":
+                curLog.transform.Find("FlowerSize").GetComponent<TextMeshProUGUI>().text = "Зелень";
+                break;
+            default:
+                break;
+        }
         logAmount++;
         for (int i = 0; i < logAmount - 1; i++)
         {
