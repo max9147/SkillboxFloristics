@@ -139,6 +139,7 @@ public class EditFlowers : MonoBehaviour
             if (item.GetComponent<SpriteRenderer>().sortingOrder == flower.GetComponent<SpriteRenderer>().sortingOrder + 1) //Находим цветы
             {
                 GetComponent<LogSystem>().LayerUpLog(flower.GetComponent<SpriteRenderer>().sortingOrder);
+                GetComponent<ScoringSystem>().MoveFlowerUp(flower.GetComponent<SpriteRenderer>().sortingOrder);
                 item.GetComponent<SpriteRenderer>().sortingOrder--;
                 flower.GetComponent<SpriteRenderer>().sortingOrder++;
                 break;
@@ -155,6 +156,7 @@ public class EditFlowers : MonoBehaviour
             if (item.GetComponent<SpriteRenderer>().sortingOrder == flower.GetComponent<SpriteRenderer>().sortingOrder - 1) //Находим цветы
             {
                 GetComponent<LogSystem>().LayerDownLog(flower.GetComponent<SpriteRenderer>().sortingOrder);
+                GetComponent<ScoringSystem>().MoveFlowerDown(flower.GetComponent<SpriteRenderer>().sortingOrder);
                 item.GetComponent<SpriteRenderer>().sortingOrder++;
                 flower.GetComponent<SpriteRenderer>().sortingOrder--;
                 break;

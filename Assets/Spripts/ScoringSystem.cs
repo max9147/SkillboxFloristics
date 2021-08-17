@@ -869,4 +869,26 @@ public class ScoringSystem : MonoBehaviour
     {
         return isOpen;
     }
+
+    public void MoveFlowerUp(int id)
+    {
+        GameObject temp = addedFlowers[id];
+        addedFlowers[id] = addedFlowers[id - 1];
+        addedFlowers[id - 1] = temp;
+
+        FlowerColor tempColor = flowerColors[id];
+        flowerColors[id] = flowerColors[id - 1];
+        flowerColors[id - 1] = tempColor;
+    }
+
+    public void MoveFlowerDown(int id)
+    {
+        GameObject temp = addedFlowers[id - 2];
+        addedFlowers[id - 2] = addedFlowers[id - 1];
+        addedFlowers[id - 1] = temp;
+
+        FlowerColor tempColor = flowerColors[id - 2];
+        flowerColors[id - 2] = flowerColors[id - 1];
+        flowerColors[id - 1] = tempColor;
+    }
 }

@@ -47,8 +47,8 @@ public class TabsChange : MonoBehaviour
                 fillFlowers.SetActive(false);
                 detailFlowers.SetActive(false);
                 green.SetActive(false);
-                if (bouquet.activeSelf) content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() * 100);
-                else content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, basket.GetComponent<ArrangeBasket>().GetFlowerCount() * 100);
+                if (bouquet.activeSelf) content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() * GetComponent<LogSystem>().GetItemHeight());
+                else content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, basket.GetComponent<ArrangeBasket>().GetFlowerCount() * GetComponent<LogSystem>().GetItemHeight());
                 descriptionText.text = "Во вкладке \"Ваш букет\" можно смотреть и редактировать цветы, участвующие в композиции.";
                 break;
             case 1:
