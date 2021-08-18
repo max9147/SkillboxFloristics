@@ -72,7 +72,7 @@ public class LogSystem : MonoBehaviour
         {
             logs[i].transform.localPosition += new Vector3(0, -logItemHeight / 2, 0);
         }
-        content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, logAmount * logItemHeight);
+        if (log.activeSelf) content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, logAmount * logItemHeight);
     }
 
     public void RemoveFromLog(int id)
@@ -93,7 +93,7 @@ public class LogSystem : MonoBehaviour
         {
             logs[i].transform.localPosition += new Vector3(0, logItemHeight / 2, 0);
         }
-        content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, logAmount * logItemHeight);
+        if (log.activeSelf) content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, logAmount * logItemHeight);
     }
 
     public void LayerUpLog(int id)

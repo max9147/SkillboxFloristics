@@ -63,9 +63,10 @@ public class DragFlowers : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (transform.position.y <= -1.8f || transform.position.y >= 2.5f) return;
+        ray = mainCam.ScreenPointToRay(Input.mousePosition); //Проверка на нахождение курсора в content
+        if (ray.origin.y > 2.7f || ray.origin.y < -1.7f) return;
         if (gameManager.GetComponent<TabsChange>().CheckDescriptionOpen() || gameManager.GetComponent<ScoringSystem>().CheckIsOpen() || gameManager.GetComponent<SelectType>().CheckIsOpen() || gameManager.GetComponent<EditFlowers>().isDragging) return;
-        curMenu = Instantiate(desctiptionMenu, transform);
+        curMenu = Instantiate(desctiptionMenu, content.transform);
         curMenu.transform.Find("FlowerNameText").GetComponent<TextMeshProUGUI>().text = flower.flowerName;
         if (transform.position.y >= -0.85f) curMenu.transform.position = transform.position - new Vector3(0, 0.6f, 0);
         else

@@ -42,6 +42,7 @@ public class ScoringSystem : MonoBehaviour
     public TextMeshProUGUI colorScoreTextNumber;
     public TextMeshProUGUI endHelpText;
     public TextMeshProUGUI amountText;
+    public TextMeshProUGUI schemeText;
     public Slider sizeSlider;    
 
     private GameObject[] toDestroy;
@@ -652,6 +653,7 @@ public class ScoringSystem : MonoBehaviour
         ContrastMeter.SetActive(false);
         HarmonyMeter.SetActive(false);
         ContrastHarmonyMeter.SetActive(false);
+        schemeText.text = "";
 
         if (flowerColors.Count == 0)
         {
@@ -710,6 +712,7 @@ public class ScoringSystem : MonoBehaviour
         {
             case 0:
                 MonochromeMeter.SetActive(true);
+                schemeText.text = "Монохромная";
                 if (most == FlowerColor.White) MonochromeMeter.transform.localPosition = new Vector3(0, -50, 0);
                 else MonochromeMeter.transform.localPosition = new Vector3(0, 0, 0);
                 switch (most)
@@ -739,6 +742,7 @@ public class ScoringSystem : MonoBehaviour
                 break;
             case 1:
                 ContrastMeter.SetActive(true);
+                schemeText.text = "Контрастная";
                 switch (contrastMaxCombo)
                 {
                     case 0:
@@ -756,6 +760,7 @@ public class ScoringSystem : MonoBehaviour
                 break;
             case 2:
                 HarmonyMeter.SetActive(true);
+                schemeText.text = "Гармоническая";
                 switch (harmonyMaxCombo)
                 {
                     case 0:
@@ -770,6 +775,7 @@ public class ScoringSystem : MonoBehaviour
                 break;
             case 3:
                 ContrastHarmonyMeter.SetActive(true);
+                schemeText.text = "Контрастная гармоническая";
                 switch (contrastHarmonyMaxCombo)
                 {
                     case 0:
