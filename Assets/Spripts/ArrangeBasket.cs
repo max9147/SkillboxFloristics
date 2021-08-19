@@ -7,6 +7,7 @@ using TMPro;
 public class ArrangeBasket : MonoBehaviour
 {
     public GameObject positionArrow;
+    public GameObject gameManager;
     public Button buttonCreate;
     public Button buttonBack;
     public Slider sizeSlider;
@@ -21,7 +22,7 @@ public class ArrangeBasket : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) //Используем для записи цветка в объект
     {
-        collisionFlower = collision.gameObject;
+        collisionFlower = collision.gameObject;        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -31,6 +32,7 @@ public class ArrangeBasket : MonoBehaviour
 
     private void OnMouseEnter() //Используем для обозначения нахождения цветка в объекте
     {
+        if (gameManager.GetComponent<SelectType>().CheckIsOpen()) return;
         flowerInside = true;
     }
 
@@ -77,7 +79,7 @@ public class ArrangeBasket : MonoBehaviour
         {
             flowerCount++;
             if (flowerCount > 30) amountText.text = "Много цветов";
-            else if (flowerCount >= 10)
+            else if (flowerCount >= 5)
             {
                 sizeSlider.value += 0.033f;
                 amountText.text = "";

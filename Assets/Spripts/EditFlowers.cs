@@ -26,7 +26,7 @@ public class EditFlowers : MonoBehaviour
 
     public void SelectFlower(GameObject flower)
     {
-        if (flower.GetComponent<SpriteRenderer>().sortingLayerName == "Default" || isEditing || GetComponent<ScoringSystem>().CheckIsOpen()) return;
+        if (flower.GetComponent<SpriteRenderer>().sortingLayerName == "Default" || isEditing || GetComponent<ScoringSystem>().CheckIsOpen() || GetComponent<SelectType>().CheckIsOpen()) return;
         prevFlower = flower;      
         flower.GetComponent<SpriteRenderer>().sortingLayerName = "Foreground";
         flower.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.None;
@@ -42,8 +42,8 @@ public class EditFlowers : MonoBehaviour
     }
 
     public void StartEdit(GameObject flower)
-    {        
-        if (curMenu || GetComponent<ScoringSystem>().CheckIsOpen()) return;
+    {
+        if (curMenu || GetComponent<ScoringSystem>().CheckIsOpen() || GetComponent<SelectType>().CheckIsOpen()) return;
         flower.GetComponent<SpriteRenderer>().sortingLayerName = "Flowers";
         isEditing = true;
         curMenu = Instantiate(editMenu, canvas.transform);
@@ -91,7 +91,7 @@ public class EditFlowers : MonoBehaviour
                     buttonBack.interactable = false;
                 }
 
-                if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() < 10 || bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 30)
+                if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() < 5 || bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 30)
                     buttonCreate.interactable = false;
             }
         }
@@ -111,16 +111,16 @@ public class EditFlowers : MonoBehaviour
                     buttonBack.interactable = false;
                 }
 
-                if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() < 10 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 30)
+                if (basket.GetComponent<ArrangeBasket>().GetFlowerCount() < 5 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 30)
                     buttonCreate.interactable = false;
             }
         }
 
         if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() > 30 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() > 30) amountText.text = "Много цветов";
-        else if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10) amountText.text = "";
+        else if (bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 5 || basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 5) amountText.text = "";
         else amountText.text = "Мало цветов";
 
-        if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
+        if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 5 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 5 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
             buttonCreate.interactable = true;
 
         foreach (var item in flowers) //Перебираем цветы на сцене

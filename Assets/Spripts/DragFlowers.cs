@@ -147,13 +147,22 @@ public class DragFlowers : MonoBehaviour
                     flowerToDrag.GetComponent<SpriteRenderer>().sortingOrder = basket.GetComponent<ArrangeBasket>().GetFlowerCount() + 1;
                     flowerToDrag.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
 
-                    snappedPos = new Vector3((basket.transform.position.x + curPos.x) / 2, (curPos.y / 2) + 0.2f, 0); //Находим место цветка в корзине
+                    snappedPos = new Vector3(curPos.x, (curPos.y / 2) + 0.1f, 0); //Находим место цветка в корзине
                     float deviation = snappedPos.x - bouquet.transform.position.x;
-                    //snappedPos.y = Mathf.Clamp(snappedPos.y, -1.2f, 3);
+
+                    if (deviation > 1.1f)
+                    {
+                        snappedPos.x -= (deviation - 1.1f) / 2;
+                        flowerToDrag.transform.up = (new Vector3(1.1f - deviation, -1, 0)) * -1;
+                    }
+                    else if (deviation < -1.1f)
+                    {
+                        snappedPos.x -= (1.1f + deviation) / 2;
+                        flowerToDrag.transform.up = (new Vector3(-1.1f - deviation, -1, 0)) * -1;
+                    }
+                    else flowerToDrag.transform.up = Vector3.up;
 
                     flowerToDrag.transform.position = snappedPos;
-
-                    flowerToDrag.transform.up = (basketTip.transform.position - flowerToDrag.transform.position + new Vector3(0, Mathf.Abs(deviation) * 3.8f, 0)) * -1f; //Задаем цветку поворот внутри корзины
                 }
                 else
                 {
@@ -173,7 +182,7 @@ public class DragFlowers : MonoBehaviour
             {
                 canTake = true;
                 Destroy(flowerToDrag);
-                if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 10 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 10 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
+                if ((bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() >= 5 && bouquet.GetComponent<ArrangeBouquet>().GetFlowerCount() <= 30) || (basket.GetComponent<ArrangeBasket>().GetFlowerCount() >= 5 && basket.GetComponent<ArrangeBasket>().GetFlowerCount() <= 30))
                 {
                     buttonCreate.interactable = true;
                 }

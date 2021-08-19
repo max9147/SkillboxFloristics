@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SelectType : MonoBehaviour
 {
+    public Button buttonCreate;
+    public Button buttonBack;
+    public Button buttonContinue;
     public GameObject bouquet;
     public GameObject bouquetBackground;
     public GameObject bouquetTip;
@@ -13,6 +18,7 @@ public class SelectType : MonoBehaviour
     public GameObject chooseBouquetMenu;
     public GameObject chooseBasketMenu;
     public GameObject soundButton;
+    public GameObject positionArrow;
     public Sprite[] bouquets;
     public Sprite bouquetBG;
     public Sprite bouquetBGGray;
@@ -25,6 +31,8 @@ public class SelectType : MonoBehaviour
     public Sprite basketBGBig;
     public Sprite basketMask;
     public Sprite basketMaskBig;
+    public Slider sizeSlider;
+    public TextMeshProUGUI amountText;
 
     private bool isOpen = false;
 
@@ -35,10 +43,10 @@ public class SelectType : MonoBehaviour
 
     public void InitSelection()
     {
-        bouquet.SetActive(false);
-        basket.SetActive(false);
         selectMenu.SetActive(true);
         isOpen = true;
+        if (bouquet.activeInHierarchy || basket.activeInHierarchy) buttonContinue.gameObject.SetActive(true);
+        else buttonContinue.gameObject.SetActive(false);
     }
 
     public void SelectBouquet()
@@ -53,7 +61,24 @@ public class SelectType : MonoBehaviour
         soundButton.GetComponent<AudioSource>().Play();
         chooseBouquetMenu.SetActive(false);
         bouquet.GetComponent<SpriteRenderer>().sprite = bouquets[id];
-        bouquet.GetComponent<ArrangeBouquet>().bouquetID = id;
+        bouquet.GetComponent<ArrangeBouquet>().bouquetID = id;        
+
+        GetComponent<LogSystem>().ClearLog();
+        GameObject[] toDestroy = GameObject.FindGameObjectsWithTag("Flower");
+        foreach (var item in toDestroy) //Перебираем цветы на сцене
+        {
+            Destroy(item);
+        }
+        sizeSlider.value = 0;
+        amountText.text = "";
+        positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
+        if (bouquet.activeInHierarchy) bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
+        if (basket.activeInHierarchy) basket.GetComponent<ArrangeBasket>().ClearBasket();
+        GetComponent<ScoringSystem>().addedFlowers.Clear();
+        GetComponent<ScoringSystem>().flowerColors.Clear();
+        buttonCreate.interactable = false;
+        buttonBack.interactable = false;
+        GetComponent<ScoringSystem>().CheckColorMeter();
 
         switch (id)
         {
@@ -77,6 +102,7 @@ public class SelectType : MonoBehaviour
                 break;
         }
 
+        basket.SetActive(false);
         bouquet.SetActive(true);
         isOpen = false;
     }
@@ -93,6 +119,24 @@ public class SelectType : MonoBehaviour
         soundButton.GetComponent<AudioSource>().Play();
         chooseBasketMenu.SetActive(false);
         basket.GetComponent<SpriteRenderer>().sprite = baskets[id];
+        buttonContinue.gameObject.SetActive(true);
+
+        GetComponent<LogSystem>().ClearLog();
+        GameObject[] toDestroy = GameObject.FindGameObjectsWithTag("Flower");
+        foreach (var item in toDestroy) //Перебираем цветы на сцене
+        {
+            Destroy(item);
+        }
+        sizeSlider.value = 0;
+        amountText.text = "";
+        positionArrow.transform.eulerAngles = new Vector3(0, 0, 0);
+        if (bouquet.activeInHierarchy) bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
+        if (basket.activeInHierarchy) basket.GetComponent<ArrangeBasket>().ClearBasket();
+        GetComponent<ScoringSystem>().addedFlowers.Clear();
+        GetComponent<ScoringSystem>().flowerColors.Clear();
+        buttonCreate.interactable = false;
+        buttonBack.interactable = false;
+        GetComponent<ScoringSystem>().CheckColorMeter();
 
         switch (id)
         {
@@ -110,6 +154,7 @@ public class SelectType : MonoBehaviour
                 break;
         }
 
+        bouquet.SetActive(false);
         basket.SetActive(true);
         isOpen = false;
     }
@@ -120,6 +165,15 @@ public class SelectType : MonoBehaviour
         chooseBasketMenu.SetActive(false);
         chooseBouquetMenu.SetActive(false);
         selectMenu.SetActive(true);
+    }
+
+    public void RevertReseting()
+    {
+        soundButton.GetComponent<AudioSource>().Play();
+        chooseBasketMenu.SetActive(false);
+        chooseBouquetMenu.SetActive(false);
+        selectMenu.SetActive(false);
+        isOpen = false;
     }
 
     public bool CheckIsOpen()

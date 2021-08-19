@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class ScoringSystem : MonoBehaviour
 {
+    public GameObject bouquet;
+    public GameObject basket;
     public GameObject scoreScreen;
     public GameObject soundButton;
     public GameObject positionArrow;
@@ -26,6 +28,8 @@ public class ScoringSystem : MonoBehaviour
     public List<GameObject> addedFlowers = new List<GameObject>();
     public List<FlowerColor> flowerColors = new List<FlowerColor>();
     public Sprite starActive;
+    public Button buttonCreate;
+    public Button buttonBack;
     public TextMeshProUGUI flowerCountText;
     public TextMeshProUGUI focusCountText;
     public TextMeshProUGUI baseCountText;
@@ -606,6 +610,10 @@ public class ScoringSystem : MonoBehaviour
             endHelpStatus[i] = false;
         }
         endHelpMenu.SetActive(false);
+        if (bouquet.activeInHierarchy) bouquet.GetComponent<ArrangeBouquet>().ClearBouquet();
+        if (basket.activeInHierarchy) basket.GetComponent<ArrangeBasket>().ClearBasket();
+        bouquet.SetActive(false);
+        basket.SetActive(false);
         soundButton.GetComponent<AudioSource>().Play();
         toDestroy = GameObject.FindGameObjectsWithTag("Flower");
         foreach (var item in toDestroy) //Перебираем цветы на сцене
@@ -623,6 +631,23 @@ public class ScoringSystem : MonoBehaviour
         CheckColorMeter();
         endHelpText.text = "";
         GetComponent<LogSystem>().ClearLog();
+    }
+
+    public void CancelScore()
+    {
+        for (int i = 0; i < endHelpStatus.Length; i++)
+        {
+            endHelpStatus[i] = false;
+        }
+        endHelpMenu.SetActive(false);
+        soundButton.GetComponent<AudioSource>().Play();
+        scoreScreen.SetActive(false);
+        isOpen = false;
+        totalScore = 0;
+        starCount = 0;
+        endHelpText.text = "";
+        buttonCreate.interactable = true;
+        buttonBack.interactable = true;
     }
 
     public void AddFlower(GameObject flower)
